@@ -13,6 +13,7 @@ import {RecipeDetailsCameComponent} from "./recipe-details-came/recipe-details-c
 import {DataViewModule} from "primeng/dataview";
 import {DividerModule} from 'primeng/divider';
 import { FooterCameComponent } from './footer-came/footer-came.component';
+import { RecipeFicheCameComponent } from './recipe-fiche-came/recipe-fiche-came.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FooterCameComponent } from './footer-came/footer-came.component';
     HeaderCameComponent,
     RecipesCameComponent,
     RecipeDetailsCameComponent,
-    FooterCameComponent
+    FooterCameComponent,
+    RecipeFicheCameComponent
   ],
   imports: [
     BrowserModule,

@@ -10,6 +10,9 @@
     margin: 0 5%;
     width: 90%;
 }
-.recies-listItem{
+.recipes-listItem{
     width: 100%;
+}
+:host >>> .pi-align-right:before {
+    content: none !important;
 }

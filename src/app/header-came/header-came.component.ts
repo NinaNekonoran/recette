@@ -17,7 +17,7 @@ export class HeaderCameComponent implements OnInit {
   ngOnInit() {
     
     this.items = [
-      {label: 'Accueil', icon: 'pi pi-fw pi-home'}
+      {label: 'Accueil', icon: 'pi pi-fw pi-home', routerLink: ['']}
     ];
 
     this.activeItem = this.items[0];
