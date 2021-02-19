@@ -1,0 +1,14 @@
+<h2 class="p-text-center liste-title">--- Listes des recettes ---</h2>
+<section class="recipes-section p-d-flex p-flex-row p-flex-wrap p-justify-around">
+    <article *ngFor="let recipe of this.recipes" class="p-p-2 ">
+        <p-card [routerLink]="['/recipe', recipe.id, recipe.title ]"
+                 [header]="recipe.title" [subheader]="recipe.subTitle" [style]="{width: '200px'}" styleClass="p-card-shadow">
+            <ng-template pTemplate="header">
+                <img alt="Card" [src]="recipe.img">
+            </ng-template>
+            <p>{{recipe.description}}</p>
+        </p-card>
+    </article>
+</section>
+
+
