@@ -4,8 +4,7 @@ import {RecipeDetailsCameComponent} from "./recipe-details-came/recipe-details-c
 import {RecipesCameComponent} from "./recipes-came/recipes-came.component";
 
 const appRouter: Routes = [
-    { path: '', redirectTo : 'accueil', pathMatch: 'full'},
-    { path: 'accueil',  component : RecipesCameComponent},
+    { path: '',  component : RecipesCameComponent},
     { path: 'recipe/:id/:title', component : RecipeDetailsCameComponent}
 ];
 
