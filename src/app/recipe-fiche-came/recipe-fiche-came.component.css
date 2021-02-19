@@ -20,3 +20,9 @@
     text-overflow: ellipsis;
     padding : 0 !important;
 }
+.resize_fit_center {
+    height: 12.5em;
+    object-fit: cover;
+    width: 100%;
+}
+
