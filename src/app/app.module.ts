@@ -10,19 +10,26 @@ import {TabMenuModule} from 'primeng/tabmenu';
 import { RecipesCameComponent } from './recipes-came/recipes-came.component';
 import {AppRoutingModule} from "./app-routing.module";
 import {RecipeDetailsCameComponent} from "./recipe-details-came/recipe-details-came.component";
+import {DataViewModule} from "primeng/dataview";
+import {DividerModule} from 'primeng/divider';
+import { FooterCameComponent } from './footer-came/footer-came.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderCameComponent,
     RecipesCameComponent,
-    RecipeDetailsCameComponent
+    RecipeDetailsCameComponent,
+    FooterCameComponent
   ],
   imports: [
     BrowserModule,
     CommonModule,
     TabMenuModule,
     CardModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DataViewModule,
+    DividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
