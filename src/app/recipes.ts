@@ -5,7 +5,7 @@ export let recipes = [
         member : '5 à 6 personnes',
         time_preparation : '40 min',
         time_cuisson : '1 h 30 min',
-      description : 'à définir',
+      description : 'rspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Consectetur, adipisci velit, sed quia non numquam eius modi.',
       img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1613750628714.jpg?raw=true',
         ingredients : [
             {name : 'Folon frais', amount : '1kg '},

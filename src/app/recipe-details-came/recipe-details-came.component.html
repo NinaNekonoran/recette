@@ -24,8 +24,8 @@
 
         <div class="p-col-5 p-m-3">
             <span class="p-badge p-badge-warning" *ngIf="recipeDetails.member">{{recipeDetails.member}}</span>
-            <span class="p-badge p-badge-success" *ngIf="recipeDetails.time_preparation">{{recipeDetails.time_preparation}}</span>
-            <span class="p-badge p-badge-danger" *ngIf="recipeDetails.time_cuisson">{{recipeDetails.time_cuisson}}</span>
+            <span class="p-badge p-badge-success" *ngIf="recipeDetails.time_preparation">Préparation : {{recipeDetails.time_preparation}}</span>
+            <span class="p-badge p-badge-danger" *ngIf="recipeDetails.time_cuisson">Cuisson : {{recipeDetails.time_cuisson}}</span>
             <p class="footer-title">Etapes :</p>
             <div>
                 <ul>

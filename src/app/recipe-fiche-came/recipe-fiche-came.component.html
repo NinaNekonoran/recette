@@ -9,8 +9,8 @@
             ...
             <div class="p-mt-2">
                 <span class="p-badge p-badge-warning" *ngIf="recipe.member">{{recipe.member}}</span>
-                <span class="p-badge p-badge-warning" *ngIf="recipe.time_preparation">{{recipe.time_preparation}}</span>
-                <span class="p-badge p-badge-warning" *ngIf="recipe.time_cuisson">{{recipe.time_cuisson}}</span>
+                <span class="p-badge p-badge-success" *ngIf="recipe.time_preparation">{{recipe.time_preparation}}</span>
+                <span class="p-badge p-badge-danger" *ngIf="recipe.time_cuisson">{{recipe.time_cuisson}}</span>
             </div>
         </ng-template>
     </p-card>
