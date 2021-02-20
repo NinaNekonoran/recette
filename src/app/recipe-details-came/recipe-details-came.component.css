@@ -18,3 +18,16 @@
     width: 90%;
     background-color: #F7F7F7;
 }
+.footer-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4em;
+    color: #333;
+}
+
+:host >>> ul{
+    padding : 0 0 0 10px !important;
+}
+.p-badge{
+    text-align: center;
+    padding : 0 8px;
+}

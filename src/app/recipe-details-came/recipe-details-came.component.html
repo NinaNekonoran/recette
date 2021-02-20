@@ -1,7 +1,36 @@
 <h2 class="p-text-center liste-title">-- {{recipeDetails.title}} --</h2>
 <a [routerLink]="['../../../']" class="back-recipe"><-- back</a>
 
-<section class="recipes-section p-d-flex p-flex-row p-flex-wrap p-justify-around">
+<section class="recipes-section p-d-flex p-flex-row  p-justify-around">
+
+    <div class="p-d-flex footer-background ">
+
+
+        <div class="p-col-2 p-m-3" *ngIf="recipeDetails.ingredients">
+            <p class="footer-title">Ingrédients :</p>
+            <ul>
+                <li class="p-d-flex p-justify-between p-align-center" *ngFor="let ingredient of recipeDetails.ingredients">
+                    <p class="p-col-10 p-m-0">- {{ingredient.name}}</p>
+                    <span class="p-col-2 p-badge p-badge-warning" *ngIf="ingredient.amount">{{ingredient.amount}}</span>
+                </li>
+            </ul>
+        </div>
+
+        <p-divider layout="vertical" ></p-divider>
+
+        <img class="p-col-4 p-m-3 p-col-align-center" [src]="recipeDetails.img" height="auto" width="40%"/>
+
+        <div class="p-col-4 p-m-3">
+            <p class="footer-title">Etapes :</p>
+            <div class="p-d-flex">
+                <p >
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                    architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                    voluptatem sequi nesciunt. Consectetur, adipisci velit, sed quia non numquam eius modi.
+                </p>
+            </div>
+        </div>
+    </div>
 
 </section>
 

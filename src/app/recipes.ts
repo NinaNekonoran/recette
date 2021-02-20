@@ -3,7 +3,15 @@ export let recipes = [
       id : 1,
       title : 'Sanga',
       description : 'C\'est une recette proche du tajine marocain sans pour autant avoir recours à des épices ou arômes. Ici l\'oignon et le vinaigre donneront un goût mi sucré, mi acidulé et conserveront un bon goût pour les amateurs de viande d\'agneau.',
-      img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1613750628714.jpg?raw=true'
+      img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1613750628714.jpg?raw=true',
+        ingredients : [
+            {name : 'Feuilles de zom (morelle noire) ou feuilles d’aubergines', amount : '1kg '},
+            {name : 'Noix de palme', amount : '500g'},
+            {name : 'Mis frais en épis', amount : '2kg'},
+            {name : 'De l\'eau'},
+            {name : 'Du sucre'},
+            {name : 'Du Piment'}
+            ]
     },
     {
       id : 2,
