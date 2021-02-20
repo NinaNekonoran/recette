@@ -13,8 +13,11 @@
     font-size: 1.4em;
 }
 .recipes-section{
-    margin: 0 5% 30px 5%;
     min-height: 300px;
+}
+.recipes-section,
+.recipes-sub-section{
+    margin: 0 5% 30px 5%;
     width: 90%;
     background-color: #F7F7F7;
 }
@@ -30,4 +33,10 @@
 .p-badge{
     text-align: center;
     padding : 0 8px;
+}
+
+:host >>> .p-badge.p-badge-warning,
+:host >>> .p-badge.p-badge-success,
+:host >>> .p-badge.p-badge-danger{
+    margin : 0px 3px ;
 }

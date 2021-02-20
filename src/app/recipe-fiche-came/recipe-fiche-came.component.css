@@ -1,21 +1,21 @@
 
-:host >>> .p-card-footer{
+.footer-suite{
     font-family: 'Dancing Script', cursive;
     text-align: right;
 }
 :host >>> .p-card .p-card-body{
-    height: 21em;
+    height: 20em;
 }
 :host >>> .p-card-title{
     font-family: 'Dancing Script', cursive;
-    min-height: 3.7em;
-    max-height: 3.7em;
+    min-height: 1.2em;
+    max-height: 1.2em;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 :host >>> .p-card-content{
-    min-height: 9em;
-    max-height: 9em;
+    min-height: 9.1em;
+    max-height: 9.1em;
     overflow: hidden;
     text-overflow: ellipsis;
     padding : 0 !important;
@@ -26,3 +26,9 @@
     width: 100%;
 }
 
+:host >>> .p-badge.p-badge-warning {
+    margin : 2px 1px ;
+}
+:host >>> .p-card .p-card-footer {
+    padding: 0;
+}

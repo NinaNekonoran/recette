@@ -7,6 +7,8 @@
 
 
         <div class="p-col-2 p-m-3" *ngIf="recipeDetails.ingredients">
+            <p class="footer-title">Description :</p>
+            <p>{{recipeDetails.description}}</p>
             <p class="footer-title">Ingrédients :</p>
             <ul>
                 <li class="p-d-flex p-justify-between p-align-center" *ngFor="let ingredient of recipeDetails.ingredients">
@@ -20,18 +22,22 @@
 
         <img class="p-col-4 p-m-3 p-col-align-center" [src]="recipeDetails.img" height="auto" width="40%"/>
 
-        <div class="p-col-4 p-m-3">
+        <div class="p-col-5 p-m-3">
+            <span class="p-badge p-badge-warning" *ngIf="recipeDetails.member">{{recipeDetails.member}}</span>
+            <span class="p-badge p-badge-success" *ngIf="recipeDetails.time_preparation">{{recipeDetails.time_preparation}}</span>
+            <span class="p-badge p-badge-danger" *ngIf="recipeDetails.time_cuisson">{{recipeDetails.time_cuisson}}</span>
             <p class="footer-title">Etapes :</p>
-            <div class="p-d-flex">
-                <p >
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                    architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                    voluptatem sequi nesciunt. Consectetur, adipisci velit, sed quia non numquam eius modi.
-                </p>
+            <div>
+                <ul>
+                    <li class="p-d-flex p-justify-between p-align-center" *ngFor="let state of recipeDetails.states">
+                        <p class="p-mb-1" [innerHTML]="'- ' + state"></p>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
 
 </section>
+
 
 

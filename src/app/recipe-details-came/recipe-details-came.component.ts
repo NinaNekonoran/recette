@@ -22,4 +22,6 @@ export class RecipeDetailsCameComponent implements OnInit {
     this.recipeDetails = recipes.find( aux => aux.id.toString() == id);
   }
 
+  public Search: string = 'lavez';
+
 }

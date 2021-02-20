@@ -14,6 +14,7 @@ import {DataViewModule} from "primeng/dataview";
 import {DividerModule} from 'primeng/divider';
 import { FooterCameComponent } from './footer-came/footer-came.component';
 import { RecipeFicheCameComponent } from './recipe-fiche-came/recipe-fiche-came.component';
+import { HighlightPipe } from './highlight.pipe';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { RecipeFicheCameComponent } from './recipe-fiche-came/recipe-fiche-came.
     RecipesCameComponent,
     RecipeDetailsCameComponent,
     FooterCameComponent,
-    RecipeFicheCameComponent
+    RecipeFicheCameComponent,
+    HighlightPipe
   ],
   imports: [
     BrowserModule,

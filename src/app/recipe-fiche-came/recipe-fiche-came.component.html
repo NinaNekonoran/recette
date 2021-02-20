@@ -1,12 +1,17 @@
 <article class="p-p-2 " *ngIf="recipe">
     <p-card [routerLink]="['/recipe', recipe.id, recipe.title ]"
-            [header]="recipe.title" [style]="{width: '200px',height: '32em'}" styleClass="p-card-shadow">
+            [header]="recipe.title" [style]="{width: '200px',height: '31em'}" styleClass="p-card-shadow">
         <ng-template pTemplate="header">
             <img class="resize_fit_center" alt="Card" [src]="recipe.img">
         </ng-template>
         {{recipe.description}}
         <ng-template pTemplate="footer">
-            [suite]
+            ...
+            <div class="p-mt-2">
+                <span class="p-badge p-badge-warning" *ngIf="recipe.member">{{recipe.member}}</span>
+                <span class="p-badge p-badge-warning" *ngIf="recipe.time_preparation">{{recipe.time_preparation}}</span>
+                <span class="p-badge p-badge-warning" *ngIf="recipe.time_cuisson">{{recipe.time_cuisson}}</span>
+            </div>
         </ng-template>
     </p-card>
 </article>
