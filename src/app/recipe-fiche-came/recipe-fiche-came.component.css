@@ -3,8 +3,13 @@
     font-family: 'Dancing Script', cursive;
     text-align: right;
 }
+
+:host >>> .p-card{
+    cursor: pointer;
+}
+
 :host >>> .p-card .p-card-body{
-    height: 20em;
+    height: 17em;
 }
 :host >>> .p-card-title{
     font-family: 'Dancing Script', cursive;
@@ -31,4 +36,10 @@
 }
 :host >>> .p-card .p-card-footer {
     padding: 0;
+}
+.footer-title{
+    font-size: 0.8em;
+}
+.footer-content{
+    font-size: 0.8em;
 }

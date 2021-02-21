@@ -15,6 +15,7 @@ import {DividerModule} from 'primeng/divider';
 import { FooterCameComponent } from './footer-came/footer-came.component';
 import { RecipeFicheCameComponent } from './recipe-fiche-came/recipe-fiche-came.component';
 import { HighlightPipe } from './highlight.pipe';
+import {ButtonModule} from "primeng/button";
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { HighlightPipe } from './highlight.pipe';
     CardModule,
     AppRoutingModule,
     DataViewModule,
-    DividerModule
+    DividerModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

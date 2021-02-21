@@ -25,17 +25,5 @@ export let recipes = [
             '<i>Vous pouvez aussi faire le sanga avec les feuilles d\'épinards, ou les feuilles de zom, ou  les feuilles d\'aubergines.</i>',
             '<b>BON APPETTIT</b>'
         ]
-    },
-    {
-      id : 2,
-      title : 'Ragout de poisson',
-      description : '600 g de farine de millet très fine\n',
-        img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1613750628687.jpg?raw=true'
-    },
-    {
-      id : 3,
-      title : 'Plantin',
-      subTitle : 'subTitle',
-      description : 'Côte d’Ivoire, Éthiopie, Somalie ou Sénégal ? Embarquement immédiat pour un festival de petits plats africains qui font danser les papilles et la cuisine ! Les pays d’Afrique ont le chic pour nous faire voyager d’un coup de fourchette. Saveurs ancestrales et mélanges inattendus, sucré salé ou salé sucré, toutes les couleurs du soleil envahissent les assiettes par la magie d’une simple recette. Nous, on dit chouette et on se régale !',
-        img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1613750628659.jpg?raw=true'
-    }];
+    }
+    ];

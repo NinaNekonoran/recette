@@ -1,16 +1,24 @@
 <article class="p-p-2 " *ngIf="recipe">
     <p-card [routerLink]="['/recipe', recipe.id, recipe.title ]"
-            [header]="recipe.title" [style]="{width: '200px',height: '31em'}" styleClass="p-card-shadow">
+            [header]="recipe.title" [style]="{width: '200px',height: '32em'}" styleClass="p-card-shadow">
         <ng-template pTemplate="header">
             <img class="resize_fit_center" alt="Card" [src]="recipe.img">
         </ng-template>
         {{recipe.description}}
         <ng-template pTemplate="footer">
             ...
-            <div class="p-mt-2">
-                <span class="p-badge p-badge-warning" *ngIf="recipe.member">{{recipe.member}}</span>
-                <span class="p-badge p-badge-success" *ngIf="recipe.time_preparation">{{recipe.time_preparation}}</span>
-                <span class="p-badge p-badge-danger" *ngIf="recipe.time_cuisson">{{recipe.time_cuisson}}</span>
+            <p-divider class="p-m-0"></p-divider>
+
+            <div class="p-d-flex">
+                <div class="p-col-6 p-p-0">
+                    <p class="footer-title p-m-0 p-text-bold">Portion</p>
+                    <p class="footer-content  p-m-0">{{recipe.member}}</p>
+                </div>
+                <div class="p-col-6 p-text-right p-p-0">
+                    <p class="footer-title p-m-0 p-text-bold">Temps</p>
+                    <p class="footer-content p-m-0">{{recipe.time_preparation}}</p>
+                    <p class="footer-content p-m-0">{{recipe.time_cuisson}}</p>
+                </div>
             </div>
         </ng-template>
     </p-card>
