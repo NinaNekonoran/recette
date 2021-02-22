@@ -1,9 +1,9 @@
-export let recipes = [{
+let recipes = [{
         id : 2,
         title : 'BOUILLON DE POISSON',
         member : '4 à 6 personnes',
-        time_preparation : 'xxx min',
-        time_cuisson : 'xxx min',
+        time_preparation : '20 min',
+        time_cuisson : '25 min',
         description : 'rspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Consectetur, adipisci velit, sed quia non numquam eius modi.',
         img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1613750628687.jpg?raw=true',
         ingredients : [
@@ -63,3 +63,7 @@ export let recipes = [{
         ]
     }
     ];
+let presentation = {
+
+}
+export {recipes, presentation} ;
