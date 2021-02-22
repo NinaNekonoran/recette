@@ -2,7 +2,7 @@
 .header-background-image{
     height: 350px;
     width: 100%;
-    background: url(../../assets/world.png) repeat  #FCD116;
+    background: url(../../../assets/world.png) repeat  #FCD116;
     background-size: 60%;
     animation: animation 100s linear infinite;
 }

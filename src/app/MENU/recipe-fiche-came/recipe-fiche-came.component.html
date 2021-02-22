@@ -1,6 +1,6 @@
 <article class="p-p-2 " *ngIf="recipe">
     <p-card [routerLink]="['/recipe', recipe.id, recipe.title ]"
-            [header]="recipe.title" [style]="{width: '200px',height: '32em'}" styleClass="p-card-shadow">
+            [header]="recipe.title" [style]="{width: '200px',height: '34em'}" styleClass="p-card-shadow">
         <ng-template pTemplate="header">
             <img class="resize_fit_center" alt="Card" [src]="recipe.img">
         </ng-template>
@@ -16,8 +16,8 @@
                 </div>
                 <div class="p-col-6 p-text-right p-p-0">
                     <p class="footer-title p-m-0 p-text-bold">Temps</p>
-                    <p class="footer-content p-m-0">{{recipe.time_preparation}}</p>
-                    <p class="footer-content p-m-0">{{recipe.time_cuisson}}</p>
+                    <p class="footer-content p-m-0" *ngIf="recipe.time_preparation">{{recipe.time_preparation}}</p>
+                    <p class="footer-content p-m-0" *ngIf="recipe.time_cuisson">{{recipe.time_cuisson}}</p>
                 </div>
             </div>
         </ng-template>

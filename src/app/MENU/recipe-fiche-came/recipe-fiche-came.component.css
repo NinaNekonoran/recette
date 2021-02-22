@@ -13,8 +13,8 @@
 }
 :host >>> .p-card-title{
     font-family: 'Dancing Script', cursive;
-    min-height: 1.2em;
-    max-height: 1.2em;
+    min-height: 2.4em;
+    max-height: 2.4em;
     overflow: hidden;
     text-overflow: ellipsis;
 }

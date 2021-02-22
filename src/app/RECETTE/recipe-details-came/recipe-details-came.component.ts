@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
-import { recipes } from '../recipes';
+import { recipes } from '../../recipes';
 
 @Component({
   selector: 'app-recipe-details-came',
