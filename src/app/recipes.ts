@@ -9,7 +9,7 @@ let recipes = [{
         ingredients : [
             {name : 'Maquereaux', amount : '2'},
             {name : 'Tomates', amount : '3'},
-            {name : 'Gingimbre frais', amount : '10g'},
+            {name : 'Gingembre frais', amount : '10g'},
             {name : 'Oignon', amount : '1'},
             {name : 'Gousse d\'ail', amount : '1'},
             {name : 'Branche de basilic', amount : '1'},
@@ -18,14 +18,14 @@ let recipes = [{
             {name : '[Piment frais]', amount : '1'},
             {name : 'Cuillère d\'huile d\'olive', amount : '2'},
             {name : '[Njansang]', amount : '20g'},
-            {name : '[Pébé]', amount : '10g'},
+            {name : '[Pèbé]', amount : '10g'},
             {name : 'Sel'},
-            {name : 'POivre'},
+            {name : 'Poivre'},
         ],
         states : [
             'Nettoyez, lavez les <b>poissons</b>, coupez-les en 3 ou 4 morceaux, réservez dans un grand saladier rempli d\'eau salée.',
-            'Lavez, coupez les légumes en morceaux, mixez les tomates, l\'<b>oignon</b>, le <b>gingimbre</b>, le <b>basilic</b>, le <b>poireau</b>, l\'<b>ail</b>, et un petit morceau de <b>ail</b> si besoin, réservez.',
-            'Ecrasez le <b>pébè</b> et le <b>djansang</b> si besoin, réservez.',
+            'Lavez, coupez les légumes en morceaux, mixez les tomates, l\'<b>oignon</b>, le <b>gingembre</b>, le <b>basilic</b>, le <b>poireau</b>, l\'<b>ail</b>, et un petit morceau de <b>piment</b> si besoin, réservez.',
+            'Ecrasez le <b>pèbè</b> et le <b>djansang</b> si besoin, réservez.',
             'Videz l\'eau des poissons, ajoutez les ingrédients mixés, écrasés, sans oublier le <b>jus de citron</b> dans le saladier à poissons, <b>poivrez</b>, <b>salez</b>, mélangez bien, et versez le contenu dans une grande casserole à fond épais.',
             'Posez votre casserole sur un feu doux, laissez frémir <b>10 minutes</b>, ensuite ajoutez de l\'eau, de l\'huile, assaisonnez à votre gout, remuez, et laissez cuire <b>20 minutes</b> environ.',
             'Gouttez, rectifiez, ajoutez de l\'eau si nécessaire, surtout veillez à ce que les morceaux de poissons restent entiers, laissez encore <b>5 minutes</b> au feu.'
@@ -63,7 +63,13 @@ let recipes = [{
         ]
     }
     ];
-let presentation = {
 
-}
-export {recipes, presentation} ;
+let presentation = "Bonjour tous le monde, j'aime cuisiner de bons plats d'ici, d'ailleurs, et de mon enfance.\n" +
+    "Depuis l'âge de 8 ans, ma mère m'a appris à cuisiner.\n" +
+    "La cuisine camerounaise est délicieuse, et très variée. Elle est riche en saveur. On y trouve des épices, des produits végétaux, des poissons, des viandes, sans oublier des fruits tropicaux.\n" +
+    "Je vous laisse le temps de découvrir mes quelques recettes simples, familiales, classiques, et traditionnelles.\n" +
+    "Je vous souhaite un bon appétit.";
+
+let title = "Cuisine de grand-mère Cameroun";
+
+export {recipes, presentation, title} ;
