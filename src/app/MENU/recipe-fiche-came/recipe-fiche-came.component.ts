@@ -1,4 +1,4 @@
-import {Component, Input, OnInit, Output} from '@angular/core';
+import {Component, HostListener, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-recipe-fiche-came',
@@ -9,10 +9,23 @@ export class RecipeFicheCameComponent implements OnInit {
 
   @Input()
   recipe;
-
-  constructor() { }
+  mobile : boolean;
 
   ngOnInit(): void {
+    this.isMoblie();
   }
 
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.isMoblie();
+  }
+
+  private isMoblie() {
+    if (window.innerWidth < 700) { // 768px portrait
+      this.mobile = true;
+    }
+    else{
+      this.mobile = false;
+    }
+  }
 }

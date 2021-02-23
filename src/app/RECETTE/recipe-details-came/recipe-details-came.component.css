@@ -44,3 +44,21 @@
     color: #333333;
     margin: auto 0 auto 10px;
 }
+
+.resize_fit_center {
+    height: 25em;
+    object-fit: cover;
+    width: 100%;
+}
+
+.resize_fit_center_big {
+    height: auto;
+    object-fit: cover;
+    width: 30%;
+}
+
+.resize_fit_center_small {
+    height: auto;
+    object-fit: cover;
+    width: 30%;
+}

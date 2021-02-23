@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {MenuItem} from 'primeng/api';
+import {title} from '../../recipes';
 
 @Component({
   selector: 'app-header-came',
@@ -11,6 +12,7 @@ export class HeaderCameComponent implements OnInit {
   constructor() { }
 
   items: MenuItem[];
+  title = title;g
 
   activeItem: MenuItem;
 

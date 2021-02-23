@@ -1,4 +1,29 @@
-<article class="p-p-2 " *ngIf="recipe">
+<article class="p-p-2" *ngIf="mobile">
+    <p-card [routerLink]="['/recipe', recipe.id, recipe.title ]"
+            [header]="recipe.title" [style]="{width: '100%',height: '34em'}" styleClass="p-card-shadow">
+        <ng-template pTemplate="header">
+            <img class="resize_fit_center" alt="Card" [src]="recipe.img">
+        </ng-template>
+        {{recipe.description}}
+        <ng-template pTemplate="footer">
+            ...
+            <p-divider class="p-m-0"></p-divider>
+
+            <div class="p-d-flex">
+                <div class="p-col-6 p-p-0">
+                    <p class="footer-title p-m-0 p-text-bold">Portion</p>
+                    <p class="footer-content  p-m-0">{{recipe.member}}</p>
+                </div>
+                <div class="p-col-6 p-text-right p-p-0">
+                    <p class="footer-title p-m-0 p-text-bold">Temps</p>
+                    <p class="footer-content p-m-0" *ngIf="recipe.time_preparation">{{recipe.time_preparation}}</p>
+                    <p class="footer-content p-m-0" *ngIf="recipe.time_cuisson">{{recipe.time_cuisson}}</p>
+                </div>
+            </div>
+        </ng-template>
+    </p-card>
+</article>
+<article class="p-p-2" *ngIf="recipe && !mobile" >
     <p-card [routerLink]="['/recipe', recipe.id, recipe.title ]"
             [header]="recipe.title" [style]="{width: '200px',height: '34em'}" styleClass="p-card-shadow">
         <ng-template pTemplate="header">
