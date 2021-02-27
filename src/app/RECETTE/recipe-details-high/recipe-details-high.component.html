@@ -1,0 +1,33 @@
+<section class="recipes-section p-d-flex p-flex-row  p-justify-around">
+    <div class="p-d-flex footer-background ">
+        <div class="p-col-2 p-m-3" *ngIf="recipeDetails.ingredients">
+            <p class="footer-title">Description :</p>
+            <p>{{recipeDetails.description}}</p>
+            <p class="footer-title">Ingrédients :</p>
+            <ul>
+                <li class="p-d-flex p-justify-between p-align-center" *ngFor="let ingredient of recipeDetails.ingredients">
+                    <p class="p-col-10 p-m-0">- {{ingredient.name}}</p>
+                    <span class="p-col-2 p-badge p-badge-warning" *ngIf="ingredient.amount">{{ingredient.amount}}</span>
+                </li>
+            </ul>
+        </div>
+
+        <p-divider layout="vertical" ></p-divider>
+
+        <img class="p-col-4 p-m-3  resize_fit_center_big" [src]="recipeDetails.img"/>
+
+        <div class="p-col-5 p-m-3">
+            <span class="p-badge p-badge-warning" *ngIf="recipeDetails.member">{{recipeDetails.member}}</span>
+            <span class="p-badge p-badge-success" *ngIf="recipeDetails.time_preparation">Préparation : {{recipeDetails.time_preparation}}</span>
+            <span class="p-badge p-badge-danger" *ngIf="recipeDetails.time_cuisson">Cuisson : {{recipeDetails.time_cuisson}}</span>
+            <p class="footer-title">Etapes :</p>
+            <div>
+                <ul>
+                    <li class="p-d-flex p-justify-between p-align-center" *ngFor="let state of recipeDetails.states">
+                        <p class="p-mb-1" [innerHTML]="'- ' + state"></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

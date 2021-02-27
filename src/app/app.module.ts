@@ -16,6 +16,9 @@ import { FooterCameComponent } from './FOOTER/footer-came/footer-came.component'
 import { RecipeFicheCameComponent } from './MENU/recipe-fiche-came/recipe-fiche-came.component';
 import { HighlightPipe } from './highlight.pipe';
 import {ButtonModule} from "primeng/button";
+import { RecipeDetailsHighComponent } from './RECETTE/recipe-details-high/recipe-details-high.component';
+import { RecipeDetailsMediumComponent } from './RECETTE/recipe-details-medium/recipe-details-medium.component';
+import { RecipeDetailsSmallComponent } from './RECETTE/recipe-details-small/recipe-details-small.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import {ButtonModule} from "primeng/button";
     RecipeDetailsCameComponent,
     FooterCameComponent,
     RecipeFicheCameComponent,
-    HighlightPipe
+    HighlightPipe,
+    RecipeDetailsHighComponent,
+    RecipeDetailsMediumComponent,
+    RecipeDetailsSmallComponent
   ],
   imports: [
     BrowserModule,

@@ -70,6 +70,6 @@ let presentation = "Bonjour tous le monde, j'aime cuisiner de bons plats d'ici, 
     "Je vous laisse le temps de découvrir mes quelques recettes simples, familiales, classiques, et traditionnelles.\n" +
     "Je vous souhaite un bon appétit.";
 
-let title = "Cuisine de grand-mère Cameroun";
+let title = "Mamie Cameroun";
 
 export {recipes, presentation, title} ;
