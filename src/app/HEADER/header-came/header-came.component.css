@@ -16,23 +16,16 @@
 .header-title {
     font-family: 'Dancing Script', cursive;
     font-size: 4em;
-    margin-top: 100px;
+    padding-top: 130px;
     color: #333;
     text-shadow: 0.1em 0.05em 0.05em #FFFF;
+    z-index: 1;
 }
 
 .header-image{
     height: 200px;
     margin: 65px 0 0 10%;
 }
-
-
-
-
-
-
-
-
 
 .header-title {
     animation: text-shadow 2s ease-in-out alternate;

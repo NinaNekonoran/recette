@@ -19,12 +19,25 @@
                 </ul>
             </div>
         </section>
-        <p-divider layout="horizontale" ></p-divider>
+
+        <p-divider></p-divider>
+
+        <section class="p-ml-2 p-mr-2">
+            <app-recipe-details-ingredient [ingredientsImg]="ingredientsImg"></app-recipe-details-ingredient>
+        </section>
+
+        <p-divider></p-divider>
 
         <div class=" p-m-5">
             <span class="p-badge p-badge-warning" *ngIf="recipeDetails.member">{{recipeDetails.member}}</span>
             <span class="p-badge p-badge-success" *ngIf="recipeDetails.time_preparation">Préparation : {{recipeDetails.time_preparation}}</span>
             <span class="p-badge p-badge-danger" *ngIf="recipeDetails.time_cuisson">Cuisson : {{recipeDetails.time_cuisson}}</span>
+
+            <article *ngIf="recipeDetails.advices">
+                <p class="footer-title">Conseils :</p>
+                <p *ngFor="let advice of recipeDetails.advices"  [innerHTML]="advice"></p>
+            </article>
+
             <p class="footer-title">Etapes :</p>
             <div>
                 <ul>
@@ -34,5 +47,7 @@
                 </ul>
             </div>
         </div>
+        <article class="p-text-right p-mb-4 p-mr-5"><b>BON APPETTIT</b></article>
+
     </div>
 </section>

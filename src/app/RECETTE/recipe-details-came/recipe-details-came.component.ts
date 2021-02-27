@@ -11,6 +11,7 @@ export class RecipeDetailsCameComponent implements OnInit {
 
   recipeDetails = null;
   mobile : string;
+  ingredientsImg;
 
   constructor(private activatedRoute: ActivatedRoute) {
   }
@@ -18,6 +19,7 @@ export class RecipeDetailsCameComponent implements OnInit {
   ngOnInit(): void {
     this.getDetails(this.activatedRoute.snapshot.paramMap.get('id'));
     this.isMobile();
+    this.ingredientsImg = this.recipeDetails.ingredients.filter(ing => ing.img != null);
   }
 
   private getDetails(id: string): void {
@@ -37,7 +39,7 @@ export class RecipeDetailsCameComponent implements OnInit {
       this.mobile = 'SMALL';
     }
     else{
-        this.mobile = 'HIGH';
+        this.mobile = 'MEDIUM';
     }
   }
 

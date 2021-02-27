@@ -54,11 +54,15 @@
 .resize_fit_center_big {
     height: auto;
     object-fit: cover;
-    width: 30%;
+    width: 100%;
 }
 
 .resize_fit_center_small {
     height: auto;
     object-fit: cover;
     width: 30%;
+}
+
+:host >>> .p-fieldset{
+    margin-bottom: 1em;
 }

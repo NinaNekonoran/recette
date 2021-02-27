@@ -3,22 +3,29 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HeaderCameComponent } from './HEADER/header-came/header-came.component';
-import {CardModule} from 'primeng/card';
 
 import {CommonModule} from '@angular/common';
+
+import {CardModule} from 'primeng/card';
+import {FieldsetModule} from 'primeng/fieldset';
 import {TabMenuModule} from 'primeng/tabmenu';
+import {DataViewModule} from "primeng/dataview";
+import {DividerModule} from 'primeng/divider';
+import {ButtonModule} from "primeng/button";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { RecipesCameComponent } from './MENU/recipes-came/recipes-came.component';
 import {AppRoutingModule} from "./app-routing.module";
 import {RecipeDetailsCameComponent} from "./RECETTE/recipe-details-came/recipe-details-came.component";
-import {DataViewModule} from "primeng/dataview";
-import {DividerModule} from 'primeng/divider';
 import { FooterCameComponent } from './FOOTER/footer-came/footer-came.component';
 import { RecipeFicheCameComponent } from './MENU/recipe-fiche-came/recipe-fiche-came.component';
 import { HighlightPipe } from './highlight.pipe';
-import {ButtonModule} from "primeng/button";
 import { RecipeDetailsHighComponent } from './RECETTE/recipe-details-high/recipe-details-high.component';
 import { RecipeDetailsMediumComponent } from './RECETTE/recipe-details-medium/recipe-details-medium.component';
 import { RecipeDetailsSmallComponent } from './RECETTE/recipe-details-small/recipe-details-small.component';
+import { RecipeDetailsIngredientComponent } from './RECETTE/recipe-details-ingredient/recipe-details-ingredient.component';
+import {AccordionModule} from "primeng/accordion";
+import {ToastModule} from "primeng/toast";
 
 @NgModule({
   declarations: [
@@ -31,7 +38,8 @@ import { RecipeDetailsSmallComponent } from './RECETTE/recipe-details-small/reci
     HighlightPipe,
     RecipeDetailsHighComponent,
     RecipeDetailsMediumComponent,
-    RecipeDetailsSmallComponent
+    RecipeDetailsSmallComponent,
+    RecipeDetailsIngredientComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +49,11 @@ import { RecipeDetailsSmallComponent } from './RECETTE/recipe-details-small/reci
     AppRoutingModule,
     DataViewModule,
     DividerModule,
-    ButtonModule
+    ButtonModule,
+    FieldsetModule,
+    BrowserAnimationsModule,
+    AccordionModule,
+    ToastModule
   ],
   providers: [],
   bootstrap: [AppComponent]

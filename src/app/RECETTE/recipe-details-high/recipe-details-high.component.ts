@@ -12,6 +12,9 @@ export class RecipeDetailsHighComponent implements OnInit {
   @Input()
   recipeDetails = null;
 
+  @Input()
+  ingredientsImg = [];
+
   ngOnInit(): void {
   }
 

@@ -1,4 +1,3 @@
-.highlight {
-    background-color: violet;
-    font-weight: bold;
+:host >>> .p-badge {
+    min-width: 50px;
 }

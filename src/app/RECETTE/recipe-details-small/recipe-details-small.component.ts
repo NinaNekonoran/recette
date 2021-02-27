@@ -12,6 +12,9 @@ export class RecipeDetailsSmallComponent implements OnInit {
   @Input()
   recipeDetails = null;
 
+  @Input()
+  ingredientsImg = [];
+
   ngOnInit(): void {
   }
 

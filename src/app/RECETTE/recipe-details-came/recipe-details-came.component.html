@@ -3,6 +3,6 @@
     <button pButton pRipple type="button" icon="pi pi-chevron-left" class="p-button-rounded p-button-warning"></button>
     <p>retourner sur la carte</p>
 </a>
-<app-recipe-details-high *ngIf="mobile === 'HIGH'" [recipeDetails]="recipeDetails"></app-recipe-details-high>
-<app-recipe-details-medium *ngIf="mobile === 'MEDIUM'" [recipeDetails]="recipeDetails"></app-recipe-details-medium>
-<app-recipe-details-small *ngIf="mobile === 'SMALL'" [recipeDetails]="recipeDetails"></app-recipe-details-small>
+<app-recipe-details-high *ngIf="mobile === 'HIGH'" [recipeDetails]="recipeDetails" [ingredientsImg]="ingredientsImg"></app-recipe-details-high>
+<app-recipe-details-medium *ngIf="mobile === 'MEDIUM'" [recipeDetails]="recipeDetails" [ingredientsImg]="ingredientsImg"></app-recipe-details-medium>
+<app-recipe-details-small *ngIf="mobile === 'SMALL'" [recipeDetails]="recipeDetails" [ingredientsImg]="ingredientsImg"></app-recipe-details-small>
