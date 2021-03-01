@@ -1,10 +1,82 @@
-let recipes = [{
+let NO_IMAGE = 'https://www.recia.fr/wp-content/uploads/2019/09/no_image.png';
+
+let recipes = [
+    {
+        id : 6,
+        title : 'MANIOC DOUX CUISSON A L\'EAU',
+        member : '4 à 5 personnes',
+        time_preparation : '20 min',
+        time_cuisson : '25 min',
+        description : 'Le manioc frais est un légume, un tubercule farineux apprécié et consommé généralement bouilli, c\'est un aliment très nourrissant.',
+        img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1614201716299.jpg?raw=true',
+        ingredients : [
+            {name : 'Manioc frais', amount : '1', img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1614201716342.jpg?raw=true'},
+            {name : '[sel]'}
+        ],
+        states : [
+            'Lavez les maniocs.',
+            'A l\'aide d\'un couteau coupez les maniocs en deux, épluchez-les en profondeur, fendez, enlevez les racines au milieu, coupez en morceaux de taille moyenne, rincez.',
+            'Mettez-les dans une casserole, ajoutez de l\'eau à mi-hauteur des morceaux de manioc et salez si besoin, mettez la casserole au feu, dès ébullition, laissez cuire pendant 25 min environ, si l\'eau de cuisson déborde, mettez votre couvercle entrouvert, surveillez la cuisson.',
+            'Piquez les maniocs avec le bout d\'un couteau, si le couteau s\'enfonce, votre manioc est cuit, arrêtez la cuisson quand le manioc est tendre, enlevez l\'eau de cuisson et dégustez.'
+        ],
+        advices: [
+            'Choisissez le manioc frais bien ferme. Il accompagne vos plats de poissons, de viandes, vos feuilles de manioc, les safous, ect…'
+        ]
+    },
+    {
+        id : 5,
+        title : 'FEUILLES DE MANIOC SANS SEL: (Kwem ou Kpwem)',
+        member : '4 à 5 personnes',
+        time_preparation : '30 min',
+        time_cuisson : '2h',
+        description : 'Les feuilles de manioc, ou purée de feuilles de manioc ou (pkwem) chez les bétis au Cameroun, est un plat très nourrissant. On peut  le préparer sans ou avec sel en ajoutant la viande le poisson ou de la pâte d\'arachide, ect...',
+        img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1614201716313.jpg?raw=true',
+        ingredients : [
+            {name : ['Paquets de feuilles de manioc frais','Sachets de feuilles de manioc surgelés'], amount : ['3','2']},
+            {name : 'Boîte de 500g de jus de noix de palme (sauce graine)', amount : '1'},
+            {name : 'Maïs', amount : '1'},
+            {name : '[Macabos]', amount : '2'}
+        ],
+        states : [
+            'Mettez les feuilles de manioc dans une casserole,  ajoutez de l\'eau à hauteur des feuilles, mélangez, couvrez et faites cuire  à feu doux 1h environ, en remuant de temps en temps',
+            'Epluchez, lavez les macabos et le maïs, coupez-les en deux si nécessaire, réservez.',
+            'Au bout d\'une heure de cuisson, ajoutez dans la préparation les macabos, fermez la casserole et laissez cuire 15 min',
+            'Rincez et ouvrez la boîte de jus de noix de palme (sauce graine), enlevez à l\'aide d\'une cuillère l\'huile rouge qui est au dessus, vous pouvez la jeter, versez toujours à l\'aide d\'une cuillère le jus de la boîte dans la casserole, ajoutez en même temps le maïs, remuez, le mélange ne doit pas être épais ni liquide, ajoutez de l\'eau si besoin et faites  cuire encore 30 min environ, gouttez, les feuilles de manioc doivent être tendres et servez chaud.'
+        ],
+
+        advices : [
+            'Les feuilles de manioc s\'accompagnent avec le manioc frais bouilli, le macabo, le maïs, ou le bâton de manioc, ect...',
+            'A la place de la boîte de 500g de jus de noix de palme, vous pouvez mettre la boîte de 800g selon votre goût.'
+        ],
+    },
+    {
+        id : 4,
+        title : 'MACABO BOUILLI',
+        member : '4 personnes',
+        time_preparation : '15 min',
+        time_cuisson : '30min',
+        description : 'xxx',
+        img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1614541536120.jpg?raw=true',
+        ingredients : [
+            {name : 'Macabos', amount : '5', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1614541536105.jpg?raw=true'},
+            {name : '[sel]'},
+        ],
+        states : [
+            'Pelez les macabos avec un couteau, lavez, coupez-les en 2 ou 3 morceaux si nécessaire, rincez.',
+            'Dans une casserole disposez les macabos, ajoutez de l\'eau à hauteur des macabos.',
+            'Mettez au feu à feu moyen, dès que l\'eau boue, ajoutez un peu de sel si besoin, et laissez cuire 30 mn environ.',
+            'Vérifiez la cuisson avec la pointe d\'un couteau, si le couteau s\'enfonce, alors les macabos sont cuits.',
+            'Retirez du feu, enlevez l\'eau de cuisson et servez chaud.',
+            'Le macabo bouilli s\'accompagne avec les poissons en sauce, les viandes en sauce, les feuilles de manioc, ect...'
+        ]
+    },
+    {
         id : 3,
         title : 'BOEUF SAUCE GOMBO',
         member : '4 à 5 personnes',
         time_preparation : '20 min',
         time_cuisson : '2h30',
-        description : 'rspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Consectetur, adipisci velit, sed quia non numquam eius modi.',
+        description : 'La sauce gombo est une sauce gluante, à base de gombos frais. Elle accompagne souvent  les plats de viandes,  de crabes, de crevettes, de poissons fumés, ect... Elle est l\'une des sauces les plus célèbres d\'Afrique.',
         img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/img3.jpg?raw=true',
         ingredients : [
             {name : 'Côtes de BOEUF', amount : '1kg'},
@@ -25,7 +97,10 @@ let recipes = [{
             'Lavez les gombos, coupez chaque gombo en 4 ou 5 morceaux, réservez.',
             'Faîtes bouillir de l\'eau dans une casserole sans couvercle, ajoutez les gombos, et laissez cuire 20 min environ à feu doux en remuant de temps en temps, faîtes attention que l\'eau de cuisson ne déborde pas.',
             'Dès que les gombos sont cuits, enlevez l\'eau de cuisson, et versez les gombos dans la casserole de viande tendre, remuez, gouttez, assaisonnez encore à votre convenance si besoin, laissez encore mijoter 10 min, et servez avec le foufou de votre choix, ect…',
-        ]
+        ],
+        advices : [
+            'Vous pouvez utiliser d\'autres morceaux de viande de boeuf : queue de boeuf, boeuf bourguignon ou autres. La sauce gombo s\'accompagne de foufou de manioc, de foufou de maïs, de plantin pilé, vous pouvez  aussi mélanger la farine de maïs avec la farine de manioc, ect...'
+        ],
     },{
         id : 2,
         title : 'BOUILLON DE POISSON',
