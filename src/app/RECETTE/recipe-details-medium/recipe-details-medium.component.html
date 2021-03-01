@@ -21,9 +21,7 @@
                 <img class="resize_fit_center" [src]="recipeDetails.img"/>
 
                 <div>
-                    <span class="p-badge p-badge-warning" *ngIf="recipeDetails.member">{{recipeDetails.member}}</span>
-                    <span class="p-badge p-badge-success" *ngIf="recipeDetails.time_preparation">Préparation : {{recipeDetails.time_preparation}}</span>
-                    <span class="p-badge p-badge-danger" *ngIf="recipeDetails.time_cuisson">Cuisson : {{recipeDetails.time_cuisson}}</span>
+                    <app-recipe-details-details [recipeDetails]="recipeDetails "></app-recipe-details-details>
 
                     <article *ngIf="recipeDetails.advices">
                         <p class="footer-title">Conseils :</p>

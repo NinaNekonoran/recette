@@ -26,6 +26,7 @@ import { RecipeDetailsSmallComponent } from './RECETTE/recipe-details-small/reci
 import { RecipeDetailsIngredientComponent } from './RECETTE/recipe-details-ingredient/recipe-details-ingredient.component';
 import {AccordionModule} from "primeng/accordion";
 import {ToastModule} from "primeng/toast";
+import { RecipeDetailsDetailsComponent } from './RECETTE/recipe-details-details/recipe-details-details.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import {ToastModule} from "primeng/toast";
     RecipeDetailsHighComponent,
     RecipeDetailsMediumComponent,
     RecipeDetailsSmallComponent,
-    RecipeDetailsIngredientComponent
+    RecipeDetailsIngredientComponent,
+    RecipeDetailsDetailsComponent
   ],
   imports: [
     BrowserModule,

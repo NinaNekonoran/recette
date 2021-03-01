@@ -1,0 +1,46 @@
+<p-divider></p-divider>
+<article class="p-d-flex">
+    <article class="p-col-6">
+        <div class="p-d-flex">
+            <div class="p-col-6  p-p-0">
+                <p class="footer-title p-m-0 p-text-bold">Portion </p>
+            </div>
+            <div class="p-col-6  p-p-0">
+                <p class="footer-content  p-m-0">{{recipeDetails.member}}</p>
+            </div>
+        </div>
+
+        <div class="p-d-flex">
+            <div class="p-col-6  p-p-0">
+                <p class="footer-title p-m-0 p-text-bold">Temps de préparation </p>
+            </div>
+            <div class="p-col-6  p-p-0">
+                <p class="footer-content p-m-0" *ngIf="recipeDetails.time_preparation"> {{recipeDetails.time_preparation}}</p>
+            </div>
+        </div>
+        <div class="p-d-flex">
+            <div class="p-col-6 p-p-0">
+                <p class="footer-title p-m-0 p-text-bold">Temps de cuisson </p>
+
+            </div>
+            <div class="p-col-6  p-p-0">
+                <p class="footer-content p-m-0" *ngIf="recipeDetails.time_cuisson"> {{recipeDetails.time_cuisson}}</p>
+            </div>
+        </div>
+    </article>
+
+    <p-divider layout="vertical" ></p-divider>
+
+    <article class="p-d-flex p-col-6" >
+
+        <p class="p-text-right p-mr-2">Difficulté : </p>
+
+            <img class="difficult_image" [src]="difficult_image" />
+            <img class="difficult_image" [ngClass]="{'difficult_image_color': recipeDetails.difficult < 2}" [src]="difficult_image" />
+            <img class="difficult_image" [ngClass]="{'difficult_image_color': recipeDetails.difficult < 3}" [src]="difficult_image" />
+            <img class="difficult_image" [ngClass]="{'difficult_image_color': recipeDetails.difficult < 4}" [src]="difficult_image" />
+            <img class="difficult_image" [ngClass]="{'difficult_image_color': recipeDetails.difficult < 5}" [src]="difficult_image" />
+
+    </article>
+</article>
+<p-divider></p-divider>

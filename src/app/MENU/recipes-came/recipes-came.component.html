@@ -8,10 +8,12 @@
         </ng-template>
 
         <ng-template let-recipe pTemplate="listItem" >
-            <article class="recipes-listItem" [routerLink]="['/recipe', recipe.id, recipe.title ]">
+            <article class="recipes-listItem p-d-flex" [routerLink]="['/recipe', recipe.id, recipe.title ]">
                 <div class="p-m-1">
                     {{recipe.title}}
                 </div>
+                <span class="p-badge p-badge-warning" *ngIf="recipe.type === 'trad'">Traditionnelle</span>
+                <span class="p-badge p-badge-success" *ngIf="recipe.type === 'autre'">Autre</span>
             </article>
 
         </ng-template>

@@ -21,11 +21,14 @@ let recipes = [
         ],
         advices: [
             'Choisissez le manioc frais bien ferme. Il accompagne vos plats de poissons, de viandes, vos feuilles de manioc, les safous, ect…'
-        ]
+        ],
+        difficult : 2,
+        type : 'trad'
     },
     {
         id : 5,
-        title : 'FEUILLES DE MANIOC SANS SEL: (Kwem ou Kpwem)',
+        title : 'FEUILLES DE MANIOC sans sel',
+        subtitle : 'Kwem ou Kpwem',
         member : '4 à 5 personnes',
         time_preparation : '30 min',
         time_cuisson : '2h',
@@ -48,6 +51,8 @@ let recipes = [
             'Les feuilles de manioc s\'accompagnent avec le manioc frais bouilli, le macabo, le maïs, ou le bâton de manioc, ect...',
             'A la place de la boîte de 500g de jus de noix de palme, vous pouvez mettre la boîte de 800g selon votre goût.'
         ],
+        difficult : 5,
+        type : 'trad'
     },
     {
         id : 4,
@@ -68,7 +73,9 @@ let recipes = [
             'Vérifiez la cuisson avec la pointe d\'un couteau, si le couteau s\'enfonce, alors les macabos sont cuits.',
             'Retirez du feu, enlevez l\'eau de cuisson et servez chaud.',
             'Le macabo bouilli s\'accompagne avec les poissons en sauce, les viandes en sauce, les feuilles de manioc, ect...'
-        ]
+        ],
+        difficult :4,
+        type : 'autre'
     },
     {
         id : 3,
@@ -101,6 +108,8 @@ let recipes = [
         advices : [
             'Vous pouvez utiliser d\'autres morceaux de viande de boeuf : queue de boeuf, boeuf bourguignon ou autres. La sauce gombo s\'accompagne de foufou de manioc, de foufou de maïs, de plantin pilé, vous pouvez  aussi mélanger la farine de maïs avec la farine de manioc, ect...'
         ],
+        difficult :3,
+        type : 'autre'
     },{
         id : 2,
         title : 'BOUILLON DE POISSON',
@@ -136,7 +145,9 @@ let recipes = [
         advices : [
             'Le bouillon de poisson se sert chaud accompagné du plantin vert, du manioc, de l\'igname, du macabo, ect...'
         ],
-        areImg : true
+        areImg : true,
+        difficult : 2,
+        type : 'trad'
     },
     {
         id : 1,
@@ -162,9 +173,11 @@ let recipes = [
         ],
         advices : [
             '<i>Vous pouvez aussi faire le sanga avec les feuilles d\'épinards, ou les feuilles de zom, ou  les feuilles d\'aubergines.</i>'
-        ]
+        ],
+        difficult : 1,
+        type : 'autre'
     }
-    ];
+];
 
 let presentation = "Bonjour tous le monde, j'aime cuisiner de bons plats d'ici, d'ailleurs, et de mon enfance.\n" +
     "Depuis l'âge de 8 ans, ma mère m'a appris à cuisiner.\n" +
@@ -174,4 +187,6 @@ let presentation = "Bonjour tous le monde, j'aime cuisiner de bons plats d'ici, 
 
 let title = "Mamie Cameroun";
 
-export {recipes, presentation, title} ;
+let difficult_image = 'https://www.flaticon.com/svg/vstatic/svg/481/481486.svg?token=exp=1614608935~hmac=f7f2bb2dbcdccfc2113b6a802c174b31';
+
+export {recipes, presentation, title, difficult_image} ;

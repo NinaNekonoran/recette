@@ -25,15 +25,15 @@
 </article>
 <article class="p-p-2" *ngIf="recipe && !mobile" >
     <p-card [routerLink]="['/recipe', recipe.id, recipe.title ]"
-            [header]="recipe.title" [style]="{width: '200px',height: '34em'}" styleClass="p-card-shadow">
+            [header]="recipe.title" [style]="{width: '200px',height: '33em'}" styleClass="p-card-shadow">
         <ng-template pTemplate="header">
             <img class="resize_fit_center" alt="Card" [src]="recipe.img">
         </ng-template>
-        {{recipe.description}}
-        <ng-template pTemplate="footer">
-            ...
-            <p-divider class="p-m-0"></p-divider>
 
+        <span class="p-badge p-badge-warning p-col-12 p-p-0" *ngIf="recipe.type === 'trad'">Traditionnelle</span>
+        <span class="p-badge p-badge-success p-col-12 p-p-0" *ngIf="recipe.type === 'autre'">Autre</span>
+
+        <p-divider class="p-m-0"></p-divider>
             <div class="p-d-flex">
                 <div class="p-col-6 p-p-0">
                     <p class="footer-title p-m-0 p-text-bold">Portion</p>
@@ -45,6 +45,15 @@
                     <p class="footer-content p-m-0" *ngIf="recipe.time_cuisson">{{recipe.time_cuisson}}</p>
                 </div>
             </div>
-        </ng-template>
+        <p-divider class="p-m-0"></p-divider>
+
+        <p class="p-text-right difficult_title">Difficulté</p>
+        <div class="p-text-center">
+            <img class="difficult_image" [src]="difficult_image" />
+            <img class="difficult_image" [ngClass]="{'difficult_image_color': recipe.difficult < 2}" [src]="difficult_image" />
+            <img class="difficult_image" [ngClass]="{'difficult_image_color': recipe.difficult < 3}" [src]="difficult_image" />
+            <img class="difficult_image" [ngClass]="{'difficult_image_color': recipe.difficult < 4}" [src]="difficult_image" />
+            <img class="difficult_image" [ngClass]="{'difficult_image_color': recipe.difficult < 5}" [src]="difficult_image" />
+        </div>
     </p-card>
 </article>
