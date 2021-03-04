@@ -19,7 +19,9 @@
         </ng-template>
 
         <ng-template let-recipe pTemplate="gridItem">
-            <app-recipe-fiche-came [recipe]="recipe"></app-recipe-fiche-came>
+            <app-recipe-fiche-came *ngIf="mobile" [recipe]="recipe" [width_recipe]="'100%'" ></app-recipe-fiche-came>
+            <app-recipe-fiche-came *ngIf="!mobile" [recipe]="recipe" [width_recipe]="'200px'" ></app-recipe-fiche-came>
+
         </ng-template>
 
         <ng-template let-item pTemplate="paginatordropdownitem">

@@ -9,24 +9,11 @@ export class RecipeFicheCameComponent implements OnInit {
 
   @Input()
   recipe;
-  mobile : boolean;
+  @Input()
+  width_recipe : string;
+
   difficult_image = difficult_image;
 
   ngOnInit(): void {
-    this.isMoblie();
-  }
-
-  @HostListener('window:resize', ['$event'])
-  onResize(event) {
-    this.isMoblie();
-  }
-
-  private isMoblie() {
-    if (window.innerWidth < 700) { // 768px portrait
-      this.mobile = true;
-    }
-    else{
-      this.mobile = false;
-    }
   }
 }

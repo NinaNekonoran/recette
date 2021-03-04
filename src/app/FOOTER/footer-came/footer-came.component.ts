@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 import {presentation} from '../../recipes';
 @Component({
   selector: 'app-footer-came',
@@ -11,7 +11,24 @@ export class FooterCameComponent implements OnInit {
 
   constructor() { }
 
+  mobile;
+
   ngOnInit(): void {
+    this.isMoblie();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.isMoblie();
+  }
+
+  private isMoblie() {
+    if (window.innerWidth < 600) { // 768px portrait
+      this.mobile = true;
+    }
+    else{
+      this.mobile = false;
+    }
   }
 
 }

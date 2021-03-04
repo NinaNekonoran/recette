@@ -1,8 +1,8 @@
-    <div class="p-d-flex footer-background ">
+<div *ngIf="mobile" class="footer-background ">
 
-        <img class=" p-m-5 p-col-align-center" src="https://github.com/NinaNekonoran/recette/blob/dev/src/assets/acc.jpg?raw=true" height="144" width="108"/>
-
-        <div class="p-col-7  p-m-5">
+    <div class="p-d-flex">
+        <img class="p-col-1 p-m-5 p-col-align-center" src="https://github.com/NinaNekonoran/recette/blob/dev/src/assets/acc.jpg?raw=true" width="100%"/>
+        <div class="p-col-11 p-m-5">
             <p class="footer-title">Qui suis-je ? </p>
             <div class="p-d-flex">
                 <p>
@@ -10,13 +10,37 @@
                 </p>
             </div>
         </div>
-        <p-divider layout="vertical" ></p-divider>
-        <div class="p-col-3  p-m-5">
-            <p class="footer-title">Contact : </p>
-            <div class="p-d-flex">
-                <p>
-                    unmail@gmail.com
-                </p>
-            </div>
+    </div>
+    <p-divider layout="horizontale" ></p-divider>
+
+    <div class="p-col-3 p-m-5">
+        <p class="footer-title">Contact : </p>
+        <div class="p-d-flex">
+            <p>
+                unmail@gmail.com
+            </p>
         </div>
+    </div>
+</div>
+<div *ngIf="!mobile" class="footer-background">
+    <img class=" p-m-5 p-col-align-center" src="https://github.com/NinaNekonoran/recette/blob/dev/src/assets/acc.jpg?raw=true" height="144" width="108"/>
+
+    <div class="p-col-12 p-m-5">
+        <p class="footer-title">Qui suis-je ? </p>
+        <div class="p-d-flex">
+            <p>
+                {{presentation}}
+            </p>
+        </div>
+    </div>
+    <p-divider layout="vertical" ></p-divider>
+
+    <div class="p-col-3  p-m-5">
+        <p class="footer-title">Contact : </p>
+        <div class="p-d-flex">
+            <p>
+                unmail@gmail.com
+            </p>
+        </div>
+    </div>
 </div>
