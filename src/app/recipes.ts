@@ -1,5 +1,10 @@
 let NO_IMAGE = 'https://www.recia.fr/wp-content/uploads/2019/09/no_image.png';
-
+enum TYPE_RECIPE {
+    TRADITIONNELS = 'TRADITIONNELS',
+    CLASSIQUE = 'CLASSIQUE',
+    ACCOMPAGNEMENT = 'ACCOMPAGNEMENT',
+    NO = 'NO'
+}
 let recipes = [
     {
         id : 6,
@@ -15,7 +20,7 @@ let recipes = [
         ],
         states : [
             'Lavez les maniocs.',
-            'A l\'aide d\'un couteau coupez les maniocs en deux, épluchez-les en profondeur, fendez, enlevez les racines au milieu, coupez en morceaux de taille moyenne, rincez.',
+            'A l\'aide d\'un couteau coupez les maniocs en deux, épluchez-les en profondeur ou raclez-les légèrement afin d\'éviter toute amertume. Fendez, enlevez les racines au milieu, coupez en morceaux de taille moyenne, rincez.',
             'Mettez-les dans une casserole, ajoutez de l\'eau à mi-hauteur des morceaux de manioc et salez si besoin, mettez la casserole au feu, dès ébullition, laissez cuire pendant 25 min environ, si l\'eau de cuisson déborde, mettez votre couvercle entrouvert, surveillez la cuisson.',
             'Piquez les maniocs avec le bout d\'un couteau, si le couteau s\'enfonce, votre manioc est cuit, arrêtez la cuisson quand le manioc est tendre, enlevez l\'eau de cuisson et dégustez.'
         ],
@@ -23,7 +28,7 @@ let recipes = [
             'Choisissez le manioc frais bien ferme. Il accompagne vos plats de poissons, de viandes, vos feuilles de manioc, les safous, ect…'
         ],
         difficult : 2,
-        type : 'trad'
+        type : TYPE_RECIPE.ACCOMPAGNEMENT
     },
     {
         id : 5,
@@ -52,11 +57,11 @@ let recipes = [
             'A la place de la boîte de 500g de jus de noix de palme, vous pouvez mettre la boîte de 800g selon votre goût.'
         ],
         difficult : 5,
-        type : 'trad'
+        type : TYPE_RECIPE.TRADITIONNELS
     },
     {
         id : 4,
-        title : 'MACABO BOUILLI',
+        title : 'MACABO BOUILLI GRILLÉ',
         member : '4 personnes',
         time_preparation : '15 min',
         time_cuisson : '30min',
@@ -75,7 +80,7 @@ let recipes = [
             'Le macabo bouilli s\'accompagne avec les poissons en sauce, les viandes en sauce, les feuilles de manioc, ect...'
         ],
         difficult :4,
-        type : 'autre'
+        type : TYPE_RECIPE.NO
     },
     {
         id : 3,
@@ -109,7 +114,7 @@ let recipes = [
             'Vous pouvez utiliser d\'autres morceaux de viande de boeuf : queue de boeuf, boeuf bourguignon ou autres. La sauce gombo s\'accompagne de foufou de manioc, de foufou de maïs, de plantin pilé, vous pouvez  aussi mélanger la farine de maïs avec la farine de manioc, ect...'
         ],
         difficult :3,
-        type : 'autre'
+        type : TYPE_RECIPE.CLASSIQUE
     },{
         id : 2,
         title : 'BOUILLON DE POISSON',
@@ -147,7 +152,7 @@ let recipes = [
         ],
         areImg : true,
         difficult : 2,
-        type : 'trad'
+        type : TYPE_RECIPE.CLASSIQUE
     },
     {
         id : 1,
@@ -175,11 +180,11 @@ let recipes = [
             '<i>Vous pouvez aussi faire le sanga avec les feuilles d\'épinards, ou les feuilles de zom, ou  les feuilles d\'aubergines.</i>'
         ],
         difficult : 1,
-        type : 'autre'
+        type : TYPE_RECIPE.TRADITIONNELS
     }
 ];
 
-let presentation = "Bonjour tous le monde, j'aime cuisiner de bons plats d'ici, d'ailleurs, et de mon enfance.\n" +
+let presentation = "Bonjour tout le monde, j'aime cuisiner de bons plats d'ici, d'ailleurs, et de mon enfance.\n" +
     "Depuis l'âge de 8 ans, ma mère m'a appris à cuisiner.\n" +
     "La cuisine camerounaise est délicieuse, et très variée. Elle est riche en saveur. On y trouve des épices, des produits végétaux, des poissons, des viandes, sans oublier des fruits tropicaux.\n" +
     "Je vous laisse le temps de découvrir mes quelques recettes simples, familiales, classiques, et traditionnelles.\n" +
