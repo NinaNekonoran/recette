@@ -281,6 +281,6 @@ let presentation = "Bonjour tout le monde, j'aime cuisiner de bons plats d'ici, 
 
 let title = "Mamie Cameroun";
 
-let difficult_image = 'https://www.flaticon.com/svg/vstatic/svg/481/481486.svg?token=exp=1614608935~hmac=f7f2bb2dbcdccfc2113b6a802c174b31';
+let difficult_image = 'https://raw.githubusercontent.com/NinaNekonoran/recette/6012d758f24b735beb30772383e60ac954a35523/src/assets/diff.svg';
 
 export {recipes, presentation, title, difficult_image} ;
