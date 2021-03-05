@@ -8,3 +8,9 @@
     font-size: 1.4em;
     color: #333;
 }
+
+
+.resize_fit {
+    height: 25em;
+    object-fit: cover;
+}
