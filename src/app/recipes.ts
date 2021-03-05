@@ -7,6 +7,95 @@ enum TYPE_RECIPE {
 }
 let recipes = [
     {
+        id : 9,
+        title : 'BANANES PLANTAINS PILES',
+        member : '3 à 4 personnes',
+        time_preparation : '40 min',
+        time_cuisson : '30 min',
+        description : 'Le plantain pilé est un accompagnement de sauce, c\'est une pâte épaisse simple à réaliser, il suffit d\'avoir un mortier et un pilon.',
+        img : NO_IMAGE,
+        ingredients : [
+            {name : 'Bananes plantains verts,', amount : '3'},
+            {name : 'Bananes plantains jaunes', amount : '2'}
+        ],
+        states : [
+            'Lavez les plantains, mettez-les dans une bassine d\'eau froide, coupez les extrémités, et coupez chaque banane en deux, épluchez-les dans de l\'eau à l\'aide d\'un couteau, raclez le dessus pour enlever leur couche supérieure contenant les fibres, rincez.',
+            'Dans une casserole, mettez les plantains verts au fond et les jaunes au dessus, ajoutez de l\'eau, mettez au feu et faites bouillir pendant 30 min environ à feu moyen.',
+            'Préparez le mortier, le pilon, un récipient d\'eau froide, et lavez vous les mains.',
+            'Vérifiez la cuisson, dès que vos plantains sont cuits, enlevez l\'eau de cuisson, et attendez  3 min avant de commencer à piler, les plantains doivent être tièdes.',
+            'Pilez d\'abord les verts et ajoutez ensuite les jaunes, vous pouvez piler en deux fois suivant la grosseur de votre mortier, de temps en temps mouillez votre main gauche si vous êtes droitier dans le récipient d\'eau, pour tourner la pâte de plantain pour qu\'elle ne colle pas au mortier, en même temps mouillez aussi le bout du pilon dans cette eau.',
+            'Continuez à piler énergiquement jusqu\'à obtenir une pâte homogène.',
+            'Mouillez vos mains, faites les boules allongées, découpez-les en tranches à l\'aide d\'un couteau et présentez-les dans un plat.'
+        ],
+        advices: [
+            'Vous pouvez piler que des plantains verts, que les plantains jaunes ou mûrs.'
+        ],
+        difficult : 2,
+        type : TYPE_RECIPE.ACCOMPAGNEMENT
+    },
+    {
+        id : 8,
+        title : 'POULET SAUCE D\'ARACHIDE',
+        member : '4 à 6 personnes',
+        time_preparation : '30 min',
+        time_cuisson : '1h30',
+        description : 'C\'est un plat délicieux, une sauce onctueuse à base des arachides grillées et écrasées.',
+        img : NO_IMAGE,
+        ingredients : [
+            {name : 'Poulet fermier,', amount : '1,5 kg'},
+            {name : 'Pâte d\'arachide', amount : '5 cs'},
+            {name : 'Tomates', amount : '6'},
+            {name : 'Oignons', amount : '2'},
+            {name : 'Gousses d\'ail', amount : '2'},
+            {name : 'Petit morceaux de gingembre', amount : '1'},
+            {name : 'Huile végétale', amount : '5 cs'},
+            {name : '[Cube maggi]', amount : '1'},
+            {name : 'Sel'},
+            {name : 'Poivre noir'}
+        ],
+        states : [
+            'Lavez et épluchez les légumes, coupez un oignon en petits morceaux, mixez les tomates et un oignon, écrasez de l\'ail et le gingembre, réservez.',
+            'Coupez le poulet en morceaux, lavez, essuyez.',
+            'Faites dorer dans une casserole, ou une cocotte, les morceaux de poulet, des deux côtés avec de l\'huile, réservez.',
+            'Dans la même casserole, vérifiez d\'huile qui reste, diminuez-en s\'il y en a de trop, faites revenir l\'oignon coupé en petits morceaux, ajoutez les légumes mixés, l\'ail et le gingembre écrasés, ajoutez 3 verres d\'eau et laissez cuire 10 min à feu moyen.',
+            'Rajoutez le poulet, salez, poivrez, assaisonnez à votre goût, laissez mijoter 30 min environ à feu doux.',
+            'Pendant la cuisson, prélevez 5 cuillères à soupe de sauce, versez-la dans un saladier, ajoutez la pâte d\'arachide, mélangez de façon à obtenir une crème onctueuse, lisse et sans grumeaux.',
+            'Versez doucement cette crème dans la casserole contenant le poulet, mélangez, et laissez cuire 20 min à feu doux, gouttez, rajoutez de l\'eau si vous trouvez la sauce trop épaisse, et servez.'
+            ],
+        advices: [
+            'La sauce d\'arachide peut aussi bien être préparée avec du poisson frais, ou avec du poisson fumé, ou du poulet fumé, ou avec du boeuf, ect...',
+            'Servez accompagnée  de foufou, du plantin vert/mur/pilé, ou avec du riz, ect...'
+        ],
+        difficult : 4,
+        type : TYPE_RECIPE.CLASSIQUE
+    },
+    {
+        id : 7,
+        title : 'FOUFOU DE MAÏS/MANIOC',
+        member : '2 à 3 personnes',
+        time_preparation : '10 min',
+        time_cuisson : '20 min',
+        description : 'C\'est une pâte solide, réalisée à partir de deux farines: farine de maïs et farine de manioc, elle se mange avec une sauce en accompagnement.',
+        img : NO_IMAGE,
+        ingredients : [
+            {name : 'Farine de maïs', amount : '200g'},
+            {name : 'Farine de manioc', amount : '100g'},
+            {name : 'Eau chaude'}
+        ],
+        states : [
+            'Faites bouillir de l\'eau dans une marmite, dès que l\'eau boue, divisez-la en deux parties en conservant le moins d\'eau possible dans la marmite et transférez l\'autre partie de l\'eau bouillante dans un récipient.',
+            'Baissez le feu, versez la farine de maïs en pluie dans l\'eau qui se trouve dans la marmite, remuez avec une spatule en bois ou bien avec un pilon, il faut de la force et de l\'énergie pour bien mélanger, ajoutez la farine de manioc, rajoutez l\'eau chaude de réserve petit à petit tout en remuant entre chaque ajout jusqu\'à l\'obtention d\'une pâte homogène, solide.',
+            'Coupez la source de chaleur, bloquez votre marmite et mélangez vigoureusement à l\'aide de votre spatule ou pilon en raclant les bords.',
+            'La pâte doit être sans grumeaux.',
+            'Prenez un grand bol d\'eau froide et une grosse cuillère à soupe ou bien une petite louche, formez les boules de foufou en trempant la cuillère dans le bol d\'eau froide, et puis dans la pâte pour prélever la quantité souhaitée et formez les boules avec l\'aide de vos mains en les trempant dans de l\'eau froide, faire attention de ne pas se brûler, présentez-les dans un plat.',
+        ],
+        advices: [
+            'L\'eau doit rester bien chaude pendant la cuisson.'
+        ],
+        difficult : 1,
+        type : TYPE_RECIPE.ACCOMPAGNEMENT
+    },
+    {
         id : 6,
         title : 'MANIOC DOUX CUISSON A L\'EAU',
         member : '4 à 5 personnes',
