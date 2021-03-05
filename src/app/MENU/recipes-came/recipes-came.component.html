@@ -12,8 +12,10 @@
                 <div class="p-m-1">
                     {{recipe.title}}
                 </div>
-                <span class="p-badge p-badge-warning" *ngIf="recipe.type === 'trad'">Traditionnelle</span>
-                <span class="p-badge p-badge-success" *ngIf="recipe.type === 'autre'">Autre</span>
+                <span class="p-badge p-badge-warning" *ngIf="recipe.type === 'TRADITIONNELS'">Traditionnels</span>
+                <span class="p-badge p-badge-success" *ngIf="recipe.type === 'CLASSIQUE'">Classique</span>
+                <span class="p-badge p-badge-info" *ngIf="recipe.type === 'ACCOMPAGNEMENT'">Accompagnement</span>
+                <span class="p-badge p-badge-danger" *ngIf="recipe.type === 'NO'">Rien</span>
             </article>
 
         </ng-template>

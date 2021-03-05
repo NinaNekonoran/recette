@@ -169,7 +169,7 @@ let recipes = [
             'Le macabo bouilli s\'accompagne avec les poissons en sauce, les viandes en sauce, les feuilles de manioc, ect...'
         ],
         difficult :4,
-        type : TYPE_RECIPE.NO
+        type : TYPE_RECIPE.ACCOMPAGNEMENT
     },
     {
         id : 3,
@@ -214,15 +214,15 @@ let recipes = [
         img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1613750628687.jpg?raw=true',
         ingredients : [
             {name : 'Maquereaux', amount : '2', img : 'https://image.freepik.com/photos-gratuite/maquereaux-frais-vue-dessus-assiette_23-2148295238.jpg'},
-            {name : 'Tomates', amount : '3', img : 'https://image.freepik.com/photos-gratuite/tomates_144627-15408.jpg'},
+            {name : 'Tomates', amount : '3'},
             {name : 'Gingembre frais', amount : '10g', img : 'https://image.freepik.com/photos-gratuite/gingembre-doux-amer_144627-12044.jpg'},
-            {name : 'Oignon', amount : '1', img : 'https://image.freepik.com/photos-gratuite/oignon_144627-27528.jpg'},
-            {name : 'Gousse d\'ail', amount : '1', img: 'https://image.freepik.com/photos-gratuite/fin-haut-frais-ail_144627-34523.jpg'},
+            {name : 'Oignon', amount : '1'},
+            {name : 'Gousse d\'ail', amount : '1'},
             {name : 'Branche de basilic', amount : '1', img: 'https://image.freepik.com/photos-gratuite/gros-plan-basilic-savoureux-mise-au-point-selective_1220-1501.jpg'},
             {name : 'Branche de blanc de poireau', amount : '1', img:'https://image.freepik.com/photos-gratuite/poireau-surface-blanche_144627-45166.jpg'},
-            {name : 'Citron', amount : '1', img:'https://image.freepik.com/photos-gratuite/citron_1205-1667.jpg'},
-            {name : '[Piment frais]', amount : '1', img:'https://image.freepik.com/photos-gratuite/poivre-isole_1205-1721.jpg'},
-            {name : 'Cuillère d\'huile d\'olive', amount : '2', img:'https://image.freepik.com/photos-gratuite/bouteille-huile-olive-table-marbre_114579-18137.jpg'},
+            {name : 'Citron', amount : '1'},
+            {name : '[Piment frais]', amount : '1'},
+            {name : 'Cuillère d\'huile d\'olive', amount : '2'},
             {name : '[Njansang]', amount : '20g', img:'https://i.pinimg.com/originals/1b/6f/7b/1b6f7be5b247f2f54b367d4da38f83f5.jpg'},
             {name : '[Pèbé]', amount : '10g', img:'https://afritibi.com/wp-content/uploads/2017/02/noix-de-pebe.png'},
             {name : 'Sel'},
@@ -253,7 +253,7 @@ let recipes = [
         img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1613750628714.jpg?raw=true',
         ingredients : [
             {name : 'Folon frais', amount : '1kg ', img: 'https://enviesdafrique.fr/wp-content/uploads/2020/11/follon-300x300.jpeg'},
-            {name : 'Epis de maïs doux frais', amount : '8-10', img: 'https://image.freepik.com/photos-gratuite/graines-mais-sucre-table-bois_1150-9483.jpg'},
+            {name : 'Epis de maïs doux frais', amount : '8-10'},
             {name : 'Boîte de 500g de jus de noix de palme(sauce graine)', amount : '1', img: 'https://produits.bienmanger.com/28567-0w600h600_Sauce_Graine_Palme.jpg'}
         ],
         states : [
