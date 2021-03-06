@@ -37,7 +37,7 @@
                         </ul>
                     </div>
                 </div>
-                <img class="resize_fit_center" [src]="recipeDetails.img[1]"/>
+                <img *ngif="recipeDetails.img[1]" class="resize_fit_center" [src]="recipeDetails.img[1]"/>
                 <article class="p-text-right"><b>BON APPETTIT</b></article>
             </section>
         </div>

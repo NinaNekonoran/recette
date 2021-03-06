@@ -2,7 +2,7 @@
     <p-card [routerLink]="['/recipe', recipe.id, recipe.title ]"
             [header]="recipe.title" [style]="{width: width_recipe,height: '33em'}" styleClass="p-card-shadow">
         <ng-template pTemplate="header">
-            <img class="resize_fit_center" alt="Card" [src]="recipe.img">
+            <img class="resize_fit_center" alt="Card" [src]="recipe.img[0]">
         </ng-template>
 
         <span class="p-badge p-badge-warning p-col-12 p-p-0" *ngIf="recipe.type === 'TRADITIONNELS'">Traditionnels</span>

@@ -13,7 +13,7 @@ let recipes = [
         time_preparation : '40 min',
         time_cuisson : '30 min',
         description : 'Le plantain pilé est un accompagnement de sauce, c\'est une pâte épaisse simple à réaliser, il suffit d\'avoir un mortier et un pilon.',
-        img : NO_IMAGE,
+        img : [NO_IMAGE],
         ingredients : [
             {name : 'Bananes plantains verts,', amount : '3'},
             {name : 'Bananes plantains jaunes', amount : '2'}
@@ -40,7 +40,7 @@ let recipes = [
         time_preparation : '30 min',
         time_cuisson : '1h30',
         description : 'C\'est un plat délicieux, une sauce onctueuse à base des arachides grillées et écrasées.',
-        img : NO_IMAGE,
+        img : [NO_IMAGE],
         ingredients : [
             {name : 'Poulet fermier,', amount : '1,5 kg'},
             {name : 'Pâte d\'arachide', amount : '5 cs'},
@@ -76,7 +76,7 @@ let recipes = [
         time_preparation : '10 min',
         time_cuisson : '20 min',
         description : 'C\'est une pâte solide, réalisée à partir de deux farines: farine de maïs et farine de manioc, elle se mange avec une sauce en accompagnement.',
-        img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000299.JPG?raw=true',
+        img : ['https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000299.JPG?raw=true'],
         ingredients : [
             {name : 'Farine de maïs', amount : '200g', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000293.JPG?raw=true'},
             {name : 'Farine de manioc', amount : '100g', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000296.JPG?raw=true'},
@@ -102,7 +102,7 @@ let recipes = [
         time_preparation : '20 min',
         time_cuisson : '25 min',
         description : 'Le manioc frais est un légume, un tubercule farineux apprécié et consommé généralement bouilli, c\'est un aliment très nourrissant.',
-        img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1614201716299.jpg?raw=true',
+        img :[ 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1614201716299.jpg?raw=true'],
         ingredients : [
             {name : 'Manioc frais', amount : '1', img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1614201716342.jpg?raw=true'},
             {name : '[sel]'}
@@ -127,7 +127,7 @@ let recipes = [
         time_preparation : '30 min',
         time_cuisson : '2h',
         description : 'Les feuilles de manioc, ou purée de feuilles de manioc ou (pkwem) chez les bétis au Cameroun, est un plat très nourrissant. On peut  le préparer sans ou avec sel en ajoutant la viande le poisson ou de la pâte d\'arachide, ect...',
-        img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1614201716313.jpg?raw=true',
+        img : ['https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1614201716313.jpg?raw=true'],
         ingredients : [
             {name : ['Paquets de feuilles de manioc frais','Sachets de feuilles de manioc surgelés'], amount : ['3','2']},
             {name : 'Boîte de 500g de jus de noix de palme (sauce graine)', amount : '1'},
@@ -155,7 +155,7 @@ let recipes = [
         time_preparation : '15 min',
         time_cuisson : '30min',
         description : 'xxx',
-        img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1614541536120.jpg?raw=true',
+        img :[ 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1614541536120.jpg?raw=true'],
         ingredients : [
             {name : 'Macabos', amount : '5', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1614541536105.jpg?raw=true'},
             {name : '[sel]'},
@@ -214,7 +214,7 @@ let recipes = [
         time_preparation : '20 min',
         time_cuisson : '25 min',
         description : 'Le bouillon de poisson appelé au Cameroun Pèpè Soupe est une recette simple, pimentée, très épicée, elle est délicieuse. Choisissez le poisson à chair ferme: Le bar, le capitaine, le mâchoiron, la carpe, ou le maquereau, évitez les poissons avec beaucoup d\'arrêtes. Vous pouvez remplacer le piment avec du poivre selon votre goût. ',
-        img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1613750628687.jpg?raw=true',
+        img : ['https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1613750628687.jpg?raw=true'],
         ingredients : [
             {name : 'Maquereaux', amount : '2', img : 'https://image.freepik.com/photos-gratuite/maquereaux-frais-vue-dessus-assiette_23-2148295238.jpg'},
             {name : 'Tomates', amount : '3'},
@@ -253,7 +253,7 @@ let recipes = [
         time_preparation : '40 min',
         time_cuisson : '1 h 30 min',
         description : 'Le Sanga est un met composé de légumes (les feuilles de folon, de zom, d\'aubergines, ou les épinards), de maïs en grain doux frais cuits avec du jus de noix de palme et mangé avec ou sans sucre, il est apprécié dans le sud  et presque partout au Cameroun, on peut le consommer en entrée, ou en plat principal.',
-        img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1613750628714.jpg?raw=true',
+        img : ['https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1613750628714.jpg?raw=true'],
         ingredients : [
             {name : 'Folon frais', amount : '1kg ', img: 'https://enviesdafrique.fr/wp-content/uploads/2020/11/follon-300x300.jpeg'},
             {name : 'Epis de maïs doux frais', amount : '8-10'},
