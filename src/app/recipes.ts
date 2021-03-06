@@ -76,10 +76,10 @@ let recipes = [
         time_preparation : '10 min',
         time_cuisson : '20 min',
         description : 'C\'est une pâte solide, réalisée à partir de deux farines: farine de maïs et farine de manioc, elle se mange avec une sauce en accompagnement.',
-        img : NO_IMAGE,
+        img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000299.JPG?raw=true',
         ingredients : [
-            {name : 'Farine de maïs', amount : '200g'},
-            {name : 'Farine de manioc', amount : '100g'},
+            {name : 'Farine de maïs', amount : '200g', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000293.JPG?raw=true'},
+            {name : 'Farine de manioc', amount : '100g', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000296.JPG?raw=true'},
             {name : 'Eau chaude'}
         ],
         states : [
@@ -178,15 +178,18 @@ let recipes = [
         time_preparation : '20 min',
         time_cuisson : '2h30',
         description : 'La sauce gombo est une sauce gluante, à base de gombos frais. Elle accompagne souvent  les plats de viandes,  de crabes, de crevettes, de poissons fumés, ect... Elle est l\'une des sauces les plus célèbres d\'Afrique.',
-        img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/img3.jpg?raw=true',
+        img : [
+            'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000289.JPG?raw=true',
+            'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000306.JPG?raw=true'
+        ],
         ingredients : [
-            {name : 'Côtes de BOEUF', amount : '1kg'},
-            {name : 'Gombos frais', amount : '200g'},
-            {name : 'Oignons', amount : '2'},
-            {name : 'Gousses d\'ail', amount : '4'},
-            {name : 'Tomates', amount : '2'},
+            {name : 'Côtes de BOEUF', amount : '1kg', img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000272.JPG?raw=true'},
+            {name : 'Gombos frais', amount : '200g', img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000271.JPG?raw=true'},
+            {name : 'Oignons', amount : '2', img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000267.JPG?raw=true'},
+            {name : 'Gousses d\'ail', amount : '4', img:'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000265.jpg?raw=true'},
+            {name : 'Tomates', amount : '2', img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000268.jpg?raw=true'},
             {name : 'Huile végétale', amount : '3 cs'},
-            {name : '[Cube maggi]', amount : '1'},
+            {name : '[Cube maggi]', amount : '1', img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000275.jpg?raw=true'},
             {name : 'Sel'},
             {name : 'Poivre'},
         ],

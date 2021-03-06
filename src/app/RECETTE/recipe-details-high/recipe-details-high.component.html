@@ -15,8 +15,10 @@
         <p-divider layout="vertical" ></p-divider>
 
         <div class="p-col-4 p-m-3">
-            <app-recipe-details-ingredient [ingredientsImg]="ingredientsImg"></app-recipe-details-ingredient>
-            <img class="resize_fit_center_big" [src]="recipeDetails.img"/>
+            <app-recipe-details-ingredient pCol="p-col-6" [ingredientsImg]="ingredientsImg"></app-recipe-details-ingredient>
+            <div *ngFor="let img of recipeDetails.img">
+                <img class="resize_fit_center_big" [src]="img"/>
+            </div>
         </div>
         <div class="p-col-5 p-m-3 p-pl-6">
             <app-recipe-details-details [recipeDetails]="recipeDetails"></app-recipe-details-details>

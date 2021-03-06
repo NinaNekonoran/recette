@@ -12,6 +12,9 @@ export class RecipeDetailsIngredientComponent implements OnInit {
   @Input()
   ingredientsImg;
 
+  @Input()
+  pCol;
+
   ngOnInit(): void {
   }
 

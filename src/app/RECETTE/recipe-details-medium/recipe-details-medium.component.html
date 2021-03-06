@@ -17,8 +17,8 @@
             <p-divider layout="vertical" ></p-divider>
 
             <section class="p-col-9 p-m-3">
-                <app-recipe-details-ingredient [ingredientsImg]="ingredientsImg"></app-recipe-details-ingredient>
-                <img class="resize_fit_center" [src]="recipeDetails.img"/>
+                <app-recipe-details-ingredient pCol="p-col-6" [ingredientsImg]="ingredientsImg"></app-recipe-details-ingredient>
+                <img class="resize_fit_center" [src]="recipeDetails.img[0]"/>
 
                 <div>
                     <app-recipe-details-details [recipeDetails]="recipeDetails "></app-recipe-details-details>
@@ -37,8 +37,8 @@
                         </ul>
                     </div>
                 </div>
+                <img class="resize_fit_center" [src]="recipeDetails.img[1]"/>
                 <article class="p-text-right"><b>BON APPETTIT</b></article>
-
             </section>
         </div>
     </div>

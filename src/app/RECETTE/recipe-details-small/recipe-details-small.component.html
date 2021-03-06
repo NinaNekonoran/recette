@@ -1,50 +1,50 @@
 <section class="recipes-section p-d-flex p-flex-row  p-justify-around">
 
     <div class=" footer-background ">
-        <section class="p-m-5">
+        <section class="p-m-3">
             <p class="footer-title">Description :</p>
             <p>{{recipeDetails.description}}</p>
         </section>
-        <section class="p-d-flex">
-            <img class="p-col-5 p-m-3 resize_fit_center_small" [src]="recipeDetails.img"/>
 
-            <div class="p-col-5 p-m-3" *ngIf="recipeDetails.ingredients">
+        <section class="p-d-flex">
+            <img class="p-col-6  resize_fit_center_small" [src]="recipeDetails.img"/>
+
+            <div class="p-col-5" *ngIf="recipeDetails.ingredients">
 
                 <p class="footer-title">Ingrédients :</p>
-                <ul>
-                    <li class="p-d-flex p-justify-between p-align-center" *ngFor="let ingredient of recipeDetails.ingredients">
-                        <p class="p-col-10 p-m-0">- {{ingredient.name}}</p>
+                    <div class="p-d-flex p-mb-2" *ngFor="let ingredient of recipeDetails.ingredients">
                         <span class="p-col-2 p-badge p-badge-warning" *ngIf="ingredient.amount">{{ingredient.amount}}</span>
-                    </li>
-                </ul>
+                        <p class="p-m-0">{{ingredient.name}}</p>
+                    </div>
             </div>
         </section>
 
         <p-divider></p-divider>
 
         <section class="p-ml-2 p-mr-2">
-            <app-recipe-details-ingredient [ingredientsImg]="ingredientsImg"></app-recipe-details-ingredient>
+            <app-recipe-details-ingredient pCol="p-col-12" [ingredientsImg]="ingredientsImg"></app-recipe-details-ingredient>
         </section>
 
         <p-divider></p-divider>
 
-        <div class=" p-m-5">
-            <app-recipe-details-details [recipeDetails]="recipeDetails "></app-recipe-details-details>
+                <div class=" p-m-3">
+                    <app-recipe-details-details-small [recipeDetails]="recipeDetails "></app-recipe-details-details-small>
 
-            <article *ngIf="recipeDetails.advices">
-                <p class="footer-title">Conseils :</p>
-                <p *ngFor="let advice of recipeDetails.advices"  [innerHTML]="advice"></p>
-            </article>
+                    <article *ngIf="recipeDetails.advices">
+                        <p class="footer-title">Conseils :</p>
+                        <p *ngFor="let advice of recipeDetails.advices"  [innerHTML]="advice"></p>
+                    </article>
+                    <p class="footer-title">Etapes :</p>
+                    <div>
+                        <ul>
+                            <li class="p-d-flex p-justify-between p-align-center" *ngFor="let state of recipeDetails.states">
+                                <p class="p-mb-1" [innerHTML]="'- ' + state"></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        <img class="resize_fit_center p-p-3" [src]="recipeDetails.img[1]"/>
 
-            <p class="footer-title">Etapes :</p>
-            <div>
-                <ul>
-                    <li class="p-d-flex p-justify-between p-align-center" *ngFor="let state of recipeDetails.states">
-                        <p class="p-mb-1" [innerHTML]="'- ' + state"></p>
-                    </li>
-                </ul>
-            </div>
-        </div>
         <article class="p-text-right p-mb-4 p-mr-5"><b>BON APPETTIT</b></article>
 
     </div>

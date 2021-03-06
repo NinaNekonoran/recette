@@ -1,6 +1,6 @@
 <p-fieldset *ngIf="ingredientsImg.length > 0" legend="A quoi ressembles les ingrédients ?" [toggleable]="true" [collapsed]="true">
     <article  class="p-d-flex p-flex-wrap" >
-        <div class=" p-col-6" *ngFor="let ingredient of ingredientsImg">
+        <div [class]="pCol" *ngFor="let ingredient of ingredientsImg">
             <img  [src]="ingredient.img" class="ingredient-fix" />
             <p class="p-text-center">{{ingredient.name}}</p>
         </div>

@@ -60,7 +60,6 @@
 .resize_fit_center_small {
     height: auto;
     object-fit: cover;
-    width: 30%;
 }
 
 :host >>> .p-fieldset{
