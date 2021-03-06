@@ -15,10 +15,12 @@ let recipes = [
         time_preparation : '40 min',
         time_cuisson : '30 min',
         description : 'Le plantain pilé est un accompagnement de sauce, c\'est une pâte épaisse simple à réaliser, il suffit d\'avoir un mortier et un pilon.',
-        img : [NO_IMAGE],
+        img : [
+            'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000356.JPG?raw=true'
+        ],
         ingredients : [
-            {name : 'Bananes plantains verts,', amount : '3'},
-            {name : 'Bananes plantains jaunes', amount : '2'}
+            {name : 'Bananes plantains verts jaunes', amount : '5', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000337.JPG?raw=true'},
+            {name: 'Mortier', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000320.jpg?raw=true'}
         ],
         states : [
             'Lavez les plantains, mettez-les dans une bassine d\'eau froide, coupez les extrémités, et coupez chaque banane en deux, épluchez-les dans de l\'eau à l\'aide d\'un couteau, raclez le dessus pour enlever leur couche supérieure contenant les fibres, rincez.',
@@ -43,14 +45,17 @@ let recipes = [
         time_preparation : '30 min',
         time_cuisson : '1h30',
         description : 'C\'est un plat délicieux, une sauce onctueuse à base des arachides grillées et écrasées.',
-        img : [NO_IMAGE],
+        img : [
+            'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000365.JPG?raw=true',
+
+        ],
         ingredients : [
-            {name : 'Poulet fermier,', amount : '1,5 kg'},
-            {name : 'Pâte d\'arachide', amount : '5 cs'},
-            {name : 'Tomates', amount : '6'},
+            {name : 'Poulet fermier,', amount : '1,5 kg', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000334.JPG?raw=true'},
+            {name : 'Pâte d\'arachide', amount : '5 cs', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000329.JPG?raw=true'},
+            {name : 'Tomates', amount : '6', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000325.jpg?raw=true'},
             {name : 'Oignons', amount : '2'},
             {name : 'Gousses d\'ail', amount : '2'},
-            {name : 'Petit morceaux de gingembre', amount : '1'},
+            {name : 'Petit morceaux de gingembre', amount : '1', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000331.JPG?raw=true'},
             {name : 'Huile végétale', amount : '5 cs'},
             {name : '[Cube maggi]', amount : '1'},
             {name : 'Sel'},
