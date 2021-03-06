@@ -1,14 +1,9 @@
 <article class="p-p-2" *ngIf="recipe" >
     <p-card [routerLink]="['/recipe', recipe.id, recipe.title ]"
-            [header]="recipe.title" [style]="{width: width_recipe,height: '33em'}" styleClass="p-card-shadow">
+            [header]="recipe.title" [style]="{width: width_recipe,height: '36em'}" styleClass="p-card-shadow">
         <ng-template pTemplate="header">
             <img class="resize_fit_center" alt="Card" [src]="recipe.img[0]">
         </ng-template>
-
-        <span class="p-badge p-badge-warning p-col-12 p-p-0" *ngIf="recipe.type === 'TRADITIONNELS'">Traditionnels</span>
-        <span class="p-badge p-badge-success p-col-12 p-p-0" *ngIf="recipe.type === 'CLASSIQUE'">Classique</span>
-        <span class="p-badge p-badge-info p-col-12 p-p-0" *ngIf="recipe.type === 'ACCOMPAGNEMENT'">Accompagnement</span>
-        <span class="p-badge p-badge-danger p-col-12 p-p-0" *ngIf="recipe.type === 'NO'">Rien</span>
 
         <p-divider class="p-m-0"></p-divider>
             <div class="p-d-flex">
@@ -31,6 +26,13 @@
             <img class="difficult_image" [ngClass]="{'difficult_image_color': recipe.difficult < 3}" [src]="difficult_image" />
             <img class="difficult_image" [ngClass]="{'difficult_image_color': recipe.difficult < 4}" [src]="difficult_image" />
             <img class="difficult_image" [ngClass]="{'difficult_image_color': recipe.difficult < 5}" [src]="difficult_image" />
+        </div>
+
+        <p-divider class="p-m-0"></p-divider>
+
+        <div class="p-d-flex">
+            <app-plugin-like-facebook class="p-col-5 plugin-facebook-like" [url]="recipe.plugin_like"></app-plugin-like-facebook>
+            <app-badge-came class="p-col-7 p-ml-1" [type]="recipe.type"></app-badge-came>
         </div>
     </p-card>
 </article>

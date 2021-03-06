@@ -28,6 +28,8 @@ import {AccordionModule} from "primeng/accordion";
 import {ToastModule} from "primeng/toast";
 import { RecipeDetailsDetailsComponent } from './RECETTE/recipe-details-details/recipe-details-details.component';
 import {RecipeDetailsDetailsSmallComponent} from "./RECETTE/recipe-details-details-small/recipe-details-details-small.component";
+import { PluginLikeFacebookComponent } from './PLUGIN/plugin-like-facebook/plugin-like-facebook.component';
+import { BadgeCameComponent } from './badge-came/badge-came.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import {RecipeDetailsDetailsSmallComponent} from "./RECETTE/recipe-details-detai
     RecipeDetailsSmallComponent,
     RecipeDetailsIngredientComponent,
     RecipeDetailsDetailsComponent,
-    RecipeDetailsDetailsSmallComponent
+    RecipeDetailsDetailsSmallComponent,
+    PluginLikeFacebookComponent,
+    BadgeCameComponent
   ],
   imports: [
     BrowserModule,

@@ -5,6 +5,8 @@ enum TYPE_RECIPE {
     ACCOMPAGNEMENT = 'ACCOMPAGNEMENT',
     NO = 'NO'
 }
+
+let BAD_URL_PLUGIN_LIKE = 'https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Flocalhost%3A4200%2Frecipe%2F1%2FLe%2520SANGA&width=92&layout=box_count&action=like&size=small&share=true&height=65&appId=191725056082943';
 let recipes = [
     {
         id : 9,
@@ -31,7 +33,8 @@ let recipes = [
             'Vous pouvez piler que des plantains verts, que les plantains jaunes ou mûrs.'
         ],
         difficult : 2,
-        type : TYPE_RECIPE.ACCOMPAGNEMENT
+        type : TYPE_RECIPE.ACCOMPAGNEMENT,
+        plugin_like : BAD_URL_PLUGIN_LIKE
     },
     {
         id : 8,
@@ -67,7 +70,8 @@ let recipes = [
             'Servez accompagnée  de foufou, du plantin vert/mur/pilé, ou avec du riz, ect...'
         ],
         difficult : 4,
-        type : TYPE_RECIPE.CLASSIQUE
+        type : TYPE_RECIPE.CLASSIQUE,
+        plugin_like : BAD_URL_PLUGIN_LIKE
     },
     {
         id : 7,
@@ -93,7 +97,8 @@ let recipes = [
             'L\'eau doit rester bien chaude pendant la cuisson.'
         ],
         difficult : 1,
-        type : TYPE_RECIPE.ACCOMPAGNEMENT
+        type : TYPE_RECIPE.ACCOMPAGNEMENT,
+        plugin_like : BAD_URL_PLUGIN_LIKE
     },
     {
         id : 6,
@@ -117,7 +122,8 @@ let recipes = [
             'Choisissez le manioc frais bien ferme. Il accompagne vos plats de poissons, de viandes, vos feuilles de manioc, les safous, ect…'
         ],
         difficult : 2,
-        type : TYPE_RECIPE.ACCOMPAGNEMENT
+        type : TYPE_RECIPE.ACCOMPAGNEMENT,
+        plugin_like : BAD_URL_PLUGIN_LIKE
     },
     {
         id : 5,
@@ -146,7 +152,8 @@ let recipes = [
             'A la place de la boîte de 500g de jus de noix de palme, vous pouvez mettre la boîte de 800g selon votre goût.'
         ],
         difficult : 5,
-        type : TYPE_RECIPE.TRADITIONNELS
+        type : TYPE_RECIPE.TRADITIONNELS,
+        plugin_like : BAD_URL_PLUGIN_LIKE
     },
     {
         id : 4,
@@ -169,7 +176,8 @@ let recipes = [
             'Le macabo bouilli s\'accompagne avec les poissons en sauce, les viandes en sauce, les feuilles de manioc, ect...'
         ],
         difficult :4,
-        type : TYPE_RECIPE.ACCOMPAGNEMENT
+        type : TYPE_RECIPE.ACCOMPAGNEMENT,
+        plugin_like : BAD_URL_PLUGIN_LIKE
     },
     {
         id : 3,
@@ -206,7 +214,8 @@ let recipes = [
             'Vous pouvez utiliser d\'autres morceaux de viande de boeuf : queue de boeuf, boeuf bourguignon ou autres. La sauce gombo s\'accompagne de foufou de manioc, de foufou de maïs, de plantin pilé, vous pouvez  aussi mélanger la farine de maïs avec la farine de manioc, ect...'
         ],
         difficult :3,
-        type : TYPE_RECIPE.CLASSIQUE
+        type : TYPE_RECIPE.CLASSIQUE,
+        plugin_like : BAD_URL_PLUGIN_LIKE
     },{
         id : 2,
         title : 'BOUILLON DE POISSON',
@@ -244,7 +253,8 @@ let recipes = [
         ],
         areImg : true,
         difficult : 2,
-        type : TYPE_RECIPE.CLASSIQUE
+        type : TYPE_RECIPE.CLASSIQUE,
+        plugin_like : BAD_URL_PLUGIN_LIKE
     },
     {
         id : 1,
@@ -272,7 +282,8 @@ let recipes = [
             '<i>Vous pouvez aussi faire le sanga avec les feuilles d\'épinards, ou les feuilles de zom, ou  les feuilles d\'aubergines.</i>'
         ],
         difficult : 1,
-        type : TYPE_RECIPE.TRADITIONNELS
+        type : TYPE_RECIPE.TRADITIONNELS,
+        plugin_like : BAD_URL_PLUGIN_LIKE
     }
 ];
 
