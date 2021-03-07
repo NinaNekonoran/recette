@@ -30,6 +30,7 @@ import { RecipeDetailsDetailsComponent } from './RECETTE/ITEM/recipe-details-det
 import {RecipeDetailsDetailsSmallComponent} from "./RECETTE/ITEM/recipe-details-details-small/recipe-details-details-small.component";
 import { PluginLikeFacebookComponent } from './PLUGIN/plugin-like-facebook/plugin-like-facebook.component';
 import { BadgeCameComponent } from './badge-came/badge-came.component';
+import { RecipeDetailsStepComponent } from './RECETTE/ITEM/recipe-details-step/recipe-details-step.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { BadgeCameComponent } from './badge-came/badge-came.component';
     RecipeDetailsDetailsComponent,
     RecipeDetailsDetailsSmallComponent,
     PluginLikeFacebookComponent,
-    BadgeCameComponent
+    BadgeCameComponent,
+    RecipeDetailsStepComponent
   ],
   imports: [
     BrowserModule,

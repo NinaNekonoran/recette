@@ -27,14 +27,7 @@
                 <p *ngFor="let advice of recipeDetails.advices"  [innerHTML]="advice"></p>
             </article>
 
-            <p class="footer-title">Etapes :</p>
-            <div>
-                <ul>
-                    <li class="p-d-flex p-justify-between p-align-center" *ngFor="let state of recipeDetails.states">
-                        <p class="p-mb-1" [innerHTML]="'- ' + state"></p>
-                    </li>
-                </ul>
-            </div>
+            <app-recipe-details-step [recipe]="recipeDetails"></app-recipe-details-step>
             <article class="p-text-right"><b>BON APPETTIT</b></article>
         </div>
     </div>

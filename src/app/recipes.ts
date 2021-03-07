@@ -22,7 +22,7 @@ let recipes = [
             {name : 'Bananes plantains verts jaunes', amount : '5', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000337.JPG?raw=true'},
             {name: 'Mortier', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000320.jpg?raw=true'}
         ],
-        states : [
+        steps : [
             'Lavez les plantains, mettez-les dans une bassine d\'eau froide, coupez les extrémités, et coupez chaque banane en deux, épluchez-les dans de l\'eau à l\'aide d\'un couteau, raclez le dessus pour enlever leur couche supérieure contenant les fibres, rincez.',
             'Dans une casserole, mettez les plantains verts au fond et les jaunes au dessus, ajoutez de l\'eau, mettez au feu et faites bouillir pendant 30 min environ à feu moyen.',
             'Préparez le mortier, le pilon, un récipient d\'eau froide, et lavez vous les mains.',
@@ -61,7 +61,7 @@ let recipes = [
             {name : 'Sel'},
             {name : 'Poivre noir'}
         ],
-        states : [
+        steps : [
             'Lavez et épluchez les légumes, coupez un oignon en petits morceaux, mixez les tomates et un oignon, écrasez de l\'ail et le gingembre, réservez.',
             'Coupez le poulet en morceaux, lavez, essuyez.',
             'Faites dorer dans une casserole, ou une cocotte, les morceaux de poulet, des deux côtés avec de l\'huile, réservez.',
@@ -91,7 +91,7 @@ let recipes = [
             {name : 'Farine de manioc', amount : '100g', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000296.JPG?raw=true'},
             {name : 'Eau chaude'}
         ],
-        states : [
+        steps : [
             'Faites bouillir de l\'eau dans une marmite, dès que l\'eau boue, divisez-la en deux parties en conservant le moins d\'eau possible dans la marmite et transférez l\'autre partie de l\'eau bouillante dans un récipient.',
             'Baissez le feu, versez la farine de maïs en pluie dans l\'eau qui se trouve dans la marmite, remuez avec une spatule en bois ou bien avec un pilon, il faut de la force et de l\'énergie pour bien mélanger, ajoutez la farine de manioc, rajoutez l\'eau chaude de réserve petit à petit tout en remuant entre chaque ajout jusqu\'à l\'obtention d\'une pâte homogène, solide.',
             'Coupez la source de chaleur, bloquez votre marmite et mélangez vigoureusement à l\'aide de votre spatule ou pilon en raclant les bords.',
@@ -117,7 +117,7 @@ let recipes = [
             {name : 'Manioc frais', amount : '1', img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1614201716342.jpg?raw=true'},
             {name : '[sel]'}
         ],
-        states : [
+        steps : [
             'Lavez les maniocs.',
             'A l\'aide d\'un couteau coupez les maniocs en deux, épluchez-les en profondeur ou raclez-les légèrement afin d\'éviter toute amertume. Fendez, enlevez les racines au milieu, coupez en morceaux de taille moyenne, rincez.',
             'Mettez-les dans une casserole, ajoutez de l\'eau à mi-hauteur des morceaux de manioc et salez si besoin, mettez la casserole au feu, dès ébullition, laissez cuire pendant 25 min environ, si l\'eau de cuisson déborde, mettez votre couvercle entrouvert, surveillez la cuisson.',
@@ -145,7 +145,7 @@ let recipes = [
             {name : 'Maïs', amount : '1'},
             {name : '[Macabos]', amount : '2'}
         ],
-        states : [
+        steps : [
             'Mettez les feuilles de manioc dans une casserole,  ajoutez de l\'eau à hauteur des feuilles, mélangez, couvrez et faites cuire  à feu doux 1h environ, en remuant de temps en temps',
             'Epluchez, lavez les macabos et le maïs, coupez-les en deux si nécessaire, réservez.',
             'Au bout d\'une heure de cuisson, ajoutez dans la préparation les macabos, fermez la casserole et laissez cuire 15 min',
@@ -172,7 +172,7 @@ let recipes = [
             {name : 'Macabos', amount : '5', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1614541536105.jpg?raw=true'},
             {name : '[sel]'},
         ],
-        states : [
+        steps : [
             'Pelez les macabos avec un couteau, lavez, coupez-les en 2 ou 3 morceaux si nécessaire, rincez.',
             'Dans une casserole disposez les macabos, ajoutez de l\'eau à hauteur des macabos.',
             'Mettez au feu à feu moyen, dès que l\'eau boue, ajoutez un peu de sel si besoin, et laissez cuire 30 mn environ.',
@@ -206,7 +206,7 @@ let recipes = [
             {name : 'Sel'},
             {name : 'Poivre'},
         ],
-        states : [
+        steps : [
             'Epluchez et lavez les oignons, les gousses d\'ail, et les tomates, coupez-les en petits morceaux.',
             'Apprêtez votre viande, coupez-la en morceaux, rincez et égouttez.',
             'Chauffez de l\'huile dans une casserole, faîtes rissoler la viande en remuant de temps en temps pendant 10 min, ajoutez les légumes coupés en morceaux, assaisonnez à votre goût (cube maggi), salez, poivrez, remuez, couvrez et laissez mijoter à feu doux pendant 20 min en remuant de temps en temps.',
@@ -245,7 +245,7 @@ let recipes = [
             {name : 'Sel'},
             {name : 'Poivre'},
         ],
-        states : [
+        steps : [
             'Nettoyez, lavez les <b>poissons</b>, coupez-les en 3 ou 4 morceaux, réservez dans un grand saladier rempli d\'eau salée.',
             'Lavez, coupez les légumes en morceaux, mixez les tomates, l\'<b>oignon</b>, le <b>gingembre</b>, le <b>basilic</b>, le <b>poireau</b>, l\'<b>ail</b>, et un petit morceau de <b>piment</b> si besoin, réservez.',
             'Ecrasez le <b>pèbè</b> et le <b>djansang</b> si besoin, réservez.',
@@ -274,7 +274,7 @@ let recipes = [
             {name : 'Epis de maïs doux frais', amount : '8-10'},
             {name : 'Boîte de 500g de jus de noix de palme(sauce graine)', amount : '1', img: 'https://produits.bienmanger.com/28567-0w600h600_Sauce_Graine_Palme.jpg'}
         ],
-        states : [
+        steps : [
             'Triez, lavez, égouttez, coupez le <b>folon</b> en deux',
             'Faites bouillir de l\'eau dans une grande casserole, <b>versez</b> les feuilles de folon dans cet eau bouillante, et laissez cuire pendant <b>15 min</b> sans couvercle, <b>remuez de temps en temps</b> avec une spatule en bois, il faut que les feuilles soient tendres, égouttez, laissez tiédir, ensuite <b>pressez-les</b> avec vos mains pour enlever l\'eau, et <b>hacher-les</b> finement avec un couteau sur une planche en bois',
             '<i>Ou bien hachez le folon frais finement à la main avec un couteau, réservez.</i>',
