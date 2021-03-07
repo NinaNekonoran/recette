@@ -16,18 +16,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { RecipesCameComponent } from './MENU/recipes-came/recipes-came.component';
 import {AppRoutingModule} from "./app-routing.module";
-import {RecipeDetailsCameComponent} from "./RECETTE/recipe-details-came/recipe-details-came.component";
+import {RecipeDetailsCameComponent} from "./RECETTE/ITEM/recipe-details-came/recipe-details-came.component";
 import { FooterCameComponent } from './FOOTER/footer-came/footer-came.component';
 import { RecipeFicheCameComponent } from './MENU/recipe-fiche-came/recipe-fiche-came.component';
 import { HighlightPipe } from './highlight.pipe';
-import { RecipeDetailsHighComponent } from './RECETTE/recipe-details-high/recipe-details-high.component';
-import { RecipeDetailsMediumComponent } from './RECETTE/recipe-details-medium/recipe-details-medium.component';
-import { RecipeDetailsSmallComponent } from './RECETTE/recipe-details-small/recipe-details-small.component';
-import { RecipeDetailsIngredientComponent } from './RECETTE/recipe-details-ingredient/recipe-details-ingredient.component';
+import { RecipeDetailsHighComponent } from './RECETTE/BASE/recipe-details-high/recipe-details-high.component';
+import { RecipeDetailsMediumComponent } from './RECETTE/BASE/recipe-details-medium/recipe-details-medium.component';
+import { RecipeDetailsSmallComponent } from './RECETTE/BASE/recipe-details-small/recipe-details-small.component';
+import { RecipeDetailsIngredientComponent } from './RECETTE/ITEM/recipe-details-ingredient/recipe-details-ingredient.component';
 import {AccordionModule} from "primeng/accordion";
 import {ToastModule} from "primeng/toast";
-import { RecipeDetailsDetailsComponent } from './RECETTE/recipe-details-details/recipe-details-details.component';
-import {RecipeDetailsDetailsSmallComponent} from "./RECETTE/recipe-details-details-small/recipe-details-details-small.component";
+import { RecipeDetailsDetailsComponent } from './RECETTE/ITEM/recipe-details-details/recipe-details-details.component';
+import {RecipeDetailsDetailsSmallComponent} from "./RECETTE/ITEM/recipe-details-details-small/recipe-details-details-small.component";
 import { PluginLikeFacebookComponent } from './PLUGIN/plugin-like-facebook/plugin-like-facebook.component';
 import { BadgeCameComponent } from './badge-came/badge-came.component';
 
