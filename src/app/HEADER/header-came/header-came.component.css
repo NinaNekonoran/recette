@@ -14,9 +14,12 @@
     }
 }
 .header-title {
+    position : absolute;
     font-family: 'Dancing Script', cursive;
     font-size: 4em;
-    padding-top: 130px;
+    padding-top: 0.8em;
+    text-align: center;
+    width: 100%;
     color: #333;
     text-shadow: 0.1em 0.05em 0.05em #FFFF;
     z-index: 1;
