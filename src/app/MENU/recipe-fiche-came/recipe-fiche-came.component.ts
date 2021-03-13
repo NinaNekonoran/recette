@@ -10,10 +10,11 @@ export class RecipeFicheCameComponent implements OnInit {
   @Input()
   recipe;
   @Input()
-  width_recipe : string;
+  full : boolean;
 
   difficult_image = difficult_image;
 
   ngOnInit(): void {
+    console.log("full : ",this.full);
   }
 }

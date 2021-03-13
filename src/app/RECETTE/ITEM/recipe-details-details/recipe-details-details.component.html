@@ -1,7 +1,5 @@
-<span class="p-badge p-badge-warning" *ngIf="recipeDetails.type === 'TRADITIONNELS'">Traditionnels</span>
-<span class="p-badge p-badge-success" *ngIf="recipeDetails.type === 'CLASSIQUE'">Classique</span>
-<span class="p-badge p-badge-info" *ngIf="recipeDetails.type === 'ACCOMPAGNEMENT'">Accompagnement</span>
-<span class="p-badge p-badge-danger" *ngIf="recipeDetails.type === 'NO'">Rien</span>
+<app-badge-came [type]="recipeDetails.type"></app-badge-came>
+
 <p-divider></p-divider>
 <article class="p-d-flex">
     <article class="p-col-6">

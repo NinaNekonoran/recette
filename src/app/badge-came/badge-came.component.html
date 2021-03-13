@@ -1,7 +1,9 @@
-<div class="type p-justify-center p-text-right">
-    <span>Plats </span>
-    <span *ngIf="type === 'TRADITIONNELS'">Traditionnels</span>
-    <span *ngIf="type === 'CLASSIQUE'">Classique</span>
-    <span *ngIf="type === 'ACCOMPAGNEMENT'">Accompagnement</span>
-    <span *ngIf="type === 'NO'">Rien</span>
+<div class="type-trad ajust-vertical p-justify-center p-m-0 p-d-flex w-100 text-wrap p-align-center"
+     [ngClass]="{
+             'type-trad': isTRADITIONNELS(),
+             'type-class': isCLASSIQUE(),
+             'type-accom': isACCOMPAGNEMENT(),
+             'type-p': isNO()}">
+    {{type}}
 </div>
+

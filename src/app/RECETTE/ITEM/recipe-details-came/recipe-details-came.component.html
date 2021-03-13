@@ -1,7 +1,7 @@
 <h2 class="p-text-center liste-title">{{recipeDetails.title}}</h2>
 <a [routerLink]="['../../../']" class="back-recipe p-d-flex">
     <button pButton pRipple type="button" icon="pi pi-chevron-left" class="p-button-rounded p-button-warning"></button>
-    <p>retourner sur la carte</p>
+    <p class="p-mb-5">retourner sur la carte</p>
 </a>
 <app-recipe-details-high *ngIf="mobile === 'HIGH'" [recipeDetails]="recipeDetails" [ingredientsImg]="ingredientsImg"></app-recipe-details-high>
 <app-recipe-details-medium *ngIf="mobile === 'MEDIUM'" [recipeDetails]="recipeDetails" [ingredientsImg]="ingredientsImg"></app-recipe-details-medium>

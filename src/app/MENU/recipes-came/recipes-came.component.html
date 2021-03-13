@@ -9,21 +9,15 @@
 
         <ng-template let-recipe pTemplate="listItem" >
             <article class="recipes-listItem p-d-flex" [routerLink]="['/recipe', recipe.id, recipe.title ]">
-                <div class="p-m-1">
-                    {{recipe.title}}
-                </div>
-                <span class="p-badge p-badge-warning" *ngIf="recipe.type === 'TRADITIONNELS'">Traditionnels</span>
-                <span class="p-badge p-badge-success" *ngIf="recipe.type === 'CLASSIQUE'">Classique</span>
-                <span class="p-badge p-badge-info" *ngIf="recipe.type === 'ACCOMPAGNEMENT'">Accompagnement</span>
-                <span class="p-badge p-badge-danger" *ngIf="recipe.type === 'NO'">Rien</span>
+                <app-badge-came [type]="recipe.type"  ></app-badge-came>
+                <div class="p-m-1">{{recipe.title}}</div>
             </article>
 
         </ng-template>
 
         <ng-template let-recipe pTemplate="gridItem">
-            <app-recipe-fiche-came *ngIf="mobile" [recipe]="recipe" [width_recipe]="'100%'" ></app-recipe-fiche-came>
-            <app-recipe-fiche-came *ngIf="!mobile" [recipe]="recipe" [width_recipe]="'200px'" ></app-recipe-fiche-came>
-
+            <app-recipe-fiche-came *ngIf="mobile" [recipe]="recipe" [full]="true" ></app-recipe-fiche-came>
+            <app-recipe-fiche-came *ngIf="!mobile" [recipe]="recipe" [full]="false" ></app-recipe-fiche-came>
         </ng-template>
 
         <ng-template let-item pTemplate="paginatordropdownitem">

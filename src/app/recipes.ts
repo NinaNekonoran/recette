@@ -1,8 +1,8 @@
 let NO_IMAGE = 'https://www.recia.fr/wp-content/uploads/2019/09/no_image.png';
 enum TYPE_RECIPE {
-    TRADITIONNELS = 'TRADITIONNELS',
-    CLASSIQUE = 'CLASSIQUE',
-    ACCOMPAGNEMENT = 'ACCOMPAGNEMENT',
+    TRADITIONNELS = 'Plats Traditionnels',
+    CLASSIQUE = 'Plats Classique',
+    ACCOMPAGNEMENT = 'Plats Accompagnement',
     NO = 'NO'
 }
 
@@ -302,4 +302,4 @@ let title = "Mamie Cameroun";
 
 let difficult_image = 'https://raw.githubusercontent.com/NinaNekonoran/recette/6012d758f24b735beb30772383e60ac954a35523/src/assets/diff.svg';
 
-export {recipes, presentation, title, difficult_image} ;
+export {recipes, presentation, title, difficult_image, TYPE_RECIPE} ;
