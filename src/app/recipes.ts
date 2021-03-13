@@ -160,16 +160,17 @@ let recipes = [
         type : TYPE_RECIPE.TRADITIONNELS,
         plugin_like : BAD_URL_PLUGIN_LIKE
     },
-    {
+    {/*https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1614541536120.jpg?raw=true
+    https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1614541536105.jpg?raw=true*/
         id : 4,
-        title : 'MACABO BOUILLI GRILLÉ',
+        title : 'MACABO BOUILLI',
         member : '4 personnes',
         time_preparation : '15 min',
         time_cuisson : '30min',
         description : 'xxx',
-        img :[ 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1614541536120.jpg?raw=true'],
+        img :[NO_IMAGE],
         ingredients : [
-            {name : 'Macabos', amount : '5', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1614541536105.jpg?raw=true'},
+            {name : 'Macabos', amount : '5'},
             {name : '[sel]'},
         ],
         steps : [
