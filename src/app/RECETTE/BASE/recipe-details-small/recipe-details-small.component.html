@@ -12,10 +12,7 @@
             <div class="p-col-5" *ngIf="recipeDetails.ingredients">
 
                 <p class="footer-title">Ingrédients :</p>
-                    <div class="p-d-flex p-mb-2" *ngFor="let ingredient of recipeDetails.ingredients">
-                        <span class="p-col-2 p-badge p-badge-warning" *ngIf="ingredient.amount">{{ingredient.amount}}</span>
-                        <p class="p-m-0">{{ingredient.name}}</p>
-                    </div>
+                <app-recipe-ingredient-list [ingredients]="recipeDetails.ingredients"></app-recipe-ingredient-list>
             </div>
         </section>
 

@@ -65,3 +65,8 @@
 :host >>> .p-fieldset{
     margin-bottom: 1em;
 }
+
+.ou{
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+}

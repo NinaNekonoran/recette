@@ -4,12 +4,7 @@
             <p class="footer-title">Description :</p>
             <p>{{recipeDetails.description}}</p>
             <p class="footer-title">Ingrédients :</p>
-            <ul>
-                <li class="p-d-flex p-justify-between p-align-center" *ngFor="let ingredient of recipeDetails.ingredients">
-                    <p class="p-col-10 p-m-0">- {{ingredient.name}}</p>
-                    <span class="p-col-2 p-badge p-badge-warning" *ngIf="ingredient.amount">{{ingredient.amount}}</span>
-                </li>
-            </ul>
+            <app-recipe-ingredient-list [ingredients]="recipeDetails.ingredients"></app-recipe-ingredient-list>
         </div>
 
         <p-divider layout="vertical" ></p-divider>

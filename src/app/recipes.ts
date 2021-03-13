@@ -1,6 +1,6 @@
 let NO_IMAGE = 'https://www.recia.fr/wp-content/uploads/2019/09/no_image.png';
 enum TYPE_RECIPE {
-    TRADITIONNELS = 'Plats Traditionnels',
+    TRADITIONNEL = 'Plats Traditionnel',
     CLASSIQUE = 'Plats Classique',
     ACCOMPAGNEMENT = 'Plats Accompagnement',
     NO = 'NO'
@@ -9,6 +9,70 @@ enum TYPE_RECIPE {
 let BAD_URL_PLUGIN_LIKE = 'https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Flocalhost%3A4200%2Frecipe%2F1%2FLe%2520SANGA&width=92&layout=box_count&action=like&size=small&share=true&height=65&appId=191725056082943';
 let recipes = [
     {
+        id : 11,
+        title : 'PUREE DE PIMENT',
+        time_preparation : '20 min',
+        time_cuisson : '20 min',
+        description : 'Très facile à réaliser, la purée de piment est une sauce très piquante utilisée pour épicer les plats de viandes, de poissons, de légumes, ect...',
+        img : [
+            NO_IMAGE
+        ],
+        ingredients : [
+            {name : 'Gros piments rouges', amount : '6'},
+            {name : 'Tomates', amount : '4'},
+            {name : 'Gousses d\'ail', amount : '3'},
+            {name : 'Oignon', amount : '1'},
+            {name : 'Morceau de gingembre', amount : '1'},
+            {name : 'Oignon', amount : '1'},
+            {name : 'Pépè', or_name : 'Clous de girofle',or_amount :'6'},
+            {name : 'Huile végétale', amount : '5 cs'},
+            {name : 'Cube maggi végétal', amount : '1'},
+            {name : '[Sel]'}
+        ],
+        steps : [
+            'Ecrasez les clous de girofle, réservez.',
+            'Nettoyez, épluchez, et lavez les légumes, coupez-les en petits morceaux.',
+            'Mixez en premier les oignons et les tomates, versez dans une casserole.',
+            'Mixez ensuite tout le reste des ingrédients avec un peu d\'eau, versez dans la même casserole, ajoutez les clous de girofle écrasés, de l\'huile, et le cube maggi, bien mélanger à l\'aide d\'une cuillère et faire mijoter à feu doux pendant 15 min environ pour cuire et éliminer l\'eau du mixage.',
+            'Assaisonnez à votre goût, ajoutez du sel et de l\'huile si besoin, remuez, laissez encore au feu 5 min environ.'
+        ],
+        advices: [
+            'Ouvrez les fenêtres pendant la cuisson, elle se conserve longtemps au frigo en ajoutant de temps en temps de l\'huile.'
+        ],
+        difficult : 5,
+        type : TYPE_RECIPE.ACCOMPAGNEMENT,
+        plugin_like : BAD_URL_PLUGIN_LIKE
+    },{
+        id : 10,
+        title : 'SAFOU BOUILLI/GRILLE',
+        member : '3 personnes',
+        time_preparation : '10 min',
+        time_cuisson : '20 min',
+        description : 'Le safou ou (prune Africaine) est préparé comme un légume, mais c\'est un fruit d\'Afrique, il a un noyau et on ne mange que sa chair.',
+        img : [
+            'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1614541536120.jpg?raw=true'
+        ],
+        ingredients : [
+            {name : 'Safous', amount : '6', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1614541536105.jpg?raw=true'},
+            {name : 'Huile végétale', amount : '1 cs'},
+            {name : 'Eau', amount : '1 cs'},
+            {name : '[Sel]'}
+        ],
+        steps : [
+            'Lavez les safous, mettez-les dans une casserole assez grande pour remplir le fond, ajoutez de l\'eau, mélangez les safous avec de l\'eau, mettez le couvercle et laissez cuire à feu très doux pendant 10 min environ.',
+            'Dès qu\'ils sont tendres, enlevez l\'eau de cuisson à l\'aide du couvercle sans touchez les safous, ajoutez de l\'huile remettez le couvercle, et laissez griller 5 min à feu doux.',
+            'Retournez-les en faisant attention de ne pas se brûler, remettez le couvercle et laissez encore griller les autres côtés 5 min.',
+            'Vérifier la cuisson, à vue d\'oeil les peaux des safous doivent être fendues.',
+            'Retirez les safous dans la casserole, jetez l\'huile de cuisson, ajoutez du sel si besoin et servez chaud.'
+        ],
+        advices: [
+            'Cuisson du safou au choix: bouilli/grillé à la casserole en entier, ou par cuisson sur des braises de votre barbecue par exemple.',
+            'Servez chaud accompagné du manioc frais, du bâton de manioc, ou avec du plantin grillé, ect...'
+        ],
+        difficult : 5,
+        type : TYPE_RECIPE.ACCOMPAGNEMENT,
+        plugin_like : BAD_URL_PLUGIN_LIKE
+    },{
         id : 9,
         title : 'BANANES PLANTAINS PILES',
         member : '3 à 4 personnes',
@@ -19,8 +83,8 @@ let recipes = [
             'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000356.JPG?raw=true'
         ],
         ingredients : [
-            {name : 'Bananes plantains verts jaunes', amount : '5', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000337.JPG?raw=true'},
-            {name: 'Mortier', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000320.jpg?raw=true'}
+            {name : 'Bananes plantains verts', amount : '3', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000337.JPG?raw=true'},
+            {name : 'Bananes plantains jaunes', amount : '2', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000337.JPG?raw=true'}
         ],
         steps : [
             'Lavez les plantains, mettez-les dans une bassine d\'eau froide, coupez les extrémités, et coupez chaque banane en deux, épluchez-les dans de l\'eau à l\'aide d\'un couteau, raclez le dessus pour enlever leur couche supérieure contenant les fibres, rincez.',
@@ -34,7 +98,7 @@ let recipes = [
         advices: [
             'Vous pouvez piler que des plantains verts, que les plantains jaunes ou mûrs.'
         ],
-        difficult : 2,
+        difficult : 1,
         type : TYPE_RECIPE.ACCOMPAGNEMENT,
         plugin_like : BAD_URL_PLUGIN_LIKE
     },
@@ -47,7 +111,7 @@ let recipes = [
         description : 'C\'est un plat délicieux, une sauce onctueuse à base des arachides grillées et écrasées.',
         img : [
             'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000365.JPG?raw=true',
-
+            'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000316.JPG?raw=true'
         ],
         ingredients : [
             {name : 'Poulet fermier,', amount : '1,5 kg', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000334.JPG?raw=true'},
@@ -74,7 +138,7 @@ let recipes = [
             'La sauce d\'arachide peut aussi bien être préparée avec du poisson frais, ou avec du poisson fumé, ou du poulet fumé, ou avec du boeuf, ect...',
             'Servez accompagnée  de foufou, du plantin vert/mur/pilé, ou avec du riz, ect...'
         ],
-        difficult : 4,
+        difficult : 3,
         type : TYPE_RECIPE.CLASSIQUE,
         plugin_like : BAD_URL_PLUGIN_LIKE
     },
@@ -101,7 +165,7 @@ let recipes = [
         advices: [
             'L\'eau doit rester bien chaude pendant la cuisson.'
         ],
-        difficult : 1,
+        difficult : 2,
         type : TYPE_RECIPE.ACCOMPAGNEMENT,
         plugin_like : BAD_URL_PLUGIN_LIKE
     },
@@ -114,7 +178,7 @@ let recipes = [
         description : 'Le manioc frais est un légume, un tubercule farineux apprécié et consommé généralement bouilli, c\'est un aliment très nourrissant.',
         img :[ 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1614201716299.jpg?raw=true'],
         ingredients : [
-            {name : 'Manioc frais', amount : '1', img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1614201716342.jpg?raw=true'},
+            {name : 'Manioc frais', amount : '1 kg', img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1614201716342.jpg?raw=true'},
             {name : '[sel]'}
         ],
         steps : [
@@ -126,7 +190,7 @@ let recipes = [
         advices: [
             'Choisissez le manioc frais bien ferme. Il accompagne vos plats de poissons, de viandes, vos feuilles de manioc, les safous, ect…'
         ],
-        difficult : 2,
+        difficult : 1,
         type : TYPE_RECIPE.ACCOMPAGNEMENT,
         plugin_like : BAD_URL_PLUGIN_LIKE
     },
@@ -140,7 +204,7 @@ let recipes = [
         description : 'Les feuilles de manioc, ou purée de feuilles de manioc ou (pkwem) chez les bétis au Cameroun, est un plat très nourrissant. On peut  le préparer sans ou avec sel en ajoutant la viande le poisson ou de la pâte d\'arachide, ect...',
         img : ['https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1614201716313.jpg?raw=true'],
         ingredients : [
-            {name : ['Paquets de feuilles de manioc frais','Sachets de feuilles de manioc surgelés'], amount : ['3','2']},
+            {name : 'Paquets de feuilles de manioc frais', amount : '3', or_name : 'Sachets de feuilles de manioc surgelés',or_amount :'2'},
             {name : 'Boîte de 500g de jus de noix de palme (sauce graine)', amount : '1'},
             {name : 'Maïs', amount : '1'},
             {name : '[Macabos]', amount : '2'}
@@ -156,12 +220,11 @@ let recipes = [
             'Les feuilles de manioc s\'accompagnent avec le manioc frais bouilli, le macabo, le maïs, ou le bâton de manioc, ect...',
             'A la place de la boîte de 500g de jus de noix de palme, vous pouvez mettre la boîte de 800g selon votre goût.'
         ],
-        difficult : 5,
-        type : TYPE_RECIPE.TRADITIONNELS,
+        difficult : 2,
+        type : TYPE_RECIPE.TRADITIONNEL,
         plugin_like : BAD_URL_PLUGIN_LIKE
     },
-    {/*https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1614541536120.jpg?raw=true
-    https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1614541536105.jpg?raw=true*/
+    {
         id : 4,
         title : 'MACABO BOUILLI',
         member : '4 personnes',
@@ -287,8 +350,8 @@ let recipes = [
         advices : [
             '<i>Vous pouvez aussi faire le sanga avec les feuilles d\'épinards, ou les feuilles de zom, ou  les feuilles d\'aubergines.</i>'
         ],
-        difficult : 1,
-        type : TYPE_RECIPE.TRADITIONNELS,
+        difficult : 2,
+        type : TYPE_RECIPE.TRADITIONNEL,
         plugin_like : BAD_URL_PLUGIN_LIKE
     }
 ];

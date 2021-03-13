@@ -18,8 +18,8 @@ export class BadgeCameComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  isTRADITIONNELS(){
-    return this.type == TYPE_RECIPE.TRADITIONNELS;
+  isTRADITIONNEL(){
+    return this.type == TYPE_RECIPE.TRADITIONNEL;
   }
 
   isACCOMPAGNEMENT(){
