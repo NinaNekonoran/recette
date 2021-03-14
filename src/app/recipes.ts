@@ -1,4 +1,4 @@
-let NO_IMAGE = 'https://www.recia.fr/wp-content/uploads/2019/09/no_image.png';
+const NO_IMAGE = 'https://www.recia.fr/wp-content/uploads/2019/09/no_image.png';
 enum TYPE_RECIPE {
     TRADITIONNEL = 'Plats Traditionnel',
     CLASSIQUE = 'Plats Classique',
@@ -6,8 +6,8 @@ enum TYPE_RECIPE {
     NO = 'NO'
 }
 
-let BAD_URL_PLUGIN_LIKE = 'https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Flocalhost%3A4200%2Frecipe%2F1%2FLe%2520SANGA&width=92&layout=box_count&action=like&size=small&share=true&height=65&appId=191725056082943';
-let recipes = [
+const BAD_URL_PLUGIN_LIKE = 'https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Flocalhost%3A4200%2Frecipe%2F1%2FLe%2520SANGA&width=92&layout=box_count&action=like&size=small&share=true&height=65&appId=191725056082943';
+const recipes = [
     {
         id : 11,
         title : 'PUREE DE PIMENT',
@@ -24,7 +24,7 @@ let recipes = [
             {name : 'Oignon', amount : '1'},
             {name : 'Morceau de gingembre', amount : '1'},
             {name : 'Oignon', amount : '1'},
-            {name : 'Pépè', or_name : 'Clous de girofle',or_amount :'6'},
+            {name : 'Pépè', or_name : 'Clous de girofle', or_amount : '6'},
             {name : 'Huile végétale', amount : '5 cs'},
             {name : 'Cube maggi végétal', amount : '1'},
             {name : '[Sel]'}
@@ -42,7 +42,7 @@ let recipes = [
         difficult : 5,
         type : TYPE_RECIPE.ACCOMPAGNEMENT,
         plugin_like : BAD_URL_PLUGIN_LIKE
-    },{
+    }, {
         id : 10,
         title : 'SAFOU BOUILLI/GRILLE',
         member : '3 personnes',
@@ -72,7 +72,7 @@ let recipes = [
         difficult : 5,
         type : TYPE_RECIPE.ACCOMPAGNEMENT,
         plugin_like : BAD_URL_PLUGIN_LIKE
-    },{
+    }, {
         id : 9,
         title : 'BANANES PLANTAINS PILES',
         member : '3 à 4 personnes',
@@ -176,7 +176,7 @@ let recipes = [
         time_preparation : '20 min',
         time_cuisson : '25 min',
         description : 'Le manioc frais est un légume, un tubercule farineux apprécié et consommé généralement bouilli, c\'est un aliment très nourrissant.',
-        img :[ 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1614201716299.jpg?raw=true'],
+        img : [ 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1614201716299.jpg?raw=true'],
         ingredients : [
             {name : 'Manioc frais', amount : '1 kg', img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1614201716342.jpg?raw=true'},
             {name : '[sel]'}
@@ -204,7 +204,7 @@ let recipes = [
         description : 'Les feuilles de manioc, ou purée de feuilles de manioc ou (pkwem) chez les bétis au Cameroun, est un plat très nourrissant. On peut  le préparer sans ou avec sel en ajoutant la viande le poisson ou de la pâte d\'arachide, ect...',
         img : ['https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1614201716313.jpg?raw=true'],
         ingredients : [
-            {name : 'Paquets de feuilles de manioc frais', amount : '3', or_name : 'Sachets de feuilles de manioc surgelés',or_amount :'2'},
+            {name : 'Paquets de feuilles de manioc frais', amount : '3', or_name : 'Sachets de feuilles de manioc surgelés', or_amount : '2'},
             {name : 'Boîte de 500g de jus de noix de palme (sauce graine)', amount : '1'},
             {name : 'Maïs', amount : '1'},
             {name : '[Macabos]', amount : '2'}
@@ -231,7 +231,7 @@ let recipes = [
         time_preparation : '15 min',
         time_cuisson : '30min',
         description : 'xxx',
-        img :[NO_IMAGE],
+        img : [NO_IMAGE],
         ingredients : [
             {name : 'Macabos', amount : '5'},
             {name : '[sel]'},
@@ -244,7 +244,7 @@ let recipes = [
             'Retirez du feu, enlevez l\'eau de cuisson et servez chaud.',
             'Le macabo bouilli s\'accompagne avec les poissons en sauce, les viandes en sauce, les feuilles de manioc, ect...'
         ],
-        difficult :4,
+        difficult : 4,
         type : TYPE_RECIPE.ACCOMPAGNEMENT,
         plugin_like : BAD_URL_PLUGIN_LIKE
     },
@@ -263,7 +263,7 @@ let recipes = [
             {name : 'Côtes de BOEUF', amount : '1kg', img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000272.JPG?raw=true'},
             {name : 'Gombos frais', amount : '200g', img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000271.JPG?raw=true'},
             {name : 'Oignons', amount : '2', img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000267.JPG?raw=true'},
-            {name : 'Gousses d\'ail', amount : '4', img:'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000265.jpg?raw=true'},
+            {name : 'Gousses d\'ail', amount : '4', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000265.jpg?raw=true'},
             {name : 'Tomates', amount : '2', img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000268.jpg?raw=true'},
             {name : 'Huile végétale', amount : '3 cs'},
             {name : '[Cube maggi]', amount : '1', img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000275.jpg?raw=true'},
@@ -282,10 +282,10 @@ let recipes = [
         advices : [
             'Vous pouvez utiliser d\'autres morceaux de viande de boeuf : queue de boeuf, boeuf bourguignon ou autres. La sauce gombo s\'accompagne de foufou de manioc, de foufou de maïs, de plantin pilé, vous pouvez  aussi mélanger la farine de maïs avec la farine de manioc, ect...'
         ],
-        difficult :3,
+        difficult : 3,
         type : TYPE_RECIPE.CLASSIQUE,
         plugin_like : BAD_URL_PLUGIN_LIKE
-    },{
+    }, {
         id : 2,
         title : 'BOUILLON DE POISSON',
         member : '4 à 6 personnes',
@@ -300,12 +300,12 @@ let recipes = [
             {name : 'Oignon', amount : '1'},
             {name : 'Gousse d\'ail', amount : '1'},
             {name : 'Branche de basilic', amount : '1', img: 'https://image.freepik.com/photos-gratuite/gros-plan-basilic-savoureux-mise-au-point-selective_1220-1501.jpg'},
-            {name : 'Branche de blanc de poireau', amount : '1', img:'https://image.freepik.com/photos-gratuite/poireau-surface-blanche_144627-45166.jpg'},
+            {name : 'Branche de blanc de poireau', amount : '1', img: 'https://image.freepik.com/photos-gratuite/poireau-surface-blanche_144627-45166.jpg'},
             {name : 'Citron', amount : '1'},
             {name : '[Piment frais]', amount : '1'},
             {name : 'Cuillère d\'huile d\'olive', amount : '2'},
-            {name : '[Njansang]', amount : '20g', img:'https://i.pinimg.com/originals/1b/6f/7b/1b6f7be5b247f2f54b367d4da38f83f5.jpg'},
-            {name : '[Pèbé]', amount : '10g', img:'https://afritibi.com/wp-content/uploads/2017/02/noix-de-pebe.png'},
+            {name : '[Njansang]', amount : '20g', img: 'https://i.pinimg.com/originals/1b/6f/7b/1b6f7be5b247f2f54b367d4da38f83f5.jpg'},
+            {name : '[Pèbé]', amount : '10g', img: 'https://afritibi.com/wp-content/uploads/2017/02/noix-de-pebe.png'},
             {name : 'Sel'},
             {name : 'Poivre'},
         ],
@@ -336,7 +336,7 @@ let recipes = [
         ingredients : [
             {name : 'Folon frais', amount : '1kg ', img: 'https://enviesdafrique.fr/wp-content/uploads/2020/11/follon-300x300.jpeg'},
             {name : 'Epis de maïs doux frais', amount : '8-10'},
-            {name : 'Boîte de 500g de jus de noix de palme(sauce graine)', amount : '1', img: 'https://produits.bienmanger.com/28567-0w600h600_Sauce_Graine_Palme.jpg'}
+            {name : 'Boîte de 500g de jus de noix de palme(sauce graine)', amount : '1'}
         ],
         steps : [
             'Triez, lavez, égouttez, coupez le <b>folon</b> en deux',
@@ -356,14 +356,14 @@ let recipes = [
     }
 ];
 
-let presentation = "Bonjour tout le monde, j'aime cuisiner de bons plats d'ici, d'ailleurs, et de mon enfance.\n" +
-    "Depuis l'âge de 8 ans, ma mère m'a appris à cuisiner.\n" +
-    "La cuisine camerounaise est délicieuse, et très variée. Elle est riche en saveur. On y trouve des épices, des produits végétaux, des poissons, des viandes, sans oublier des fruits tropicaux.\n" +
-    "Je vous laisse le temps de découvrir mes quelques recettes simples, familiales, classiques, et traditionnelles.\n" +
-    "Je vous souhaite un bon appétit.";
+const presentation = 'Bonjour tout le monde, j\'aime cuisiner de bons plats d\'ici, d\'ailleurs, et de mon enfance.\n' +
+    'Depuis l\'âge de 8 ans, ma mère m\'a appris à cuisiner.\n' +
+    'La cuisine camerounaise est délicieuse, et très variée. Elle est riche en saveur. On y trouve des épices, des produits végétaux, des poissons, des viandes, sans oublier des fruits tropicaux.\n' +
+    'Je vous laisse le temps de découvrir mes quelques recettes simples, familiales, classiques, et traditionnelles.\n' +
+    'Je vous souhaite un bon appétit.';
 
-let title = "Mamie Cameroun";
+const title = 'Mamie Cameroun';
 
-let difficult_image = 'https://raw.githubusercontent.com/NinaNekonoran/recette/6012d758f24b735beb30772383e60ac954a35523/src/assets/diff.svg';
+const difficult_image = 'https://raw.githubusercontent.com/NinaNekonoran/recette/6012d758f24b735beb30772383e60ac954a35523/src/assets/diff.svg';
 
 export {recipes, presentation, title, difficult_image, TYPE_RECIPE} ;
