@@ -365,7 +365,7 @@ const presentation = 'Bonjour tout le monde, j\'aime cuisiner de bons plats d\'i
     'Je vous souhaite un bon appétit.';
 
 const title = 'Mamie Cameroun';
-
+const mail = 'mamie.cameroun.recettes@gmail.com';
 const difficultImage = 'https://raw.githubusercontent.com/NinaNekonoran/recette/6012d758f24b735beb30772383e60ac954a35523/src/assets/diff.svg';
 
-export {recipes, presentation, title, difficultImage, TYPE_RECIPE} ;
+export {recipes, presentation, title, difficultImage, TYPE_RECIPE, mail} ;

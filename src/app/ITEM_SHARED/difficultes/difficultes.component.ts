@@ -18,7 +18,6 @@ export class DifficultesComponent implements OnInit {
   oneLine: boolean;
 
   ngOnInit(): void {
-    console.log("oneLine"+this.oneLine);
   }
 
 }

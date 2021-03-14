@@ -1,5 +1,5 @@
 import {Component, HostListener, OnInit} from '@angular/core';
-import {presentation} from '../../recipes';
+import {presentation, mail} from '../../recipes';
 @Component({
   selector: 'app-footer-came',
   templateUrl: './footer-came.component.html',
@@ -10,7 +10,7 @@ export class FooterCameComponent implements OnInit {
   presentation = presentation;
 
   constructor() { }
-
+  mail: string = mail;
   mobile;
 
   ngOnInit(): void {

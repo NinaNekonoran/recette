@@ -9,8 +9,8 @@ import {DomSanitizer} from "@angular/platform-browser";
 export class PluginLikeFacebookComponent implements OnInit {
   private sanitizer: DomSanitizer;
   @Input()
-  url : string;
-  constructor(sanitizer : DomSanitizer) {
+  url: string;
+  constructor(sanitizer: DomSanitizer) {
     this.sanitizer = sanitizer;
   }
   ngOnInit(): void {
