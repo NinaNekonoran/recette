@@ -1,5 +1,5 @@
 import {Component, HostListener, Input, OnInit, Output} from '@angular/core';
-import {difficult_image} from '../../recipes';
+import {difficultImage} from '../../recipes';
 @Component({
   selector: 'app-recipe-fiche-came',
   templateUrl: './recipe-fiche-came.component.html',
@@ -10,11 +10,10 @@ export class RecipeFicheCameComponent implements OnInit {
   @Input()
   recipe;
   @Input()
-  full : boolean;
+  full: boolean;
 
-  difficult_image = difficult_image;
+  difficultImage = difficultImage;
 
   ngOnInit(): void {
-    console.log("full : ",this.full);
   }
 }
