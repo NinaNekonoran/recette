@@ -4,13 +4,13 @@ import { recipes } from '../../../recipes';
 
 @Component({
   selector: 'app-recipe-details-came',
-  templateUrl: './recipe-details-came.component.html',
+  templateUrl: './recipe-base.html',
   styleUrls: ['../../recipe-details-came.component.css']
 })
-export class RecipeDetailsCameComponent implements OnInit {
+export class RecipeBase implements OnInit {
 
   recipeDetails = null;
-  mobile : string;
+  mobile: string;
   ingredientsImg;
 
   constructor(private activatedRoute: ActivatedRoute) {
@@ -27,7 +27,7 @@ export class RecipeDetailsCameComponent implements OnInit {
   }
 
   @HostListener('window:resize', ['$event'])
-  onResize(event) {
+  onResize() {
     this.isMobile();
   }
 
@@ -35,7 +35,7 @@ export class RecipeDetailsCameComponent implements OnInit {
     if (window.innerWidth > 1500) { // 768px portrait
       this.mobile = 'HIGH';
     }
-    else if(window.innerWidth < 1100){
+    else if (window.innerWidth < 1100){
       this.mobile = 'SMALL';
     }
     else{

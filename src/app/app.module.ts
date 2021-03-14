@@ -9,14 +9,14 @@ import {CommonModule} from '@angular/common';
 import {CardModule} from 'primeng/card';
 import {FieldsetModule} from 'primeng/fieldset';
 import {TabMenuModule} from 'primeng/tabmenu';
-import {DataViewModule} from "primeng/dataview";
+import {DataViewModule} from 'primeng/dataview';
 import {DividerModule} from 'primeng/divider';
-import {ButtonModule} from "primeng/button";
+import {ButtonModule} from 'primeng/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { RecipesCameComponent } from './MENU/recipes-came/recipes-came.component';
-import {AppRoutingModule} from "./app-routing.module";
-import {RecipeDetailsCameComponent} from "./RECETTE/ITEM/recipe-details-came/recipe-details-came.component";
+import {AppRoutingModule} from './app-routing.module';
+import {RecipeBase} from './RECETTE/BASE/recipe-base/recipe-base';
 import { FooterCameComponent } from './FOOTER/footer-came/footer-came.component';
 import { RecipeFicheCameComponent } from './MENU/recipe-fiche-came/recipe-fiche-came.component';
 import { HighlightPipe } from './highlight.pipe';
@@ -24,10 +24,10 @@ import { RecipeDetailsHighComponent } from './RECETTE/BASE/recipe-details-high/r
 import { RecipeDetailsMediumComponent } from './RECETTE/BASE/recipe-details-medium/recipe-details-medium.component';
 import { RecipeDetailsSmallComponent } from './RECETTE/BASE/recipe-details-small/recipe-details-small.component';
 import { RecipeDetailsIngredientComponent } from './RECETTE/ITEM/recipe-details-ingredient/recipe-details-ingredient.component';
-import {AccordionModule} from "primeng/accordion";
-import {ToastModule} from "primeng/toast";
+import {AccordionModule} from 'primeng/accordion';
+import {ToastModule} from 'primeng/toast';
 import { RecipeDetailsDetailsComponent } from './RECETTE/ITEM/recipe-details-details/recipe-details-details.component';
-import {RecipeDetailsDetailsSmallComponent} from "./RECETTE/ITEM/recipe-details-details-small/recipe-details-details-small.component";
+import {RecipeDetailsDetailsSmallComponent} from './RECETTE/ITEM/recipe-details-details-small/recipe-details-details-small.component';
 import { PluginLikeFacebookComponent } from './PLUGIN/plugin-like-facebook/plugin-like-facebook.component';
 import { BadgeCameComponent } from './badge-came/badge-came.component';
 import { RecipeDetailsStepComponent } from './RECETTE/ITEM/recipe-details-step/recipe-details-step.component';
@@ -38,7 +38,7 @@ import { RecipeIngredientListComponent } from './RECETTE/ITEM/recipe-ingredient-
     AppComponent,
     HeaderCameComponent,
     RecipesCameComponent,
-    RecipeDetailsCameComponent,
+    RecipeBase,
     FooterCameComponent,
     RecipeFicheCameComponent,
     HighlightPipe,
