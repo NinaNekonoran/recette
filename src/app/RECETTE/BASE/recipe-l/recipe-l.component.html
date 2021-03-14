@@ -16,7 +16,7 @@
             </div>
         </div>
         <div class="p-col-5 p-m-3 p-pl-6">
-            <app-recipe-details-details [recipeDetails]="recipeDetails"></app-recipe-details-details>
+            <app-recipe-details-details [recipe]="recipeDetails"></app-recipe-details-details>
             <article *ngIf="recipeDetails.advices">
                 <p class="footer-title">Conseils :</p>
                 <p *ngFor="let advice of recipeDetails.advices"  [innerHTML]="advice"></p>

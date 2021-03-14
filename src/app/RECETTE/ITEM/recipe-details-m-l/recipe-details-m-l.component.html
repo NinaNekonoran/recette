@@ -1,5 +1,4 @@
-<app-badge-came [type]="recipeDetails.type"></app-badge-came>
-
+<app-badge-came class="p-col-10" [type]="recipe.type"></app-badge-came>
 <p-divider></p-divider>
 <article class="p-d-flex">
     <article class="p-col-6">
@@ -8,7 +7,7 @@
                 <p class="footer-title p-m-0 p-text-bold">Portion </p>
             </div>
             <div class="p-col-6  p-p-0">
-                <p class="footer-content  p-m-0">{{recipeDetails.member}}</p>
+                <p class="footer-content  p-m-0">{{recipe.member}}</p>
             </div>
         </div>
 
@@ -17,7 +16,7 @@
                 <p class="footer-title p-m-0 p-text-bold">Temps de préparation </p>
             </div>
             <div class="p-col-6  p-p-0">
-                <p class="footer-content p-m-0" *ngIf="recipeDetails.time_preparation"> {{recipeDetails.time_preparation}}</p>
+                <p class="footer-content p-m-0" *ngIf="recipe.time_preparation"> {{recipe.time_preparation}}</p>
             </div>
         </div>
         <div class="p-d-flex">
@@ -26,14 +25,14 @@
 
             </div>
             <div class="p-col-6  p-p-0">
-                <p class="footer-content p-m-0" *ngIf="recipeDetails.time_cuisson"> {{recipeDetails.time_cuisson}}</p>
+                <p class="footer-content p-m-0" *ngIf="recipe.time_cuisson"> {{recipe.time_cuisson}}</p>
             </div>
         </div>
     </article>
 
     <p-divider layout="vertical" ></p-divider>
     <article class="p-d-flex p-col-6" >
-        <app-difficultes [difficult]="recipeDetails.difficult" [oneLine]="true"></app-difficultes>
+        <app-difficultes [difficult]="recipe.difficult" [oneLine]="true"></app-difficultes>
     </article>
 </article>
 <p-divider></p-divider>

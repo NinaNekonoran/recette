@@ -5,7 +5,7 @@ import { recipes } from '../../../recipes';
 @Component({
   selector: 'app-recipe-details-came',
   templateUrl: './recipe-base.html',
-  styleUrls: ['../../recipe-details-came.component.css']
+  styleUrls: ['../../recipe.css']
 })
 export class RecipeBase implements OnInit {
 

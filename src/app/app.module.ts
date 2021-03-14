@@ -20,19 +20,19 @@ import {RecipeBase} from './RECETTE/BASE/recipe-base/recipe-base';
 import { FooterCameComponent } from './FOOTER/footer-came/footer-came.component';
 import { RecipeFicheCameComponent } from './MENU/recipe-fiche-came/recipe-fiche-came.component';
 import { HighlightPipe } from './highlight.pipe';
-import { RecipeDetailsHighComponent } from './RECETTE/BASE/recipe-details-high/recipe-details-high.component';
-import { RecipeDetailsMediumComponent } from './RECETTE/BASE/recipe-details-medium/recipe-details-medium.component';
-import { RecipeDetailsSmallComponent } from './RECETTE/BASE/recipe-details-small/recipe-details-small.component';
+import { RecipeLComponent } from './RECETTE/BASE/recipe-l/recipe-l.component';
+import { RecipeMComponent } from './RECETTE/BASE/recipe-m/recipe-m.component';
+import { RecipeSComponent } from './RECETTE/BASE/recipe-s/recipe-s.component';
 import { RecipeDetailsIngredientComponent } from './RECETTE/ITEM/recipe-details-ingredient/recipe-details-ingredient.component';
 import {AccordionModule} from 'primeng/accordion';
 import {ToastModule} from 'primeng/toast';
-import { RecipeDetailsDetailsComponent } from './RECETTE/ITEM/recipe-details-details/recipe-details-details.component';
-import {RecipeDetailsDetailsSmallComponent} from './RECETTE/ITEM/recipe-details-details-small/recipe-details-details-small.component';
+import { RecipeDetailsMLComponent } from './RECETTE/ITEM/recipe-details-m-l/recipe-details-m-l.component';
+import {RecipeDetailsSComponent} from './RECETTE/ITEM/recipe-details-s/recipe-details-s.component';
 import { PluginLikeFacebookComponent } from './PLUGIN/plugin-like-facebook/plugin-like-facebook.component';
-import { BadgeCameComponent } from './badge-came/badge-came.component';
-import { RecipeDetailsStepComponent } from './RECETTE/ITEM/recipe-details-step/recipe-details-step.component';
+import { BadgeTypeComponent } from './ITEM_SHARED/badge-type/badge-type.component';
+import { RecipeStepComponent } from './RECETTE/ITEM/recipe-step/recipe-step.component';
 import { RecipeIngredientListComponent } from './RECETTE/ITEM/recipe-ingredient-list/recipe-ingredient-list.component';
-import { DifficultesComponent } from './ITEM/difficultes/difficultes.component';
+import { DifficultesComponent } from './ITEM_SHARED/difficultes/difficultes.component';
 
 @NgModule({
   declarations: [
@@ -43,15 +43,15 @@ import { DifficultesComponent } from './ITEM/difficultes/difficultes.component';
     FooterCameComponent,
     RecipeFicheCameComponent,
     HighlightPipe,
-    RecipeDetailsHighComponent,
-    RecipeDetailsMediumComponent,
-    RecipeDetailsSmallComponent,
+    RecipeLComponent,
+    RecipeMComponent,
+    RecipeSComponent,
     RecipeDetailsIngredientComponent,
-    RecipeDetailsDetailsComponent,
-    RecipeDetailsDetailsSmallComponent,
+    RecipeDetailsMLComponent,
+    RecipeDetailsSComponent,
     PluginLikeFacebookComponent,
-    BadgeCameComponent,
-    RecipeDetailsStepComponent,
+    BadgeTypeComponent,
+    RecipeStepComponent,
     RecipeIngredientListComponent,
     DifficultesComponent
   ],

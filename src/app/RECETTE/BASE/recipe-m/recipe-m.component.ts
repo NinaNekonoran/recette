@@ -2,10 +2,10 @@ import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-recipe-details-medium',
-  templateUrl: './recipe-details-medium.component.html',
-  styleUrls: ['../../recipe-details-came.component.css']
+  templateUrl: './recipe-m.component.html',
+  styleUrls: ['../../recipe.css']
 })
-export class RecipeDetailsMediumComponent implements OnInit {
+export class RecipeMComponent implements OnInit {
 
   constructor() { }
 
