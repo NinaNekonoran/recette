@@ -1,5 +1,4 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {difficultImage} from '../../../recipes';
 
 @Component({
   selector: 'app-recipe-details-details',
@@ -12,8 +11,6 @@ export class RecipeDetailsDetailsComponent implements OnInit {
 
   @Input()
   recipeDetails;
-
-  difficultImage = difficultImage;
 
   ngOnInit(): void {
   }

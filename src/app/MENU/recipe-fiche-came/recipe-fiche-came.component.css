@@ -40,14 +40,3 @@
 .footer-content{
     font-size: 0.8em;
 }
-.difficult_title{
-    font-size: 0.8em;
-}
-.difficult_image, .difficult_image_color{
-    margin: 0 2px 0 2px;
-    width: 25px;
-}
-.difficult_image_color{
-    filter: opacity(20%);
-    -webkit-filter: opacity(20%);
- }

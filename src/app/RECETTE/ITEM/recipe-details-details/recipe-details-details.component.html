@@ -32,17 +32,8 @@
     </article>
 
     <p-divider layout="vertical" ></p-divider>
-
     <article class="p-d-flex p-col-6" >
-
-        <p class="p-text-right p-mr-2">Difficulté : </p>
-
-            <img class="difficult_image" [src]="difficultImage" />
-            <img class="difficult_image" [ngClass]="{'difficult_image_color': recipeDetails.difficult < 2}" [src]="difficultImage" />
-            <img class="difficult_image" [ngClass]="{'difficult_image_color': recipeDetails.difficult < 3}" [src]="difficultImage" />
-            <img class="difficult_image" [ngClass]="{'difficult_image_color': recipeDetails.difficult < 4}" [src]="difficultImage" />
-            <img class="difficult_image" [ngClass]="{'difficult_image_color': recipeDetails.difficult < 5}" [src]="difficultImage" />
-
+        <app-difficultes [difficult]="recipeDetails.difficult" [oneLine]="true"></app-difficultes>
     </article>
 </article>
 <p-divider></p-divider>

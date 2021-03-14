@@ -32,6 +32,7 @@ import { PluginLikeFacebookComponent } from './PLUGIN/plugin-like-facebook/plugi
 import { BadgeCameComponent } from './badge-came/badge-came.component';
 import { RecipeDetailsStepComponent } from './RECETTE/ITEM/recipe-details-step/recipe-details-step.component';
 import { RecipeIngredientListComponent } from './RECETTE/ITEM/recipe-ingredient-list/recipe-ingredient-list.component';
+import { DifficultesComponent } from './ITEM/difficultes/difficultes.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { RecipeIngredientListComponent } from './RECETTE/ITEM/recipe-ingredient-
     PluginLikeFacebookComponent,
     BadgeCameComponent,
     RecipeDetailsStepComponent,
-    RecipeIngredientListComponent
+    RecipeIngredientListComponent,
+    DifficultesComponent
   ],
   imports: [
     BrowserModule,

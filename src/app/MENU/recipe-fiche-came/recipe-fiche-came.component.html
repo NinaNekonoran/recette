@@ -19,14 +19,7 @@
             </div>
         <p-divider class="p-m-0"></p-divider>
 
-        <p class="p-text-right difficult_title">Difficulté</p>
-        <div class="p-text-center">
-            <img class="difficult_image" [src]="difficultImage" />
-            <img class="difficult_image" [ngClass]="{'difficult_image_color': recipe.difficult < 2}" [src]="difficultImage" />
-            <img class="difficult_image" [ngClass]="{'difficult_image_color': recipe.difficult < 3}" [src]="difficultImage" />
-            <img class="difficult_image" [ngClass]="{'difficult_image_color': recipe.difficult < 4}" [src]="difficultImage" />
-            <img class="difficult_image" [ngClass]="{'difficult_image_color': recipe.difficult < 5}" [src]="difficultImage" />
-        </div>
+        <app-difficultes [difficult]="recipe.difficult" [oneLine]="false"></app-difficultes>
 
         <p-divider class="p-m-0"></p-divider>
 
