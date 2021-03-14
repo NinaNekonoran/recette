@@ -33,6 +33,7 @@ import { BadgeTypeComponent } from './ITEM_SHARED/badge-type/badge-type.componen
 import { RecipeStepComponent } from './RECETTE/ITEM/recipe-step/recipe-step.component';
 import { RecipeIngredientListComponent } from './RECETTE/ITEM/recipe-ingredient-list/recipe-ingredient-list.component';
 import { DifficultesComponent } from './ITEM_SHARED/difficultes/difficultes.component';
+import { CommentFacebookComponent } from './PLUGIN/comment-facebook/comment-facebook.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { DifficultesComponent } from './ITEM_SHARED/difficultes/difficultes.comp
     BadgeTypeComponent,
     RecipeStepComponent,
     RecipeIngredientListComponent,
-    DifficultesComponent
+    DifficultesComponent,
+    CommentFacebookComponent
   ],
   imports: [
     BrowserModule,
