@@ -3,7 +3,6 @@
         <div class="p-col-2 p-m-3" *ngIf="recipeDetails.ingredients">
             <p class="footer-title">Description :</p>
             <p>{{recipeDetails.description}}</p>
-            <p class="footer-title">Ingrédients :</p>
             <app-recipe-ingredient-list [ingredients]="recipeDetails.ingredients"></app-recipe-ingredient-list>
         </div>
 

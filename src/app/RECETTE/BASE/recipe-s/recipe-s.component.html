@@ -10,8 +10,6 @@
             <img class="p-col-6  resize_fit_center_small" [src]="recipeDetails.img[0]"/>
 
             <div class="p-col-5" *ngIf="recipeDetails.ingredients">
-
-                <p class="footer-title">Ingrédients :</p>
                 <app-recipe-ingredient-list [ingredients]="recipeDetails.ingredients"></app-recipe-ingredient-list>
             </div>
         </section>

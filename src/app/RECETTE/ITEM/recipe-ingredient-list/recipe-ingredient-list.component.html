@@ -1,3 +1,13 @@
+<p-dialog header="Légende :" [(visible)]="display">
+    <b>cs</b> : cuillère à soupe<br/>
+    <b>kg</b>  : kilogramme<br/>
+    <b>g</b>  : gramme<br/>
+    <b>[ingredient]</b>  : optionnel<br/>
+</p-dialog>
+<div class="p-d-flex p-align-center">
+    <span class="p-col-2 p-badge p-badge-warning p-p-0 p-align-center" (click)="showDialog()">Légende</span>
+    <p class="footer-title p-col-6">Ingrédients :</p>
+</div>
 <ul>
     <div class="p-justify-between p-align-center" *ngFor="let ingredient of ingredients">
         <li class="p-d-flex">

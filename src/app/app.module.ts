@@ -34,6 +34,8 @@ import { RecipeStepComponent } from './RECETTE/ITEM/recipe-step/recipe-step.comp
 import { RecipeIngredientListComponent } from './RECETTE/ITEM/recipe-ingredient-list/recipe-ingredient-list.component';
 import { DifficultesComponent } from './ITEM_SHARED/difficultes/difficultes.component';
 import { CommentFacebookComponent } from './PLUGIN/comment-facebook/comment-facebook.component';
+import {ConfirmPopupModule} from 'primeng/confirmpopup';
+import {DialogModule} from 'primeng/dialog';
 
 @NgModule({
   declarations: [
@@ -69,7 +71,8 @@ import { CommentFacebookComponent } from './PLUGIN/comment-facebook/comment-face
     FieldsetModule,
     BrowserAnimationsModule,
     AccordionModule,
-    ToastModule
+    ToastModule,
+    DialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
