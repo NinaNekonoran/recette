@@ -33,4 +33,8 @@ export class BadgeTypeComponent implements OnInit {
   isNO(){
     return this.type === TYPE_RECIPE.NO;
   }
+
+  isSAUCE(){
+    return this.type === TYPE_RECIPE.SAUCE;
+  }
 }

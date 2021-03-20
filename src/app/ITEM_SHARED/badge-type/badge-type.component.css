@@ -3,7 +3,7 @@
 */
 
 
-.type-p, .type-trad, .type-class, .type-accom{
+.type-p, .type-trad, .type-class, .type-accom, .type-sauce{
     font-family: 'Dancing Script', cursive;
     font-size: 0.90em;
     padding: 0.1em 0.2em;
@@ -15,6 +15,11 @@
 .type-trad{
     background-color: #FCD116;
     color: #333333;
+}
+
+.type-sauce{
+    background-color: #CE1126;
+    color: white;
 }
 
 .type-class{

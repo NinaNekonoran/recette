@@ -1,8 +1,9 @@
 const NO_IMAGE = 'https://www.recia.fr/wp-content/uploads/2019/09/no_image.png';
 enum TYPE_RECIPE {
-    TRADITIONNEL = 'Plats Traditionnel',
-    CLASSIQUE = 'Plats Classique',
-    ACCOMPAGNEMENT = 'Plats Accompagnement',
+    TRADITIONNEL = 'Plat Traditionnel',
+    CLASSIQUE = 'Plat Classique',
+    ACCOMPAGNEMENT = 'Plat Accompagnement',
+    SAUCE = 'Sauce',
     NO = 'NO'
 }
 
@@ -37,7 +38,7 @@ const recipes = [
             'Ecrasez ou mixez les 2 autres tomates, réservez.',
             'Lavez et pressez le citron, lavez et ciselez le basilic, épluchez et coupez l\'ail en petits morceaux, réservez.',
             'Epluchez les oignons et coupez-les en quartiers.',
-            'Faites chauffer l\'huile dans une cocotte, ajoutez les oignons et faites-les dorer sur toutes les faces pendant 10 min, ajoutez le cube maggi, remuez.',
+            'Faites chauffer l\'huile dans une cocotte, ajoutez les oignons et faites-les dorer sur toutes les faces pendant 10 min, ajoutez le cube maggi, remuez sans couvrir.',
             'Baissez le feu, ajoutez de l\'ail, mélangez, ajoutez la purée de tomate, de l\'eau, laissez mijoter 10 min.',
             'Ajoutez ensuite du basilic, le jus de citron, et les morceaux tomates, remuez, goûtez, ajoutez encore de l\'eau et du sel si besoin, laissez mijoter 5 min.',
         ],
@@ -45,8 +46,8 @@ const recipes = [
             'Cette sauce sans piment peut être servie avec du poulet braisé/grillé, le poisson braisé, ou comme accompagnement d\'autres plats.',
             'Je vous conseille les oignons jaunes.'
         ],
-        difficult : 5,
-        type : TYPE_RECIPE.ACCOMPAGNEMENT,
+        difficult : 1,
+        type : TYPE_RECIPE.SAUCE,
         plugin_like : 'https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fmamie-cameroun.fr%2Frecipe%2F11%2FSAUCE%2520D\'OIGNON%2520SANS%2520PIMENT&width=92&layout=box_count&action=like&size=small&share=true&height=65&appId=191725056082943'
     },
     {
@@ -61,11 +62,11 @@ const recipes = [
         ],
         ingredients : [
             {name : 'Gros piments rouges', amount : '6', img : 'https://github.com/NinaNekonoran/mamie-cameroun/blob/dev/src/assets/P1000395.JPG?raw=true'},
-            {name : 'Tomates', amount : '4', img: 'https://github.com/NinaNekonoran/mamie-cameroun/blob/dev/src/assets/P1000391.JPG?raw=true'},
+            {name : 'Tomates', amount : '6', img: 'https://github.com/NinaNekonoran/mamie-cameroun/blob/dev/src/assets/P1000391.JPG?raw=true'},
             {name : 'Gousses d\'ail', amount : '3'},
             {name : 'Morceau de gingembre', amount : '1'},
             {name : 'Oignon', amount : '1', img : 'https://github.com/NinaNekonoran/mamie-cameroun/blob/dev/src/assets/P1000385.JPG?raw=true'},
-            {or_name : 'Pépè', name : 'Clous de girofle', amount : '6', img: 'https://github.com/NinaNekonoran/mamie-cameroun/blob/dev/src/assets/P1000389.JPG?raw=true'},
+            {or_name : 'Pébè', name : 'Clous de girofle', amount : '6', img: 'https://github.com/NinaNekonoran/mamie-cameroun/blob/dev/src/assets/P1000389.JPG?raw=true'},
             {name : 'Huile végétale', amount : '5 cs'},
             {name : 'Cube maggi végétal', amount : '1'},
             {name : '[Sel]'}
@@ -80,8 +81,8 @@ const recipes = [
         advices: [
             'Ouvrez les fenêtres pendant la cuisson, elle se conserve longtemps au frigo en ajoutant de temps en temps de l\'huile.'
         ],
-        difficult : 5,
-        type : TYPE_RECIPE.ACCOMPAGNEMENT,
+        difficult : 2,
+        type : TYPE_RECIPE.SAUCE,
         plugin_like : 'https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fmamie-cameroun.fr%2Frecipe%2F11%2FPUREE%2520DE%2520PIMENT&width=92&layout=box_count&action=like&size=small&share=true&height=65&appId=191725056082943'
     }, {
         id : 10,
@@ -192,8 +193,8 @@ const recipes = [
         description : 'C\'est une pâte solide, réalisée à partir de deux farines: farine de maïs et farine de manioc, elle se mange avec une sauce en accompagnement.',
         img : ['https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000299.JPG?raw=true'],
         ingredients : [
-            {name : 'Farine de maïs', amount : '200g', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000293.JPG?raw=true'},
-            {name : 'Farine de manioc', amount : '100g', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000296.JPG?raw=true'},
+            {name : 'Farine de maïs', amount : '200g', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000296.JPG?raw=true'},
+            {name : 'Farine de manioc', amount : '100g', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000293.JPG?raw=true'},
             {name : 'Eau chaude'}
         ],
         steps : [
@@ -267,30 +268,6 @@ const recipes = [
         plugin_like : 'https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fmamie-cameroun.fr%2Frecipe%2F5%2FFEUILLES%2520DE%2520MANIOC%2520sans%2520sel&width=92&layout=box_count&action=like&size=small&share=true&height=65&appId=191725056082943'
     },
     {
-        id : 4,
-        title : 'MACABO BOUILLI',
-        member : '4 personnes',
-        time_preparation : '15 min',
-        time_cuisson : '30min',
-        description : 'xxx',
-        img : [NO_IMAGE],
-        ingredients : [
-            {name : 'Macabos', amount : '5'},
-            {name : '[sel]'},
-        ],
-        steps : [
-            'Pelez les macabos avec un couteau, lavez, coupez-les en 2 ou 3 morceaux si nécessaire, rincez.',
-            'Dans une casserole disposez les macabos, ajoutez de l\'eau à hauteur des macabos.',
-            'Mettez au feu à feu moyen, dès que l\'eau boue, ajoutez un peu de sel si besoin, et laissez cuire 30 mn environ.',
-            'Vérifiez la cuisson avec la pointe d\'un couteau, si le couteau s\'enfonce, alors les macabos sont cuits.',
-            'Retirez du feu, enlevez l\'eau de cuisson et servez chaud.',
-            'Le macabo bouilli s\'accompagne avec les poissons en sauce, les viandes en sauce, les feuilles de manioc, ect...'
-        ],
-        difficult : 4,
-        type : TYPE_RECIPE.ACCOMPAGNEMENT,
-        plugin_like : 'https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fmamie-cameroun.fr%2Frecipe%2F4%2FMACABO%2520BOUILLI&width=92&layout=box_count&action=like&size=small&share=true&height=65&appId=191725056082943',
-    },
-    {
         id : 3,
         title : 'BOEUF SAUCE GOMBO',
         member : '4 à 5 personnes',
@@ -302,7 +279,7 @@ const recipes = [
             'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000306.JPG?raw=true'
         ],
         ingredients : [
-            {name : 'Côtes de BOEUF', amount : '1kg', img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000272.JPG?raw=true'},
+            {name : 'Côtes de boeuf', amount : '1kg', img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000272.JPG?raw=true'},
             {name : 'Gombos frais', amount : '200g', img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000271.JPG?raw=true'},
             {name : 'Oignons', amount : '2', img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000267.JPG?raw=true'},
             {name : 'Gousses d\'ail', amount : '4', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000265.jpg?raw=true'},
@@ -337,7 +314,7 @@ const recipes = [
         description : 'Le bouillon de poisson appelé au Cameroun Pèpè Soupe est une recette simple, pimentée, très épicée, elle est délicieuse. Choisissez le poisson à chair ferme: Le bar, le capitaine, le mâchoiron, la carpe, ou le maquereau, évitez les poissons avec beaucoup d\'arrêtes. Vous pouvez remplacer le piment avec du poivre selon votre goût. ',
         img : ['https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1613750628687.jpg?raw=true'],
         ingredients : [
-            {name : 'Maquereaux', amount : '2', img : 'https://image.freepik.com/photos-gratuite/maquereaux-frais-vue-dessus-assiette_23-2148295238.jpg'},
+            {name : 'Maquereaux', amount : '2'},
             {name : 'Tomates', amount : '3'},
             {name : 'Gingembre frais', amount : '10g', img : 'https://image.freepik.com/photos-gratuite/gingembre-doux-amer_144627-12044.jpg'},
             {name : 'Oignon', amount : '1'},
@@ -409,4 +386,4 @@ const title = 'Mamie Cameroun';
 const mail = 'mamie.cameroun.recettes@gmail.com';
 const difficultImage = 'https://raw.githubusercontent.com/NinaNekonoran/recette/6012d758f24b735beb30772383e60ac954a35523/src/assets/diff.svg';
 
-export {recipes, presentation, title, difficultImage, TYPE_RECIPE, mail} ;
+export {recipes, presentation, title, difficultImage, TYPE_RECIPE, mail, NO_IMAGE} ;
