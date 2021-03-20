@@ -3,12 +3,14 @@
 
         <div class="p-d-flex">
             <div class="p-col-6  p-p-0">
-                <p class="footer-title p-m-0 p-text-bold">Portion </p>
+                <p *ngIf="recipeDetails.member" class="footer-title p-m-0 p-text-bold">Portion </p>
             </div>
             <div class="p-col-6  p-p-0">
-                <p class="footer-content  p-m-0">{{recipeDetails.member}}</p>
+                <p *ngIf="recipeDetails.member" class="footer-content  p-m-0">{{recipeDetails.member}}</p>
             </div>
         </div>
+
+        <p-divider *ngIf="recipeDetails.member"></p-divider>
 
         <div class="p-d-flex">
             <div class="p-col-6  p-p-0">
@@ -18,6 +20,9 @@
                 <p class="footer-content p-m-0" *ngIf="recipeDetails.time_preparation"> {{recipeDetails.time_preparation}}</p>
             </div>
         </div>
+
+        <p-divider></p-divider>
+
         <div class="p-d-flex">
             <div class="p-col-6 p-p-0">
                 <p class="footer-title p-m-0 p-text-bold">Temps de cuisson </p>

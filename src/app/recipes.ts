@@ -9,22 +9,63 @@ enum TYPE_RECIPE {
 const BAD_URL_PLUGIN_LIKE = 'https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Flocalhost%3A4200%2Frecipe%2F1%2FLe%2520SANGA&width=92&layout=box_count&action=like&size=small&share=true&height=65&appId=191725056082943';
 const recipes = [
     {
+        id : 12,
+        title : 'SAUCE D\'OIGNON SANS PIMENT',
+        time_preparation : '20 min',
+        time_cuisson : '25 min',
+        description : 'Une sauce simple facile à cuisiner et riche en saveur.',
+        img : [
+            'https://github.com/NinaNekonoran/mamie-cameroun/blob/dev/src/assets/P1000415.JPG?raw=true',
+            'https://github.com/NinaNekonoran/mamie-cameroun/blob/dev/src/assets/P1000397.JPG?raw=true'
+        ],
+        ingredients : [
+            {name : 'Gros oignons', amount : '6', img: 'https://github.com/NinaNekonoran/mamie-cameroun/blob/dev/src/assets/P1000398.JPG?raw=true'},
+            {name : 'Tomates', amount : '6'},
+            {name : 'Branche de basilic', amount : '1', img : 'https://github.com/NinaNekonoran/mamie-cameroun/blob/dev/src/assets/P1000401.JPG?raw=true'},
+            {name : 'Citron vert', amount : '1', img : 'https://github.com/NinaNekonoran/mamie-cameroun/blob/dev/src/assets/P1000404.JPG?raw=true'},
+            {name : 'Gousses d\'ail', amount : '2'},
+            {name : 'Huile d\'olive', amount : '5 cs'},
+            {name : 'Cube maggi végétal', amount : '1'},
+            {name : 'Eau', amount : '2 cs'},
+            {name : 'Sel'}
+        ],
+        steps : [
+            'Faites bouillir de l\'eau dans une casserole.',
+            'Lavez les tomates, ôtez les tiges puis retirez le pédoncule avec la pointe d\'un couteau, Plongez 4 tomates dans cette eau bouillante pendant 6 secondes, elles ne doivent pas cuire.',
+            'Retirez-les, plongez-les immédiatement dans de l\'eau très froide, et enlevez la peau à l\'aide d\'un couteau.',
+            'Epépinez-les, découpez-les en morceaux, réservez.',
+            'Ecrasez ou mixez les 2 autres tomates, réservez.',
+            'Lavez et pressez le citron, lavez et ciselez le basilic, épluchez et coupez l\'ail en petits morceaux, réservez.',
+            'Epluchez les oignons et coupez-les en quartiers.',
+            'Faites chauffer l\'huile dans une cocotte, ajoutez les oignons et faites-les dorer sur toutes les faces pendant 10 min, ajoutez le cube maggi, remuez.',
+            'Baissez le feu, ajoutez de l\'ail, mélangez, ajoutez la purée de tomate, de l\'eau, laissez mijoter 10 min.',
+            'Ajoutez ensuite du basilic, le jus de citron, et les morceaux tomates, remuez, goûtez, ajoutez encore de l\'eau et du sel si besoin, laissez mijoter 5 min.',
+        ],
+        advices: [
+            'Cette sauce sans piment peut être servie avec du poulet braisé/grillé, le poisson braisé, ou comme accompagnement d\'autres plats.',
+            'Je vous conseille les oignons jaunes.'
+        ],
+        difficult : 5,
+        type : TYPE_RECIPE.ACCOMPAGNEMENT,
+        plugin_like : 'https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fmamie-cameroun.fr%2Frecipe%2F11%2FSAUCE%2520D\'OIGNON%2520SANS%2520PIMENT&width=92&layout=box_count&action=like&size=small&share=true&height=65&appId=191725056082943'
+    },
+    {
         id : 11,
         title : 'PUREE DE PIMENT',
         time_preparation : '20 min',
         time_cuisson : '20 min',
         description : 'Très facile à réaliser, la purée de piment est une sauce très piquante utilisée pour épicer les plats de viandes, de poissons, de légumes, ect...',
         img : [
-            NO_IMAGE
+            'https://github.com/NinaNekonoran/mamie-cameroun/blob/dev/src/assets/P1000411.jpg?raw=true',
+            'https://github.com/NinaNekonoran/mamie-cameroun/blob/dev/src/assets/P1000383.JPG?raw=true'
         ],
         ingredients : [
-            {name : 'Gros piments rouges', amount : '6'},
-            {name : 'Tomates', amount : '4'},
+            {name : 'Gros piments rouges', amount : '6', img : 'https://github.com/NinaNekonoran/mamie-cameroun/blob/dev/src/assets/P1000395.JPG?raw=true'},
+            {name : 'Tomates', amount : '4', img: 'https://github.com/NinaNekonoran/mamie-cameroun/blob/dev/src/assets/P1000391.JPG?raw=true'},
             {name : 'Gousses d\'ail', amount : '3'},
-            {name : 'Oignon', amount : '1'},
             {name : 'Morceau de gingembre', amount : '1'},
-            {name : 'Oignon', amount : '1'},
-            {name : 'Pépè', or_name : 'Clous de girofle', or_amount : '6'},
+            {name : 'Oignon', amount : '1', img : 'https://github.com/NinaNekonoran/mamie-cameroun/blob/dev/src/assets/P1000385.JPG?raw=true'},
+            {or_name : 'Pépè', name : 'Clous de girofle', amount : '6', img: 'https://github.com/NinaNekonoran/mamie-cameroun/blob/dev/src/assets/P1000389.JPG?raw=true'},
             {name : 'Huile végétale', amount : '5 cs'},
             {name : 'Cube maggi végétal', amount : '1'},
             {name : '[Sel]'}

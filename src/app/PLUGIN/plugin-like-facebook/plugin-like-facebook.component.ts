@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {DomSanitizer} from "@angular/platform-browser";
+import {DomSanitizer} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-plugin-like-facebook',
@@ -16,6 +16,7 @@ export class PluginLikeFacebookComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // tslint:disable-next-line:typedef
   getUrlPluginLike(){
     return this.sanitizer.bypassSecurityTrustResourceUrl(this.url);
   }
