@@ -2,8 +2,7 @@ import {AfterContentInit, AfterViewChecked, AfterViewInit, Component, Input, OnI
 
 @Component({
   selector: 'app-comment-facebook',
-  templateUrl: './comment-facebook.component.html',
-  styleUrls: ['./comment-facebook.component.css']
+  templateUrl: './comment-facebook.component.html'
 })
 export class CommentFacebookComponent implements OnInit, AfterViewInit{
 

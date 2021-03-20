@@ -3,8 +3,7 @@ import {DomSanitizer} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-plugin-like-facebook',
-  templateUrl: './plugin-like-facebook.component.html',
-  styleUrls: ['./plugin-like-facebook.component.css']
+  templateUrl: './plugin-like-facebook.component.html'
 })
 export class PluginLikeFacebookComponent implements OnInit {
   private sanitizer: DomSanitizer;
