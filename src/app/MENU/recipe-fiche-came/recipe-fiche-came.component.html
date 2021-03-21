@@ -1,6 +1,6 @@
 <article class="p-p-2" *ngIf="recipe" >
     <p-card [routerLink]="['/recipe', recipe.id, recipe.title ]"
-            [header]="recipe.title" [style]="{width: full ? '100%': '200px',height: '34.8em'}" styleClass="p-card-shadow">
+            [header]="recipe.title" [style]="{width: full ? '100%': '200px',height: '37.5em'}" styleClass="p-card-shadow">
         <ng-template pTemplate="header">
             <img class="resize_fit_center" alt="Card" [src]="recipe.img[0]">
         </ng-template>
@@ -23,9 +23,8 @@
 
         <p-divider class="p-m-0"></p-divider>
 
-        <div class="p-d-flex p-m-0 relative">
-            <app-plugin-like-facebook class="p-col-fixed p-p-0" width="100px" [recipe]="recipe"></app-plugin-like-facebook>
-            <app-badge-came class="p-m-0 p-p-0" [ngClass]="{'p-col-9':full, 'p-col-7':!full}" [type]="recipe.type"></app-badge-came>
-        </div>
+        <app-badge-came class="p-m-0 p-p-0" [type]="recipe.type"></app-badge-came>
+
+        <app-plugin-like-facebook class="p-p-0 p-m-1" [recipe]="recipe"></app-plugin-like-facebook>
     </p-card>
 </article>

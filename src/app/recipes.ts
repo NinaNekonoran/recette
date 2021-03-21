@@ -3,7 +3,7 @@ enum TYPE_RECIPE {
     TRADITIONNEL = 'Plat Traditionnel',
     CLASSIQUE = 'Plat Classique',
     ACCOMPAGNEMENT = 'Plat Accompagnement',
-    SAUCE = 'Sauce',
+    SAUCE = 'Sauce d\'Accompagnement',
     NO = 'NO'
 }
 
@@ -111,7 +111,7 @@ const recipes = [
             'Cuisson du safou au choix: bouilli/grillé à la casserole en entier, ou par cuisson sur des braises de votre barbecue par exemple.',
             'Servez chaud accompagné du manioc frais, du bâton de manioc, ou avec du plantin grillé, ect...'
         ],
-        difficult : 5,
+        difficult : 1,
         type : TYPE_RECIPE.ACCOMPAGNEMENT,
         plugin_like : 'https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fmamie-cameroun.fr%2Frecipe%2F10%2FSAFOU%2520BOUILLI%252FGRILLE&width=92&layout=box_count&action=like&size=small&share=true&height=65&appId=191725056082943'
     }, {
@@ -279,7 +279,7 @@ const recipes = [
             'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000306.JPG?raw=true'
         ],
         ingredients : [
-            {name : 'Côtes de boeuf', amount : '1kg', img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000272.JPG?raw=true'},
+            {name : 'Queue de boeuf', amount : '1kg', img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000272.JPG?raw=true'},
             {name : 'Gombos frais', amount : '200g', img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000271.JPG?raw=true'},
             {name : 'Oignons', amount : '2', img : 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000267.JPG?raw=true'},
             {name : 'Gousses d\'ail', amount : '4', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000265.jpg?raw=true'},
@@ -354,9 +354,9 @@ const recipes = [
         description : 'Le Sanga est un met composé de légumes (les feuilles de folon, de zom, d\'aubergines, ou les épinards), de maïs en grain doux frais cuits avec du jus de noix de palme et mangé avec ou sans sucre, il est apprécié dans le sud  et presque partout au Cameroun, on peut le consommer en entrée, ou en plat principal.',
         img : ['https://github.com/NinaNekonoran/recette/blob/dev/src/assets/1613750628714.jpg?raw=true'],
         ingredients : [
-            {name : 'Folon frais', amount : '1kg ', img: 'https://enviesdafrique.fr/wp-content/uploads/2020/11/follon-300x300.jpeg'},
-            {name : 'Epis de maïs doux frais', amount : '8-10'},
-            {name : 'Boîte de 500g de jus de noix de palme(sauce graine)', amount : '1'}
+            {name : 'Folon frais', amount : '1kg ', img: 'https://github.com/NinaNekonoran/mamie-cameroun/blob/dev/src/assets/1616320439297.jpg?raw=true'},
+            {name : 'Epis de maïs doux frais', amount : '8-10', img : 'https://github.com/NinaNekonoran/mamie-cameroun/blob/dev/src/assets/1616320439306.jpg?raw=true'},
+            {name : 'Boîte de 500g de jus de noix de palme(sauce graine)', amount : '1', img : 'https://github.com/NinaNekonoran/mamie-cameroun/blob/dev/src/assets/1616320439289.jpg?raw=true'}
         ],
         steps : [
             'Triez, lavez, égouttez, coupez le <b>folon</b> en deux',
