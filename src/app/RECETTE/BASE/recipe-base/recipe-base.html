@@ -2,9 +2,9 @@
     <h2 class="liste-title p-col-fixed">{{recipeDetails.title}}</h2>
     <app-plugin-like-facebook class="p-col-fixed p-col-align-center" [recipe]="recipeDetails" ></app-plugin-like-facebook>
 </div>
-<a [routerLink]="['../../../']" class="back-recipe p-d-flex">
+<a [routerLink]="['../../../']" class="back-recipe p-d-flex p-mb-2">
     <button pButton pRipple type="button" icon="pi pi-chevron-left" class="p-button-rounded p-button-warning"></button>
-    <p class="p-mb-5">retourner sur la carte</p>
+    <p class="p-col-align-center">retourner sur la carte</p>
 </a>
 <app-recipe-details-high *ngIf="mobile === 'HIGH'" [recipeDetails]="recipeDetails" [ingredientsImg]="ingredientsImg"></app-recipe-details-high>
 <app-recipe-details-medium *ngIf="mobile === 'MEDIUM'" [recipeDetails]="recipeDetails" [ingredientsImg]="ingredientsImg"></app-recipe-details-medium>

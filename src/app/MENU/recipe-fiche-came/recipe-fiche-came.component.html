@@ -1,6 +1,6 @@
 <article class="p-p-2" *ngIf="recipe" >
     <p-card [routerLink]="['/recipe', recipe.id, recipe.title ]"
-            [header]="recipe.title" [style]="{width: full ? '100%': '200px',height: '37.5em'}" styleClass="p-card-shadow">
+            [header]="recipe.title" [style]="{width: full ? '100%': '200px',height: '38.2em'}" styleClass="p-card-shadow">
         <ng-template pTemplate="header">
             <img class="resize_fit_center" alt="Card" [src]="recipe.img[0]">
         </ng-template>
