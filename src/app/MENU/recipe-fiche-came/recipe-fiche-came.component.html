@@ -24,7 +24,7 @@
         <p-divider class="p-m-0"></p-divider>
 
         <div class="p-d-flex p-m-0 relative">
-            <app-plugin-like-facebook class="p-col-fixed p-p-0" width="100px" [url]="recipe.plugin_like"></app-plugin-like-facebook>
+            <app-plugin-like-facebook class="p-col-fixed p-p-0" width="100px" [recipe]="recipe"></app-plugin-like-facebook>
             <app-badge-came class="p-m-0 p-p-0" [ngClass]="{'p-col-9':full, 'p-col-7':!full}" [type]="recipe.type"></app-badge-came>
         </div>
     </p-card>
