@@ -1,6 +1,6 @@
-<p *ngIf="!oneLine" class="p-text-right p-mr-2">Difficulté : </p>
+<p *ngIf="!oneLine" class="p-text-right p-pr-2">Difficulté : </p>
 <article class="p-text-center">
-    <span *ngIf="oneLine" class="p-text-right p-mr-2">Difficulté : </span>
+    <span *ngIf="oneLine" class="p-text-right p-pr-2">Difficulté : </span>
     <img class="difficult_image" [src]="difficultImage" />
     <img class="difficult_image" [ngClass]="{'difficult_image_color': difficult < 2}" [src]="difficultImage" />
     <img class="difficult_image" [ngClass]="{'difficult_image_color': difficult < 3}" [src]="difficultImage" />

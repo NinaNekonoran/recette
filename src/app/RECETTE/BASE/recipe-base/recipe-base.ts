@@ -37,10 +37,10 @@ export class RecipeBase implements OnInit {
   }
 
   private isMobile() {
-    if (window.innerWidth > 1500) { // 768px portrait
+    if (window.innerWidth > 1400) { // 768px portrait
       this.mobile = 'HIGH';
     }
-    else if (window.innerWidth < 1100){
+    else if (window.innerWidth < 940){
       this.mobile = 'SMALL';
     }
     else{
