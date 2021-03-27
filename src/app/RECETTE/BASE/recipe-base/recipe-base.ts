@@ -1,5 +1,5 @@
 import {Component, HostListener, OnInit} from '@angular/core';
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, Params, Router} from '@angular/router';
 import { recipes } from '../../../recipes';
 
 @Component({
@@ -10,21 +10,26 @@ import { recipes } from '../../../recipes';
 export class RecipeBase implements OnInit {
 
   recipeDetails = null;
-  mobile: string;
+  mobile: string ;
   ingredientsImg;
 
-  constructor(private activatedRoute: ActivatedRoute) {
+  constructor(private activatedRoute: ActivatedRoute, private router: Router) {
   }
 
   ngOnInit(): void {
     this.getDetails(this.activatedRoute.snapshot.paramMap.get('id'));
     this.isMobile();
-    this.ingredientsImg = this.recipeDetails.ingredients.filter(ing => ing.img != null);
   }
 
   private getDetails(id: string): void {
-    this.recipeDetails = recipes.find( aux => aux.id.toString() == id);
+    this.recipeDetails = recipes.find(aux => aux.id.toString() === id);
+    if (!this.recipeDetails) {
+      this.router.navigate(['']);
+    } else {
+      this.ingredientsImg = this.recipeDetails.ingredients.filter(ing => ing.img != null);
+    }
   }
+
 
   @HostListener('window:resize', ['$event'])
   onResize() {

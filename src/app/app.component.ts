@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Title} from '@angular/platform-browser';
+import {ActivatedRoute, Router} from '@angular/router';
+import { recipes } from './recipes';
 
 @Component({
   selector: 'app-root',
@@ -9,9 +11,16 @@ import {Title} from '@angular/platform-browser';
 export class AppComponent implements OnInit{
 
 
-  public constructor(private titleService: Title) { }
-
+  redirection: string = null;
+  public constructor(private titleService: Title, private route: ActivatedRoute, private router: Router) {
+  }
   ngOnInit(): void {
     this.titleService.setTitle('Mamie Cameroun');
+    this.route.queryParams.subscribe(params => {
+      this.redirection = params.redirection;
+      if (this.redirection) {
+        this.router.navigate(['recipe/' + this.redirection + '/' + recipes.find(aux => aux.id.toString() === this.redirection).title]);
+      }
+    });
   }
 }
