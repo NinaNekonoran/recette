@@ -11,6 +11,5 @@
 
 
 .resize_fit {
-    height: 25em;
     object-fit: cover;
 }

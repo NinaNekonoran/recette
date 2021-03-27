@@ -1,16 +1,11 @@
 import {Component, HostListener, OnInit} from '@angular/core';
-import {presentation, mail} from '../../recipes';
 @Component({
   selector: 'app-footer-came',
   templateUrl: './footer-came.component.html',
-  styleUrls: ['./footer-came.component.css']
+  styleUrls: ['../footer.component.css']
 })
 export class FooterCameComponent implements OnInit {
-
-  presentation = presentation;
-
   constructor() { }
-  mail: string = mail;
   mobile;
 
   ngOnInit(): void {
@@ -23,7 +18,7 @@ export class FooterCameComponent implements OnInit {
   }
 
   private isMoblie() {
-    if (window.innerWidth < 600) { // 768px portrait
+    if (window.innerWidth < 768) { // 768px portrait
       this.mobile = true;
     }
     else{

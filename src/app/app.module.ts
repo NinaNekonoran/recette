@@ -36,6 +36,8 @@ import { DifficultesComponent } from './ITEM_SHARED/difficultes/difficultes.comp
 import { CommentFacebookComponent } from './PLUGIN/comment-facebook/comment-facebook.component';
 import {ConfirmPopupModule} from 'primeng/confirmpopup';
 import {DialogModule} from 'primeng/dialog';
+import { FooterPresentationComponent } from './FOOTER/footer-presentation/footer-presentation.component';
+import { FooterContactCreditsComponent } from './FOOTER/footer-contact-credits/footer-contact-credits.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +59,9 @@ import {DialogModule} from 'primeng/dialog';
     RecipeStepComponent,
     RecipeIngredientListComponent,
     DifficultesComponent,
-    CommentFacebookComponent
+    CommentFacebookComponent,
+    FooterPresentationComponent,
+    FooterContactCreditsComponent
   ],
   imports: [
     BrowserModule,

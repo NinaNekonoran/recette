@@ -2,41 +2,25 @@
 
     <div class="p-d-flex">
         <img class="p-col-4 resize_fit" src="https://github.com/NinaNekonoran/recette/blob/dev/src/assets/acc.jpg?raw=true"/>
-        <div class="p-col-8 p-m-2">
-            <p class="footer-title">Qui suis-je ? </p>
-            <div class="p-d-flex">
-                <p>
-                    {{presentation}}
-                </p>
-            </div>
+        <div class="p-col-8 p-p-4">
+            <app-footer-presentation></app-footer-presentation>
         </div>
     </div>
     <p-divider layout="horizontal" ></p-divider>
 
-    <div class="p-col-12 p-m-2">
-        <p class="footer-title">Contact : </p>
-        <div class="p-d-flex">
-            <p>
-                {{mail}}
-            </p>
-        </div>
+    <div class="p-col-12 p-p-4">
+        <app-footer-contact-credits></app-footer-contact-credits>
     </div>
 </div>
 <div *ngIf="!mobile" class="footer-background p-d-flex">
-    <img class=" p-m-5 p-col-align-center" src="https://github.com/NinaNekonoran/recette/blob/dev/src/assets/acc.jpg?raw=true" height="144" width="108"/>
+    <img class=" p-m-5 p-col-align-center resize_fit" src="https://github.com/NinaNekonoran/recette/blob/dev/src/assets/acc.jpg?raw=true" height="144" width="108"/>
 
-    <div class="p-col-5 p-m-5">
-        <p class="footer-title">Qui suis-je ? </p>
-        <div class="p-d-flex">{{presentation}}</div>
+    <div class="p-col-5 p-p-5">
+        <app-footer-presentation></app-footer-presentation>
     </div>
     <p-divider layout="vertical" ></p-divider>
 
-    <div class="p-col-3  p-m-5">
-        <p class="footer-title">Contact : </p>
-        <div class="p-d-flex">
-            <p>
-                {{mail}}
-            </p>
-        </div>
+    <div class="p-col-3  p-p-5">
+        <app-footer-contact-credits></app-footer-contact-credits>
     </div>
 </div>
