@@ -156,7 +156,7 @@ const recipes = [
             'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000316.JPG?raw=true'
         ],
         ingredients : [
-            {name : 'Poulet fermier,', amount : '1,5 kg', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000334.JPG?raw=true'},
+            {name : 'Poulet fermier', amount : '1,5 kg', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000334.JPG?raw=true'},
             {name : 'Pâte d\'arachide', amount : '5 cs', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000329.JPG?raw=true'},
             {name : 'Tomates', amount : '6', img: 'https://github.com/NinaNekonoran/recette/blob/dev/src/assets/P1000325.jpg?raw=true'},
             {name : 'Oignons', amount : '2'},

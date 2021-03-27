@@ -9,16 +9,16 @@
     <p class="footer-title p-col-6">Ingrédients:</p>
 </div>
 <ul>
-    <div class="p-justify-between p-align-center" *ngFor="let ingredient of ingredients">
+    <div class="p-justify-between p-align-center p-mb-1 p-mr-2" *ngFor="let ingredient of ingredients">
         <li class="p-d-flex">
-            <p class="p-col-10 p-m-0">- {{ingredient.name}}</p>
-            <span class="p-col-2 p-badge p-badge-warning p-p-0" *ngIf="ingredient.amount">{{ingredient.amount}}</span>
+            <p class="p-col-10 p-m-0 p-p-1">- {{ingredient.name}}</p>
+            <span class="p-col-2 p-badge p-badge-warning p-mt-1 p-p-0" *ngIf="ingredient.amount">{{ingredient.amount}}</span>
 
         </li>
         <div *ngIf="ingredient.or_name" class="p-ml-2 ou">ou</div>
         <li class="p-d-flex">
-            <p *ngIf="ingredient.or_name" class="p-col-10 p-m-0">{{ingredient.or_name}}</p>
-            <span *ngIf="ingredient.or_amount" class="p-col-2 p-badge p-badge-warning p-p-0">{{ingredient.or_amount}}</span>
+            <p *ngIf="ingredient.or_name" class="p-col-10 p-m-0 p-p-1">{{ingredient.or_name}}</p>
+            <span *ngIf="ingredient.or_amount" class="p-col-2 p-badge p-badge-warning p-mt-1 p-p-0">{{ingredient.or_amount}}</span>
         </li>
     </div>
 </ul>
