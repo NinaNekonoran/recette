@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+.liste-title{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    color: #333;
+}
+.recipes-section{
+    min-height: 300px;
+}
+.recipes-section,
+.recipes-sub-section{
+    margin: 0 5% 30px 5%;
+    width: 90%;
+    background-color: #F7F7F7;
+}
+.footer-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4em;
+    color: #333;
+}
+
+:host >>> ul{
+    padding : 0 0 0 10px !important;
+}
+.p-badge{
+    text-align: center;
+    padding : 0 8px;
+}
+
+:host >>> .p-badge.p-badge-warning,
+:host >>> .p-badge.p-badge-success,
+:host >>> .p-badge.p-badge-danger{
+    margin : 0px 3px ;
+}
+
+.back-recipe{
+    margin : 0 0 0 5%;
+    cursor: pointer;
+    text-decoration: none;
+}
+.back-recipe p{
+    color: #333333;
+    margin: auto 0 auto 10px;
+}
+
+.resize_fit_center {
+    height: 25em;
+    object-fit: cover;
+    width: 100%;
+}
+
+.resize_fit_center_big {
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+}
+
+.resize_fit_center_small {
+    height: auto;
+    object-fit: cover;
+}
+
+:host >>> .p-fieldset{
+    margin-bottom: 1em;
+}
+
+.ou{
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+}
+
+.comment-facebook{
+    width : 90%;
+    margin: 0 5% 30px 5%;
+}

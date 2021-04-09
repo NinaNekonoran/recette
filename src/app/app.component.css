@@ -1,0 +1,11 @@
+:host >>> .p-badge {
+    min-width: 50px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.cursor{
+    cursor: pointer;
+}
