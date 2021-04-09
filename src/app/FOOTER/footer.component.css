@@ -1,0 +1,15 @@
+.footer-background{
+    background-color: #FCD116;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+.footer-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4em;
+    color: #333;
+}
+
+
+.resize_fit {
+    object-fit: cover;
+}
