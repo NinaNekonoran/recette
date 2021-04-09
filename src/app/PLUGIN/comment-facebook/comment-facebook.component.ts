@@ -14,8 +14,7 @@ export class CommentFacebookComponent implements OnInit, AfterViewInit{
   url;
 
   ngOnInit(): void {
-    this.url = 'https://mamie-cameroun.fr/recipe/' + this.recipe.id + '/' + this.recipe.title.replaceAll(' ', '%20');
-    console.log('url : '+this.url);
+    this.url = 'https://mamie-cameroun.fr/recipe/' + this.recipe.id + '/' + this.recipe.title.replaceAll(' ', '%20').replaceAll('/', '%2F');
   }
 
   // tslint:disable-next-line:typedef

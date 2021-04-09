@@ -19,7 +19,9 @@ export class AppComponent implements OnInit{
     this.route.queryParams.subscribe(params => {
       this.redirection = params.redirection;
       if (this.redirection) {
-        this.router.navigate(['recipe/' + this.redirection + '/' + recipes.find(aux => aux.id.toString() === this.redirection).title]);
+        this.router.navigate([
+            'recipe/' + this.redirection + '/'
+        ]);
       }
     });
   }
