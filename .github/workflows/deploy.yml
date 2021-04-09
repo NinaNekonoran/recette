@@ -31,6 +31,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: File storage
         run: |
-          cp necessary/ docs/
+          cp necessary docs/
           rm -rf !(docs)
-          cp docs/* /
+          cp docs /
