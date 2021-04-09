@@ -34,10 +34,10 @@ import { RecipeStepComponent } from './RECETTE/ITEM/recipe-step/recipe-step.comp
 import { RecipeIngredientListComponent } from './RECETTE/ITEM/recipe-ingredient-list/recipe-ingredient-list.component';
 import { DifficultesComponent } from './ITEM_SHARED/difficultes/difficultes.component';
 import { CommentFacebookComponent } from './PLUGIN/comment-facebook/comment-facebook.component';
-import {ConfirmPopupModule} from 'primeng/confirmpopup';
 import {DialogModule} from 'primeng/dialog';
 import { FooterPresentationComponent } from './FOOTER/footer-presentation/footer-presentation.component';
 import { FooterContactCreditsComponent } from './FOOTER/footer-contact-credits/footer-contact-credits.component';
+import {ScrollTopModule} from 'primeng/scrolltop';
 
 @NgModule({
   declarations: [
@@ -76,7 +76,8 @@ import { FooterContactCreditsComponent } from './FOOTER/footer-contact-credits/f
     BrowserAnimationsModule,
     AccordionModule,
     ToastModule,
-    DialogModule
+    DialogModule,
+    ScrollTopModule
   ],
   providers: [],
   bootstrap: [AppComponent]
