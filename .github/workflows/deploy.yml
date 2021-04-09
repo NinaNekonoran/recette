@@ -32,5 +32,5 @@ jobs:
       - name: File storage
         run: |
           cp -a necessary/. docs/
-          rm !(docs)
+          rm -rf e2e necessary src *.json *.js
           cp docs/. ./
