@@ -18,13 +18,19 @@ jobs:
         with:
               node-version: 12.8
               
+      - name: Install angular CLI 
+        uses: npm install -g @angular/cli
+          
       - name: npm dependencies
         run: npm install 
          
       # Runs a set of commands using the runners shell
-      - name: Build Project
+      - name: Build
+        run: ng build --prod --output-path docs
+ 
+      # Runs a set of commands using the runners shell
+      - name: File storage
         run: |
-          ng build --prod --output-path docs
           cp necessary/ docs/
           rm -rf !(docs)
           cp docs/* /
