@@ -1,0 +1,32 @@
+<section class="recipes-section p-d-flex p-flex-row  p-justify-around">
+
+    <div class="p-d-flex footer-background ">
+        <div class="p-d-flex footer-background ">
+            <div class="p-col-2 p-m-3" *ngIf="recipeDetails.ingredients">
+                <p class="footer-title">Description :</p>
+                <p>{{recipeDetails.description}}</p>
+                <app-recipe-ingredient-list [ingredients]="recipeDetails.ingredients"></app-recipe-ingredient-list>
+            </div>
+
+            <p-divider layout="vertical" ></p-divider>
+
+            <section class="p-col-9 p-m-3">
+                <app-recipe-details-ingredient pCol="p-col-6" [ingredientsImg]="ingredientsImg"></app-recipe-details-ingredient>
+                <img class="resize_fit_center" [src]="recipeDetails.img[0]"/>
+
+                <div>
+                    <app-recipe-details-details [recipe]="recipeDetails "></app-recipe-details-details>
+
+                    <article *ngIf="recipeDetails.advices">
+                        <p class="footer-title">Conseils :</p>
+                        <p *ngFor="let advice of recipeDetails.advices"  [innerHTML]="advice"></p>
+                    </article>
+
+                    <app-recipe-details-step [recipe]="recipeDetails"></app-recipe-details-step>
+                </div>
+                <img *ngIf="recipeDetails.img[1]" class="resize_fit_center" [src]="recipeDetails.img[1]"/>
+                <article class="p-text-right"><b>BON APPÉTIT</b></article>
+            </section>
+        </div>
+    </div>
+</section>

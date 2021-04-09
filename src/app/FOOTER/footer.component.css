@@ -1,0 +1,27 @@
+.footer-background{
+    background-color: #FCD116;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+.footer-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4em;
+    color: #333;
+}
+
+
+.resize_fit {
+    object-fit: cover;
+}
+
+a{
+    text-decoration:none;
+}
+
+.chip-titre{
+    margin-top: 0;
+    font-size: 1.1em;
+    font-family: 'Dancing Script', cursive;
+    font-style: italic;
+    color: #007A5E;
+}

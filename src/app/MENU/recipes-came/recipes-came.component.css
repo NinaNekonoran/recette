@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+.liste-title{
+    width: 100%;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    color: #333;
+}
+.recipes-section{
+    margin: 50px 5%;
+    width: 90%;
+}
+.recipes-listItem{
+    width: 100%;
+}
+:host >>> .pi-align-right:before {
+    content: none !important;
+}
+:host >>> .p-grid.p-nogutter {
+    justify-content: center;
+}
+:host >>>.p-dataview .p-paginator-bottom {
+    border-width: 0;
+}

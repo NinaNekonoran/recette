@@ -1,0 +1,8 @@
+<p class="title">Etapes :</p>
+<div>
+    <ul>
+        <li class="p-d-flex p-justify-between p-align-center" *ngFor="let step of recipe.steps ; index as i">
+            <p class="p-mb-1" [innerHTML]="(i+1) + ' - ' + step"></p>
+        </li>
+    </ul>
+</div>
