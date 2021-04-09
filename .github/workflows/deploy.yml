@@ -38,3 +38,7 @@ jobs:
         with:
           branch: deploy # The branch the action should deploy to.
           folder: . # The folder the action should deploy.
+          clean: true
+          clean-exclude: |
+            CNAME
+            404.md
