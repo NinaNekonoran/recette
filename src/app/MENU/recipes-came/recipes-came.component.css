@@ -7,7 +7,7 @@
     color: #333;
 }
 .recipes-section{
-    margin: 0 5%;
+    margin: 50px 5%;
     width: 90%;
 }
 .recipes-listItem{
@@ -15,4 +15,10 @@
 }
 :host >>> .pi-align-right:before {
     content: none !important;
+}
+:host >>> .p-grid.p-nogutter {
+    justify-content: center;
+}
+:host >>>.p-dataview .p-paginator-bottom {
+    border-width: 0;
 }
