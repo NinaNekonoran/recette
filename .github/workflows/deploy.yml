@@ -32,5 +32,5 @@ jobs:
       - name: File storage
         run: |
           cp -a necessary/. docs/
-          rm -rf !(docs)
+          rm !(docs)
           cp docs/. ./
