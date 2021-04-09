@@ -13,3 +13,15 @@
 .resize_fit {
     object-fit: cover;
 }
+
+a{
+    text-decoration:none;
+}
+
+.chip-titre{
+    margin-top: 0;
+    font-size: 1.1em;
+    font-family: 'Dancing Script', cursive;
+    font-style: italic;
+    color: #007A5E;
+}

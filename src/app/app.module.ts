@@ -38,6 +38,7 @@ import {DialogModule} from 'primeng/dialog';
 import { FooterPresentationComponent } from './FOOTER/footer-presentation/footer-presentation.component';
 import { FooterContactCreditsComponent } from './FOOTER/footer-contact-credits/footer-contact-credits.component';
 import {ScrollTopModule} from 'primeng/scrolltop';
+import { ChipModule } from 'primeng/chip';
 
 @NgModule({
   declarations: [
@@ -77,7 +78,8 @@ import {ScrollTopModule} from 'primeng/scrolltop';
     AccordionModule,
     ToastModule,
     DialogModule,
-    ScrollTopModule
+    ScrollTopModule,
+    ChipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
