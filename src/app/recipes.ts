@@ -50,6 +50,7 @@ const recipes = [
         type : TYPE_RECIPE.SAUCE,
         plugin_like : 'https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fmamie-cameroun.fr%2Frecipe%2F11%2FSAUCE%2520D\'OIGNON%2520SANS%2520PIMENT&width=92&layout=box_count&action=like&size=small&share=true&height=65&appId=191725056082943'
     },
+    {id: 0},
     {
         id : 11,
         title : 'PUREE DE PIMENT',
@@ -305,7 +306,8 @@ const recipes = [
         difficult : 3,
         type : TYPE_RECIPE.TRADITIONNEL,
         plugin_like : 'https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fmamie-cameroun.fr%2Frecipe%2F3%2FBOEUF%2520SAUCE%2520GOMBO&width=92&layout=box_count&action=like&size=small&share=true&height=65&appId=191725056082943',
-    }, {
+    },
+    {
         id : 2,
         title : 'BOUILLON DE POISSON',
         member : '4 à 6 personnes',
