@@ -11,16 +11,23 @@ export class CommentFacebookComponent implements OnInit, AfterViewInit{
   @Input()
   recipe;
 
+  progress = true;
   url;
 
   ngOnInit(): void {
-    this.url = 'https://mamie-cameroun.fr/recipe/' + this.recipe.id + '/' + this.recipe.title.replaceAll(' ', '%20').replaceAll('/', '%2F');
+    if (this.recipe) {
+      this.url = 'https://mamie-cameroun.fr/recipe/' + this.recipe.id + '/'
+          + this.recipe.title.replaceAll(' ', '%20').replaceAll('/', '%2F');
+    } else {
+      this.url = 'https://mamie-cameroun.fr/';
+    }
   }
 
   // tslint:disable-next-line:typedef
   ngAfterViewInit(){
+    this.progress=false;
     // tslint:disable-next-line:only-arrow-functions typedef
-    (function( d, s, id) {
+    (function( d, s, id, context) {
       // tslint:disable-next-line:prefer-const one-variable-per-declaration
       let js, fjs = d.getElementsByTagName(s)[0];
       js = d.createElement(s); js.id = id;
@@ -33,6 +40,6 @@ export class CommentFacebookComponent implements OnInit, AfterViewInit{
       } else {
         fjs.parentNode.insertBefore(js, fjs);
       }
-    }(document, 'script', 'facebook-jssdk'));
+    }(document, 'script', 'facebook-jssdk', this));
   }
 }
