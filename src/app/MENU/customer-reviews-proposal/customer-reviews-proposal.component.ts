@@ -12,14 +12,11 @@ export class CustomerReviewsProposalComponent implements OnInit {
   @Input()
   full: boolean;
 
-  @Input()
-  occurrence: number;
-
   constructor(public dialogService: DialogService) {}
   ref: DynamicDialogRef;
 
   ngOnInit(): void {
-    this.occurrence += 1;
+    console.log(this.full);
   }
 
   show(): void {
