@@ -6,8 +6,6 @@
         <ng-template let-recipe pTemplate="gridItem">
             <app-recipe-fiche-came *ngIf="mobile && recipe.id!=0" [recipe]="recipe" [full]="true" ></app-recipe-fiche-came>
             <app-recipe-fiche-came *ngIf="!mobile && recipe.id!=0" [recipe]="recipe" [full]="false" ></app-recipe-fiche-came>
-            <app-customer-reviews-proposal *ngIf="mobile && recipe.id==0" [full]="true"></app-customer-reviews-proposal>
-            <app-customer-reviews-proposal *ngIf="!mobile && recipe.id==0" [full]="false"></app-customer-reviews-proposal>
         </ng-template>
 
         <ng-template let-item pTemplate="paginatordropdownitem">

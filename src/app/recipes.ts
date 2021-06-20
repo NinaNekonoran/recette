@@ -7,7 +7,6 @@ enum TYPE_RECIPE {
     NO = 'NO'
 }
 
-const BAD_URL_PLUGIN_LIKE = 'https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Flocalhost%3A4200%2Frecipe%2F1%2FLe%2520SANGA&width=92&layout=box_count&action=like&size=small&share=true&height=65&appId=191725056082943';
 const recipes = [
     {
         id : 12,
@@ -48,7 +47,6 @@ const recipes = [
         ],
         difficult : 1,
         type : TYPE_RECIPE.SAUCE,
-        plugin_like : 'https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fmamie-cameroun.fr%2Frecipe%2F11%2FSAUCE%2520D\'OIGNON%2520SANS%2520PIMENT&width=92&layout=box_count&action=like&size=small&share=true&height=65&appId=191725056082943'
     },
     {id: 0},
     {
@@ -84,7 +82,6 @@ const recipes = [
         ],
         difficult : 2,
         type : TYPE_RECIPE.SAUCE,
-        plugin_like : 'https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fmamie-cameroun.fr%2Frecipe%2F11%2FPUREE%2520DE%2520PIMENT&width=92&layout=box_count&action=like&size=small&share=true&height=65&appId=191725056082943'
     }, {
         id : 10,
         title : 'SAFOU BOUILLI/GRILLE',
@@ -114,7 +111,6 @@ const recipes = [
         ],
         difficult : 1,
         type : TYPE_RECIPE.TRADITIONNEL,
-        plugin_like : 'https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fmamie-cameroun.fr%2Frecipe%2F10%2FSAFOU%2520BOUILLI%252FGRILLE&width=92&layout=box_count&action=like&size=small&share=true&height=65&appId=191725056082943'
     }, {
         id : 9,
         title : 'BANANES PLANTAINS PILES',
@@ -143,7 +139,6 @@ const recipes = [
         ],
         difficult : 1,
         type : TYPE_RECIPE.ACCOMPAGNEMENT,
-        plugin_like : 'https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fmamie-cameroun.fr%2Frecipe%2F9%2FBANANES%2520PLANTAINS%2520PILES&width=92&layout=box_count&action=like&size=small&share=true&height=65&appId=191725056082943'
     },
     {
         id : 8,
@@ -183,7 +178,6 @@ const recipes = [
         ],
         difficult : 3,
         type : TYPE_RECIPE.CLASSIQUE,
-        plugin_like : 'https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fmamie-cameroun.fr%2Frecipe%2F8%2FPOULET%2520SAUCE%2520D\'ARACHIDE&width=92&layout=box_count&action=like&size=small&share=true&height=65&appId=191725056082943'
     },
     {
         id : 7,
@@ -210,7 +204,6 @@ const recipes = [
         ],
         difficult : 2,
         type : TYPE_RECIPE.ACCOMPAGNEMENT,
-        plugin_like : 'https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fmamie-cameroun.fr%2Frecipe%2F7%2FFOUFOU%2520DE%2520MA%25C3%258FS%252FMANIOC&width=92&layout=box_count&action=like&size=small&share=true&height=65&appId=191725056082943',
     },
     {
         id : 6,
@@ -235,7 +228,6 @@ const recipes = [
         ],
         difficult : 1,
         type : TYPE_RECIPE.ACCOMPAGNEMENT,
-        plugin_like : 'https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fmamie-cameroun.fr%2Frecipe%2F6%2FMANIOC%2520DOUX%2520CUISSON%2520A%2520L\'EAU&width=92&layout=box_count&action=like&size=small&share=true&height=65&appId=191725056082943',
     },
     {
         id : 5,
@@ -266,7 +258,6 @@ const recipes = [
         ],
         difficult : 2,
         type : TYPE_RECIPE.TRADITIONNEL,
-        plugin_like : 'https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fmamie-cameroun.fr%2Frecipe%2F5%2FFEUILLES%2520DE%2520MANIOC%2520sans%2520sel&width=92&layout=box_count&action=like&size=small&share=true&height=65&appId=191725056082943'
     },
     {
         id : 3,
@@ -305,7 +296,6 @@ const recipes = [
         ],
         difficult : 3,
         type : TYPE_RECIPE.TRADITIONNEL,
-        plugin_like : 'https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fmamie-cameroun.fr%2Frecipe%2F3%2FBOEUF%2520SAUCE%2520GOMBO&width=92&layout=box_count&action=like&size=small&share=true&height=65&appId=191725056082943',
     },
     {
         id : 2,
@@ -345,7 +335,6 @@ const recipes = [
         areImg : true,
         difficult : 2,
         type : TYPE_RECIPE.CLASSIQUE,
-        plugin_like : 'https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fmamie-cameroun.fr%2Frecipe%2F2%2FBOUILLON%2520DE%2520POISSON&width=92&layout=box_count&action=like&size=small&share=true&height=65&appId=191725056082943',
     },
     {
         id : 1,
@@ -374,7 +363,6 @@ const recipes = [
         ],
         difficult : 2,
         type : TYPE_RECIPE.TRADITIONNEL,
-        plugin_like : 'https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fmamie-cameroun.fr%2Frecipe%2F1%2FLe%2520SANGA&width=92&layout=box_count&action=like&size=small&share=true&height=65&appId=191725056082943'
     }
 ];
 
