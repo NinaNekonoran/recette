@@ -39,9 +39,6 @@ import { FooterPresentationComponent } from './FOOTER/footer-presentation/footer
 import { FooterContactCreditsComponent } from './FOOTER/footer-contact-credits/footer-contact-credits.component';
 import {ScrollTopModule} from 'primeng/scrolltop';
 import { ChipModule } from 'primeng/chip';
-import {DynamicDialogModule} from 'primeng/dynamicdialog';
-import { CustomerReviewsProposalComponent } from './MENU/customer-reviews-proposal/customer-reviews-proposal.component';
-import {ProgressSpinnerModule} from 'primeng/progressspinner';
 
 @NgModule({
   declarations: [
@@ -65,8 +62,7 @@ import {ProgressSpinnerModule} from 'primeng/progressspinner';
     DifficultesComponent,
     CommentFacebookComponent,
     FooterPresentationComponent,
-    FooterContactCreditsComponent,
-    CustomerReviewsProposalComponent,
+    FooterContactCreditsComponent
   ],
   imports: [
     BrowserModule,
@@ -83,9 +79,7 @@ import {ProgressSpinnerModule} from 'primeng/progressspinner';
     ToastModule,
     DialogModule,
     ScrollTopModule,
-    ChipModule,
-    DynamicDialogModule,
-    ProgressSpinnerModule
+    ChipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
